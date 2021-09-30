@@ -1,0 +1,71 @@
+name: board_ui
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get:
+  hexcolor:
+  eva_icons_flutter:
+  font_awesome_flutter: 
+  cupertino_icons: ^1.0.2
+  google_fonts:
+  flutter_rating_bar: ^4.0.0
+  groovin_widgets: ^3.0.2
+  flutter_advanced_segment: 
+  flexible_scrollbar: ^0.1.2
+  
+
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+      - assets/img/
+      - assets/icon/
+
+  fonts:
+    - family: Poppins Regular
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+    - family: Poppins Bold
+      fonts:
+        - asset: fonts/Poppins-Bold.ttf
+    - family: Poppins Semi Bold
+      fonts:
+        - asset: fonts/Poppins-SemiBold.ttf
+    - family: Poppins Thin
+      fonts:
+        - asset: fonts/Poppins-Thin.ttf
+    - family: Poppins Medium
+      fonts:
+        - asset: fonts/Poppins-Medium.ttf
+
+    # Cairo Fonts Arabic
+
+    - family: Cairo Bold
+      fonts:
+        - asset: fonts/Cairo-Bold.ttf
+    - family: Cairo Light
+      fonts:
+        - asset: fonts/Cairo-Light.ttf
+    - family: Cairo Regular
+      fonts:
+        - asset: fonts/Cairo-Regular.ttf
+    - family: Cairo Semi Bold
+      fonts:
+        - asset: fonts/Cairo-SemiBold.ttf
+
