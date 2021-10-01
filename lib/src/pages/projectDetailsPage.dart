@@ -1,7 +1,7 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/PaymilestonePage.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:groovin_widgets/groovin_widgets.dart';
@@ -53,36 +53,25 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 40,
+                  height: 10,
                 ),
-                GestureDetector(
-                  onTap: () => Get.back(),
-                  child: Container(
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 10),
-                      child: Icon(
-                        EvaIcons.arrowIosBack,
-                        size: 26,
-                      ),
-                    ),
-                  ),
-                ),
+                backButton(),
                 SizedBox(
-                  height: 40,
+                  height: 30,
                 ),
                 KText(
-                  text: 'Project Details',
+                  text: 'projectDetails',
                   color: AppTheme.textColor,
-                  fontSize: 20,
+                  fontSize: AppTheme.textSize17,
                   fontFamily: 'Poppins Semi Bold',
                 ),
                 SizedBox(
                   height: 13,
                 ),
                 KText(
-                  text: '''Start adding more information about the project
-like its name and description''',
-                  fontSize: 14,
+                  text: 'projectDetailsAbout',
+                  fontWeight: AppTheme.normal,
+                  fontSize: AppTheme.textSize13,
                   color: AppTheme.textColor2,
                 ),
                 SizedBox(
@@ -90,7 +79,7 @@ like its name and description''',
                 ),
                 Container(
                   clipBehavior: Clip.none,
-                  height: 7,
+                  height: 6,
                   width: Get.width,
                   decoration: BoxDecoration(
                     color: Colors.grey.shade200,
@@ -99,7 +88,7 @@ like its name and description''',
                   child: Stack(
                     children: [
                       Container(
-                        height: 7,
+                        height: 6,
                         width: Get.width / 2.20,
                         decoration: BoxDecoration(
                           color: AppTheme.iconColor.withOpacity(.70),
@@ -113,9 +102,9 @@ like its name and description''',
                   height: 40,
                 ),
                 KText(
-                  text: 'Project Title',
+                  text: 'projectDetailsTitle',
                   color: AppTheme.textColor,
-                  fontSize: 13,
+                  fontSize: AppTheme.textSize13,
                   fontFamily: 'Poppins Semi Bold',
                 ),
                 SizedBox(
@@ -129,9 +118,9 @@ like its name and description''',
                       color: AppTheme.textColor,
                     ),
                     decoration: InputDecoration(
-                      hintText: 'Design a school brochure',
+                      hintText: 'projectDetailsTitleField'.tr,
                       hintStyle: TextStyle(
-                        fontSize: 14,
+                        fontSize: AppTheme.textSize12,
                         color: AppTheme.textColor2,
                       ),
                       contentPadding: EdgeInsets.only(left: 20, right: 20),
@@ -142,9 +131,9 @@ like its name and description''',
                   height: 20,
                 ),
                 KText(
-                  text: 'Project Budget',
+                  text: 'projectDetailsProjectBudget',
                   color: AppTheme.textColor,
-                  fontSize: 13,
+                  fontSize: AppTheme.textSize13,
                   fontFamily: 'Poppins Semi Bold',
                 ),
                 SizedBox(
@@ -168,18 +157,18 @@ like its name and description''',
                                 ),
                                 children: [
                                   TextSpan(
-                                    text: 'SAR ',
+                                    text: 'sar'.tr,
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppTheme.textColor2,
-                                      fontFamily: 'Poppins Semi Bold',
+                                      fontFamily: AppTheme.semiAr,
                                     ),
                                   ),
                                 ],
                               ),
                             ),
                             KText(
-                              text: '~',
+                              text: ' ~',
                               color: AppTheme.iconColor,
                               fontSize: 16,
                             ),
@@ -189,15 +178,15 @@ like its name and description''',
                                 style: TextStyle(
                                   fontSize: 12,
                                   color: AppTheme.textColor,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontFamily: AppTheme.semiAr,
                                 ),
                                 children: [
                                   TextSpan(
-                                    text: 'SAR',
+                                    text: 'sar'.tr,
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppTheme.textColor2,
-                                      fontFamily: 'Poppins Semi Bold',
+                                      fontFamily: AppTheme.semiAr,
                                     ),
                                   ),
                                 ],
@@ -221,18 +210,18 @@ like its name and description''',
                             ),
                             children: [
                               TextSpan(
-                                text: 'SAR ',
+                                text: 'sar'.tr,
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: AppTheme.textColor2,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontFamily: AppTheme.semiAr,
                                 ),
                               ),
                             ],
                           ),
                         ),
                         KText(
-                          text: '~',
+                          text: ' ~',
                           color: AppTheme.iconColor,
                           fontSize: 16,
                         ),
@@ -246,11 +235,11 @@ like its name and description''',
                             ),
                             children: [
                               TextSpan(
-                                text: 'SAR',
+                                text: 'sar'.tr,
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: AppTheme.textColor2,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontFamily: AppTheme.semiAr,
                                 ),
                               ),
                             ],
@@ -259,7 +248,7 @@ like its name and description''',
                         Spacer(),
                         Icon(
                           Icons.expand_more,
-                          size: 22,
+                          size: 20,
                         )
                       ],
                     ),
@@ -270,43 +259,33 @@ like its name and description''',
                 ),
                 SizedBox(height: 30),
                 KText(
-                  text: 'Bid Description',
+                  text: 'bidDescription',
                   fontFamily: 'Poppins Semi Bold',
                   fontSize: 13,
                   color: AppTheme.textColor,
                 ),
                 SizedBox(height: 20),
                 Container(
-                  height: 140,
+                  height: 150,
                   width: Get.width,
                   child: TextField(
                     maxLines: 200,
                     style: TextStyle(
                       fontSize: 12,
                       color: Colors.grey,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.w500,
                     ),
                     decoration: InputDecoration(
-                      hintText:
-                          '''Lorem ipsum dolor sit amet, consectetur adipisce
-nw elit, sed do eiusmodLorem ipsum dolor sit ami
-Lorem ipsum dolor sit amet, consectetur adipisce
-Lorem ipsum dolor sit amet, consectetur adipisce
-nw elit, sed do eiusmodLorem ipsum dolor sit ami
-etretqr consectetur adipiscen''',
+                      hintText: 'projectDetailsDescriptionField'.tr,
                       hintStyle: TextStyle(
                         color: AppTheme.textColor2,
                         fontSize: 12,
                       ),
-                      contentPadding: EdgeInsets.only(
-                        left: 20,
-                        top: 40,
-                        bottom: 10,
-                      ),
+                      contentPadding: EdgeInsets.all(10),
                     ),
                   ),
                 ),
-                SizedBox(height: 80),
+                SizedBox(height: 50),
                 GestureDetector(
                   onTap: () => Get.to(PayMileStonePage()),
                   child: Container(
@@ -319,9 +298,9 @@ etretqr consectetur adipiscen''',
                     child: Container(
                       alignment: Alignment.center,
                       child: KText(
-                        text: 'Continue',
+                        text: 'continue',
                         color: AppTheme.white,
-                        fontSize: 15,
+                        fontSize: 14,
                         fontWeight: FontWeight.w600,
                       ),
                     ),

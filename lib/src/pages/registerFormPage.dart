@@ -44,7 +44,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                 KText(
                   text: 'register',
                   color: AppTheme.textColor,
-                  fontSize: 20,
+                  fontSize: 17,
                   fontFamily: 'Poppins Semi Bold',
                 ),
                 SizedBox(
@@ -52,7 +52,8 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                 ),
                 KText(
                   text: 'registerFormAbout',
-                  fontSize: 14,
+                  fontSize: 13,
+                  fontWeight: AppTheme.normal,
                   color: AppTheme.textColor2,
                 ),
                 SizedBox(
@@ -83,9 +84,9 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                   child: TextField(
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
-                      hintText: 'FormFieldFullName',
+                      hintText: 'FormFieldFullName'.tr,
                       hintStyle: TextStyle(
-                        fontSize: 14,
+                        fontSize: 12,
                         color: AppTheme.textColor2,
                       ),
                     ),
@@ -119,9 +120,9 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                   child: TextField(
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
-                      hintText: 'userNameField',
+                      hintText: 'userNameField'.tr,
                       hintStyle: TextStyle(
-                        fontSize: 14,
+                        fontSize: 12,
                         color: AppTheme.textColor2,
                       ),
                     ),
@@ -160,7 +161,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                       hintText: '**********',
                       hintStyle: TextStyle(
                         letterSpacing: 6,
-                        fontSize: 14,
+                        fontSize: 13,
                         color: AppTheme.textColor2,
                       ),
                       suffixIcon: Padding(
@@ -183,13 +184,16 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                     SizedBox(width: 10),
                     KText(
                       text: 'iAccept',
-                      fontSize: 16,
+                      fontSize: 13,
+                      fontWeight: AppTheme.normal,
                       color: AppTheme.textColor,
                       fontFamily: 'Poppins Regular',
                     ),
+                    SizedBox(width: 5),
                     KText(
                       text: 'terms&Conditions',
-                      fontSize: 16,
+                      fontWeight: AppTheme.normal,
+                      fontSize: 13,
                       fontFamily: 'Poppins Regular',
                       color: AppTheme.iconColor,
                     ),
@@ -215,7 +219,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                           child: KText(
                             text: 'registerAccount',
                             color: AppTheme.white,
-                            fontSize: 16,
+                            fontSize: 14,
                             fontWeight: FontWeight.w600,
                           ),
                         ),

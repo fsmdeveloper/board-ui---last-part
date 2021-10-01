@@ -6,9 +6,8 @@ import 'package:board_ui/src/pages/chatPage.dart';
 import 'package:board_ui/src/pages/profilePage.dart';
 import 'package:board_ui/src/widgets/advanceSegment.dart';
 import 'package:board_ui/src/widgets/kText.dart';
-import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
+
 
 import 'package:get/get.dart';
 

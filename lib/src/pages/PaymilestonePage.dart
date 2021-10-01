@@ -1,7 +1,9 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/addNewCardPage.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
+import 'package:board_ui/src/widgets/primaryButton.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:groovin_widgets/groovin_widgets.dart';
@@ -28,34 +30,23 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 40,
+                  height: 10,
                 ),
                 Row(
                   children: [
-                    GestureDetector(
-                      onTap: () => Get.back(),
-                      child: Container(
-                        child: Padding(
-                          padding: EdgeInsets.only(left: 10),
-                          child: Icon(
-                            EvaIcons.arrowIosBack,
-                            size: 26,
-                          ),
-                        ),
-                      ),
-                    ),
+                    backButton(),
                     Spacer(),
                     Column(
                       children: [
                         KText(
-                          text: 'Pay Later',
-                          fontSize: 13,
+                          text: 'payLater',
+                          fontSize: 12,
                           fontFamily: 'Poppins Semi Bold',
                         ),
                         SizedBox(height: 4),
                         Container(
                           height: 1.50,
-                          width: 60,
+                          width: 55,
                           color: Colors.grey.shade300,
                         )
                       ],
@@ -66,27 +57,26 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                   height: 40,
                 ),
                 KText(
-                  text: 'Create Milestones',
+                  text: 'createMileStone',
                   color: AppTheme.textColor,
-                  fontSize: 21,
+                  fontSize: AppTheme.textSize19,
                   fontFamily: 'Poppins Semi Bold',
                 ),
                 SizedBox(
                   height: 13,
                 ),
                 KText(
-                  text: '''Start creating milestones for your project to be
-able to work with suitable freelancer ''',
-                  fontFamily: 'Poppins Medium',
-                  fontSize: 13,
+                  text: 'createMilestoneAbout',
+                  fontWeight: AppTheme.normal,
+                  fontSize: AppTheme.textSize12,
                   color: AppTheme.textColor2,
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Container(
                   clipBehavior: Clip.none,
-                  height: 7,
+                  height: 6,
                   width: Get.width,
                   decoration: BoxDecoration(
                     color: Colors.grey.shade200,
@@ -95,7 +85,7 @@ able to work with suitable freelancer ''',
                   child: Stack(
                     children: [
                       Container(
-                        height: 7,
+                        height: 6,
                         width: Get.width,
                         decoration: BoxDecoration(
                           color: AppTheme.iconColor.withOpacity(.70),
@@ -109,10 +99,9 @@ able to work with suitable freelancer ''',
                   height: 40,
                 ),
                 KText(
-                  text: 'Project Budget',
+                  text: 'projectBudget',
                   color: AppTheme.textColor,
-                  fontSize: 13,
-                  fontFamily: 'Poppins Semi Bold',
+                  fontSize: AppTheme.textSize13,
                 ),
                 SizedBox(
                   height: 10,
@@ -131,22 +120,21 @@ able to work with suitable freelancer ''',
                                 style: TextStyle(
                                   fontSize: 12,
                                   color: AppTheme.textColor,
-                                  fontFamily: 'Poppins Semi Bold',
                                 ),
                                 children: [
                                   TextSpan(
-                                    text: 'SAR ',
+                                    text: 'sar'.tr,
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppTheme.textColor2,
-                                      fontFamily: 'Poppins Semi Bold',
+                                      fontFamily: AppTheme.semiAr,
                                     ),
                                   ),
                                 ],
                               ),
                             ),
                             KText(
-                              text: '~',
+                              text: ' ~',
                               color: AppTheme.iconColor,
                               fontSize: 16,
                             ),
@@ -160,11 +148,11 @@ able to work with suitable freelancer ''',
                                 ),
                                 children: [
                                   TextSpan(
-                                    text: 'SAR',
+                                    text: 'sar'.tr,
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppTheme.textColor2,
-                                      fontFamily: 'Poppins Semi Bold',
+                                      fontFamily: AppTheme.semiAr,
                                     ),
                                   ),
                                 ],
@@ -188,18 +176,18 @@ able to work with suitable freelancer ''',
                             ),
                             children: [
                               TextSpan(
-                                text: 'SAR ',
+                                text: 'sar'.tr,
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: AppTheme.textColor2,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontFamily: AppTheme.semiAr,
                                 ),
                               ),
                             ],
                           ),
                         ),
                         KText(
-                          text: '~',
+                          text: ' ~',
                           color: AppTheme.iconColor,
                           fontSize: 16,
                         ),
@@ -209,15 +197,15 @@ able to work with suitable freelancer ''',
                             style: TextStyle(
                               fontSize: 12,
                               color: AppTheme.textColor,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontFamily: AppTheme.semiAr,
                             ),
                             children: [
                               TextSpan(
-                                text: 'SAR',
+                                text: 'sar'.tr,
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: AppTheme.textColor2,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontFamily: AppTheme.semiAr,
                                 ),
                               ),
                             ],
@@ -226,7 +214,7 @@ able to work with suitable freelancer ''',
                         Spacer(),
                         Icon(
                           Icons.expand_more,
-                          size: 22,
+                          size: 20,
                         )
                       ],
                     ),
@@ -237,7 +225,7 @@ able to work with suitable freelancer ''',
                 ),
                 SizedBox(height: 30),
                 KText(
-                  text: 'Pay using',
+                  text: 'payUsing',
                   color: HexColor('#474461'),
                   fontSize: 15,
                   fontFamily: 'Poppins Semi Bold',
@@ -249,9 +237,10 @@ able to work with suitable freelancer ''',
                     width: 25,
                   ),
                   title: KText(
-                    text: 'Online Payments',
+                    text: 'onlinePayments',
                     fontFamily: 'Poppins Medium',
                     fontSize: 13,
+                    fontWeight: AppTheme.normal,
                   ),
                   trailing: CircleAvatar(
                     backgroundColor: HexColor('#C63878'),
@@ -268,24 +257,31 @@ able to work with suitable freelancer ''',
                 SizedBox(height: 20),
                 GestureDetector(
                   onTap: () => Get.to(AddNewCardPages()),
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 15),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Icon(
-                          Icons.add,
-                          color: AppTheme.textColor2,
-                          size: 20,
-                        ),
-                        KText(
-                          text: 'Add New Card',
-                          fontFamily: 'Poppins Semi Bold',
-                          color: Colors.black54,
-                          fontSize: 13,
-                        ),
-                        Container(),
-                      ],
+                  child: Container(
+                    height: 40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.grey.shade50.withOpacity(.50),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 15, right: 15),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(
+                            Icons.add,
+                            color: AppTheme.textColor2,
+                            size: 20,
+                          ),
+                          KText(
+                            text: 'addNewCard',
+                            fontFamily: 'Poppins Semi Bold',
+                            color: Colors.black54,
+                            fontSize: 13,
+                          ),
+                          Container(),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -362,8 +358,8 @@ able to work with suitable freelancer ''',
                     width: 25,
                   ),
                   title: KText(
-                    text: 'Pay using wallet',
-                    fontFamily: 'Poppins Medium',
+                    text: 'payUsingWallet',
+                    fontWeight: AppTheme.normal,
                     fontSize: 13,
                   ),
                   trailing: RichText(
@@ -376,41 +372,27 @@ able to work with suitable freelancer ''',
                       ),
                       children: [
                         TextSpan(
-                          text: 'SAR',
+                          text: 'sar'.tr,
                           style: TextStyle(
                             fontSize: 11,
                             color: AppTheme.textColor2,
-                            fontFamily: 'Poppins Semi Bold',
+                            fontFamily: AppTheme.semiAr,
                           ),
                         ),
                       ],
                     ),
                   ),
                 ),
-                SizedBox(height: 50),
-                GestureDetector(
-                  onTap: () => Get.back(),
-                  child: Container(
-                    height: 50,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: HexColor('#41d9c6'),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Container(
-                      alignment: Alignment.center,
-                      child: KText(
-                        text: 'Pay & Continue',
-                        fontFamily: 'Poppins Semi Bold',
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
-                ),
                 SizedBox(height: 20),
               ],
             ),
+          ),
+        ),
+        bottomSheet: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 25),
+          child: primaryButton(
+            'pay&Continue',
+            () => Get.back(),
           ),
         ),
       ),

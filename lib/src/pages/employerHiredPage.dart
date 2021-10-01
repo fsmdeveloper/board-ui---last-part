@@ -15,6 +15,8 @@ class EmployerHirePage extends StatefulWidget {
 }
 
 class _EmployerHirePageState extends State<EmployerHirePage> {
+  bool value = false;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -68,7 +70,8 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                     ),
                     SizedBox(height: 15),
                     KText(
-                      text: '''Lorem ipsum dolor sit amet, consectetur adipiscen
+                      text:
+                          '''Lorem ipsum dolor sit amet, consectetur adipiscen
 elit, sed do eiusmodLorem ipsum dolor sit ametreti
 consectetur adipiscen elit, sed do eiusmod''',
                       fontSize: 12.50,
@@ -248,8 +251,8 @@ consectetur adipiscen elit, sed do eiusmod''',
                             Row(
                               children: [
                                 Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     SizedBox(width: 8),
                                     KText(
@@ -258,41 +261,44 @@ consectetur adipiscen elit, sed do eiusmod''',
                                       fontFamily: 'Poppins Medium',
                                       fontSize: 13,
                                     ),
-                                    Row(
-                                      children: [
-                                        SizedBox(width: 5),
-                                        Icon(
-                                          Icons.star,
-                                          color: Colors.amber,
-                                          size: 14,
-                                        ),
-                                        SizedBox(width: 2),
-                                        KText(
-                                          text: '4.5',
-                                          color: Colors.white,
-                                          fontFamily: 'Poppins Medium',
-                                          fontSize: 11,
-                                        ),
-                                        SizedBox(width: 5),
-                                        KText(
-                                          text: '(',
-                                          color: Colors.white54,
-                                          fontFamily: 'Poppins Medium',
-                                          fontSize: 8,
-                                        ),
-                                        KText(
-                                          text: ' 1200 Review ',
-                                          color: Colors.white54,
-                                          fontFamily: 'Poppins Medium',
-                                          fontSize: 11,
-                                        ),
-                                        KText(
-                                          text: ')',
-                                          color: Colors.white54,
-                                          fontFamily: 'Poppins Medium',
-                                          fontSize: 8,
-                                        ),
-                                      ],
+                                    Container(
+                                      alignment: Alignment.centerRight,
+                                      child: Row(
+                                        children: [
+                                          SizedBox(width: 5),
+                                          Icon(
+                                            Icons.star,
+                                            color: Colors.amber,
+                                            size: 14,
+                                          ),
+                                          SizedBox(width: 2),
+                                          KText(
+                                            text: '4.5',
+                                            color: Colors.white,
+                                            fontFamily: 'Poppins Medium',
+                                            fontSize: 11,
+                                          ),
+                                          SizedBox(width: 5),
+                                          KText(
+                                            text: '(',
+                                            color: Colors.white54,
+                                            fontFamily: 'Poppins Medium',
+                                            fontSize: 8,
+                                          ),
+                                          KText(
+                                            text: ' 1200 Review ',
+                                            color: Colors.white54,
+                                            fontFamily: 'Poppins Medium',
+                                            fontSize: 11,
+                                          ),
+                                          KText(
+                                            text: ')',
+                                            color: Colors.white54,
+                                            fontFamily: 'Poppins Medium',
+                                            fontSize: 8,
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -458,7 +464,7 @@ etretqr consectetur adipiscen''',
                               fontSize: 16,
                               fontFamily: 'Poppins Semi Bold',
                             ),
-                            SizedBox(height: 5),
+                            // SizedBox(height: 5),
                             KText(
                               text: 'Payment details related to the project',
                               fontSize: 12,
@@ -575,8 +581,10 @@ etretqr consectetur adipiscen''',
                             activeColor: AppTheme.primaryColor,
                             toggleable: true,
                             value: 'null',
-                            groupValue: null,
-                            onChanged: null,
+                            groupValue: 'null',
+                            onChanged: (val) {
+                              setState(() {});
+                            },
                           ),
                         ),
                         title: Column(
@@ -621,7 +629,6 @@ etretqr consectetur adipiscen''',
                               fontSize: 16,
                               fontFamily: 'Poppins Semi Bold',
                             ),
-                            SizedBox(height: 5),
                             KText(
                               text: 'Would you hire that freelancer again?',
                               fontSize: 12,
@@ -631,13 +638,21 @@ etretqr consectetur adipiscen''',
                           ],
                         ),
                         trailing: CircleAvatar(
-                          backgroundColor: AppTheme.primaryColor,
-                          radius: 12,
-                          child: Image.asset(
-                            'assets/icon/done1.png',
-                            width: 12,
-                          ),
-                        ),
+                            backgroundColor: AppTheme.primaryColor,
+                            radius: 14,
+                            child: Center(
+                              child: Checkbox(
+                                fillColor: MaterialStateProperty.all(
+                                    Colors.transparent),
+                                checkColor: AppTheme.white,
+                                value: value,
+                                onChanged: (value) {
+                                  setState(() {
+                                    this.value = value!;
+                                  });
+                                },
+                              ),
+                            )),
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 15),
@@ -756,12 +771,11 @@ etretqr consectetur adipiscen''',
                           ),
                         ),
                       ),
-                      SizedBox(height: 20),
                     ],
                   ),
                 ),
               ),
-              SizedBox(height: 50),
+              SizedBox(height: 180),
             ],
           ),
         ),

@@ -89,7 +89,8 @@ class EmployerProjectPage extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 KText(
-                  text: '''Lorem ipsum dolor sit amet, consectetur adipiscen
+                  text:
+                      '''Lorem ipsum dolor sit amet, consectetur adipiscen
 elit, sed do eiusmodLorem ipsum dolor sit ametreti
 consectetur adipiscen elit, sed do eiusmod''',
                   fontSize: 12.50,
@@ -592,7 +593,7 @@ etretqr consectetur adipiscen''',
                   fontFamily: 'Poppins Medium',
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 100,
                 ),
               ],
             ),

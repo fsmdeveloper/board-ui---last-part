@@ -1,4 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
+import 'package:board_ui/src/pages/addNewCardPage.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +56,8 @@ class _TopUpBalanceMileStonePageState extends State<TopUpBalanceMileStonePage> {
                   height: 13,
                 ),
                 KText(
-                  text: '''Start creating milestones for your project to be
+                  text:
+                      '''Start creating milestones for your project to be
 able to work with suitable freelancer ''',
                   fontFamily: 'Poppins Medium',
                   fontSize: 13,
@@ -222,24 +224,34 @@ able to work with suitable freelancer ''',
                   ),
                 ),
                 SizedBox(height: 20),
-                Padding(
-                  padding: EdgeInsets.only(left: 15),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Icon(
-                        Icons.add,
-                        color: AppTheme.textColor2,
-                        size: 20,
+                GestureDetector(
+                  onTap: () => Get.to(AddNewCardPages()),
+                  child: Container(
+                    height: 40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      color: Colors.grey.shade50.withOpacity(.50),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 15),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(
+                            Icons.add,
+                            color: AppTheme.textColor2,
+                            size: 20,
+                          ),
+                          KText(
+                            text: 'Add New Card',
+                            fontFamily: 'Poppins Semi Bold',
+                            color: Colors.black.withOpacity(.60),
+                            fontSize: 13,
+                          ),
+                          Container(),
+                        ],
                       ),
-                      KText(
-                        text: 'Add New Card',
-                        fontFamily: 'Poppins Semi Bold',
-                        color: Colors.black.withOpacity(.60),
-                        fontSize: 13,
-                      ),
-                      Container(),
-                    ],
+                    ),
                   ),
                 ),
                 SizedBox(height: 30),
@@ -309,38 +321,46 @@ able to work with suitable freelancer ''',
                   ),
                 ),
                 SizedBox(height: 20),
-                ListTile(
-                  leading: Image.asset(
-                    'assets/icon/cash.png',
-                    width: 25,
+                Container(
+                  height: 60,
+                  width: Get.width,
+                  decoration: BoxDecoration(
+                    color: Colors.grey.shade50.withOpacity(.50),
+                    borderRadius: BorderRadius.circular(5),
                   ),
-                  title: KText(
-                    text: 'Pay using wallet',
-                    fontFamily: 'Poppins Medium',
-                    fontSize: 13,
-                  ),
-                  trailing: RichText(
-                    text: TextSpan(
-                      text: ' 10,000 ',
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: AppTheme.textColor,
-                        fontFamily: 'Poppins Medium',
-                      ),
-                      children: [
-                        TextSpan(
-                          text: 'SAR',
-                          style: TextStyle(
-                            fontSize: 11,
-                            color: AppTheme.textColor2,
-                            fontFamily: 'Poppins Semi Bold',
-                          ),
+                  child: ListTile(
+                    leading: Image.asset(
+                      'assets/icon/cash.png',
+                      width: 25,
+                    ),
+                    title: KText(
+                      text: 'Pay using wallet',
+                      fontFamily: 'Poppins Medium',
+                      fontSize: 13,
+                    ),
+                    trailing: RichText(
+                      text: TextSpan(
+                        text: ' 10,000 ',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: AppTheme.textColor,
+                          fontFamily: 'Poppins Medium',
                         ),
-                      ],
+                        children: [
+                          TextSpan(
+                            text: 'SAR',
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: AppTheme.textColor2,
+                              fontFamily: 'Poppins Semi Bold',
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(height: 100),
+                SizedBox(height: 40),
                 GestureDetector(
                   onTap: () => Get.back(),
                   child: Container(

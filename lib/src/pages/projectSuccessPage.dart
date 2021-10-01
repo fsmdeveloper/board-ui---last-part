@@ -16,7 +16,7 @@ class ProjectSuccessPage extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 50),
             child: Column(
               children: [
-                SizedBox(height: 140),
+                SizedBox(height: 120),
                 Center(
                   child: Container(
                     decoration: BoxDecoration(
@@ -40,17 +40,16 @@ class ProjectSuccessPage extends StatelessWidget {
                 ),
                 SizedBox(height: 60),
                 KText(
-                  text: 'Project Created!',
-                  fontSize: 23,
+                  text: 'projectCreated',
+                  fontSize: AppTheme.textSize19,
                   fontFamily: 'Poppins Semi Bold',
                 ),
                 SizedBox(height: 10),
                 KText(
-                  text: '''We created a new project for you and you 
-will find all details there''',
+                  text: 'projectCreatedAbout',
                   fontSize: 13,
                   color: AppTheme.textColor2,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w500,
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 80),
@@ -58,13 +57,13 @@ will find all details there''',
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     KText(
-                      text: 'Open',
+                      text: 'open',
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
                       color: AppTheme.primaryColor,
                     ),
                     KText(
-                      text: 'Ends within 4 days',
+                      text: 'endsWithIn4days',
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
                       color: AppTheme.textColor2,
@@ -75,8 +74,9 @@ will find all details there''',
                 Container(
                   alignment: Alignment.centerLeft,
                   child: KText(
-                    text: '''Design a WordPress website for fas ...''',
-                    fontSize: 15.50,
+                    text: 'projectTitle',
+                    fontSize: 15,
+                    maxLines: 1,
                     fontFamily: 'poppins Semi Bold',
                     color: AppTheme.textColor,
                   ),
@@ -94,8 +94,9 @@ will find all details there''',
                         ),
                         children: [
                           TextSpan(
-                            text: 'SAR ',
+                            text: 'sar'.tr,
                             style: TextStyle(
+                              fontFamily: AppTheme.semiAr,
                               fontSize: 12,
                               color: AppTheme.textColor2,
                             ),
@@ -104,7 +105,7 @@ will find all details there''',
                       ),
                     ),
                     KText(
-                      text: '~',
+                      text: ' ~',
                       color: AppTheme.iconColor,
                       fontSize: 16,
                     ),
@@ -118,9 +119,10 @@ will find all details there''',
                         ),
                         children: [
                           TextSpan(
-                            text: 'SAR',
+                            text: 'sar'.tr,
                             style: TextStyle(
                               fontSize: 12,
+                              fontFamily: AppTheme.semiAr,
                               color: AppTheme.textColor2,
                             ),
                           ),
@@ -129,29 +131,33 @@ will find all details there''',
                     ),
                   ],
                 ),
-                SizedBox(height: 150),
-                GestureDetector(
-                  onTap: () => Get.to(BottomBarHome()),
-                  child: Container(
-                    height: 50,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: AppTheme.primaryColor,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Container(
-                      alignment: Alignment.center,
-                      child: KText(
-                        text: 'Back to HomePage',
-                        color: AppTheme.white,
-                        fontSize: 15,
-                        fontFamily: AppTheme.semi,
-                      ),
-                    ),
-                  ),
-                ),
-                // SizedBox(height: 20),
               ],
+            ),
+          ),
+        ),
+        bottomSheet: GestureDetector(
+          onTap: () => Get.to(BottomBarHome()),
+          child: Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: 30,
+              vertical: 30,
+            ),
+            child: Container(
+              height: 50,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: AppTheme.primaryColor,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                alignment: Alignment.center,
+                child: KText(
+                  text: 'backtoHomePage',
+                  color: AppTheme.white,
+                  fontSize: 15,
+                  fontFamily: AppTheme.semi,
+                ),
+              ),
             ),
           ),
         ),

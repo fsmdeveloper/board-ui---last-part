@@ -64,46 +64,46 @@ class CatagoryProjectsPage extends StatelessWidget {
   final catagoryData = [
     {
       'image': 'assets/img/cata-3.jpg',
-      'title': 'Teach',
+      'title': 'teach',
     },
     {
       'image': 'assets/img/cata-2.jpg',
-      'title': 'Coding',
+      'title': 'coding',
     },
     {
       'image': 'assets/img/cata-1.jpg',
-      'title': 'Design',
+      'title': 'design',
     },
     //
     {
       'image': 'assets/img/cata-3.jpg',
-      'title': 'Teach',
+      'title': 'teach',
     },
     {
       'image': 'assets/img/cata-2.jpg',
-      'title': 'Coding',
+      'title': 'coding',
     },
     {
       'image': 'assets/img/cata-1.jpg',
-      'title': 'Design',
+      'title': 'design',
     },
     //
     {
       'image': 'assets/img/cata-3.jpg',
-      'title': 'Teach',
+      'title': 'teach',
     },
     {
       'image': 'assets/img/cata-2.jpg',
-      'title': 'Coding',
+      'title': 'coding',
     },
     {
       'image': 'assets/img/cata-1.jpg',
-      'title': 'Design',
+      'title': 'design',
     },
     //
     {
       'image': 'assets/img/cata-3.jpg',
-      'title': 'Teach',
+      'title': 'teach',
     },
     {
       'image': 'assets/img/cata-2.jpg',
@@ -111,33 +111,33 @@ class CatagoryProjectsPage extends StatelessWidget {
     },
     {
       'image': 'assets/img/cata-1.jpg',
-      'title': 'Design',
+      'title': 'design',
     },
     //
     {
       'image': 'assets/img/cata-3.jpg',
-      'title': 'Teach',
+      'title': 'teach',
     },
     {
       'image': 'assets/img/cata-2.jpg',
-      'title': 'Coding',
+      'title': 'coding',
     },
     {
       'image': 'assets/img/cata-1.jpg',
-      'title': 'Design',
+      'title': 'design',
     },
     //
     {
       'image': 'assets/img/cata-3.jpg',
-      'title': 'Teach',
+      'title': 'teach',
     },
     {
       'image': 'assets/img/cata-2.jpg',
-      'title': 'Coding',
+      'title': 'coding',
     },
     {
       'image': 'assets/img/cata-1.jpg',
-      'title': 'Design',
+      'title': 'design',
     },
     //
   ];
@@ -165,7 +165,7 @@ class CatagoryProjectsPage extends StatelessWidget {
                     ),
                     SizedBox(width: 70),
                     KText(
-                      text: 'Create New Project',
+                      text: 'createNewProject',
                       fontFamily: 'Poppins Semi Bold',
                       fontSize: 17,
                     ),
@@ -179,7 +179,7 @@ class CatagoryProjectsPage extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 40),
+              SizedBox(height: 10),
               Container(
                 height: Get.height,
                 width: Get.width,

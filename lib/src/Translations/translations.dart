@@ -163,20 +163,30 @@ email to get verified''',
           // 15 Project Details Page ==>
 
           'projectDetails': 'Project Details',
-          'projectDetailsAbout': '',
+          'projectDetailsAbout':
+              '''Start adding more information about the project
+like its name and description''',
           'projectDetailsTitle': 'Project Title',
           'projectDetailsTitleField': 'Design a school brochure',
 
           'projectDetailsProjectBudget': 'Project Budget',
           // 'bidDescription' : '',
 
-          'projectDetailsDescriptionField': '',
+          'projectDetailsDescriptionField':
+              '''Lorem ipsum dolor sit amet, consectetur adipisce
+nw elit, sed do eiusmodLorem ipsum dolor sit ami
+Lorem ipsum dolor sit amet, consectetur adipisce
+Lorem ipsum dolor sit amet, consectetur adipisce
+nw elit, sed do eiusmodLorem ipsum dolor sit ami
+etretqr consectetur adipiscen''',
           'continue': 'Continue',
 
           // 16 -  Create Pay Milestone Page  ==>
           'payLater': 'Pay Later',
           'createMileStone': 'Create Milestones',
-          'createMilestoneAbout': '',
+          'createMilestoneAbout':
+              '''Start creating milestones for your project to be
+able to work with suitable freelancer ''',
 
           // 'projectBudget' : '',
 
@@ -209,6 +219,39 @@ email to get verified''',
           'contactUsSub': '',
           'logout': 'Logout',
 
+          // 19 CreateMileStone Top Up Page ==>
+
+          // 'createMileStone': 'Create Milestones',
+          // 'createMilestoneAbout': '',
+
+          // 'projectBudget' : '',
+
+          // 'payUsing': 'Pay Using',
+          // 'onlinePayments': 'Online Payments',
+          // 'addNewCard': 'Add New Card',
+          // 'payUsingWallet': 'Pay using wallet',
+          'topUp&Balance': 'Top Up & Balance',
+
+          // 20 Add New Card Page  ==>
+
+          // 'addNewCard' : '',
+          'cardNumber': 'Card Number',
+          'cardHolder': 'Card Holder Name',
+          'cardHolderNameField': 'Khalid Saied Abdelmonem',
+          'expiryDate': 'Expiry Date',
+          'expiryDateField': '4/6/31',
+          'cvc': 'CVC',
+          'cvcField': '821',
+          'saveThisFutureUse': 'Save this card for future use',
+          // 'addNewCard' : '',
+
+
+         // 21 Project success page ==>
+
+          'projectCreated': 'Project Created!',
+          'projectCreatedAbout': '''We created a new project for you and you 
+will find all details there''',
+          'backtoHomePage': 'Back to HomePage',
           //
           //
         },
@@ -355,6 +398,138 @@ email to get verified''',
           'resend': 'إعادة الارسال',
           'dontReceiveCode': '''لم يصلك الكود؟ ''',
           'confirmOtp': 'تأكيد رمز الدخول',
+          //13 Register Form2 Pages ==>
+          // 'register' : '',
+          // 'registerFormAbout' : '',
+          'fullName': 'الاسم بالكامل',
+          'FormFieldFullName': 'ادخل البيانات هنا',
+          'userName': 'اسم المستخدم',
+          'userNameField': 'ادخل البيانات هنا',
+          // 'password' : '',
+          // 'textFieldPassword' : '',
+          'iAccept': ' أوافق على ',
+          'terms&Conditions': ' الشروط و الاحكام لتطبيق حلها',
+          // 'registerAccount': 'Register Account',
+
+          //14 Create New Catagory Page ==>
+          'createNewProject': 'إنشاء مشروع',
+          // 'teach' : '',
+          // 'coding' : '',
+          // 'design' : '',
+
+          // 15 Project Details Page ==>
+
+          'projectDetails': 'تفاصيل المشروع',
+          'projectDetailsAbout':
+              '''هيا نبدأ بإضافة معلومات اكثر عن مشروعك مثل الاسم و 
+التفاصيل الخاصة به''',
+          'projectDetailsTitle': 'عنوان المشروع',
+          'projectDetailsTitleField': 'تصميم غلاف تعليمي لمدرسة',
+
+          'projectDetailsProjectBudget': 'ميزانية المشروع',
+          // 'bidDescription' : '',
+
+          'projectDetailsDescriptionField':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+ع في أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك ل
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+ع في أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك ل
+عكس تناسب المبدأ والمنهج والحكم ''',
+          'continue': 'استمرار',
+
+          // 16 -  Create Pay Milestone Page  ==>
+          //
+          'payLater': 'ادفع لاحقا',
+          'createMileStone': 'إضافة الاموال',
+          'createMilestoneAbout':
+              '''قم بعمل دفعات نقدية للمشروع حتى تستطيع ان تبدأ
+في العمل مع المستقل المناسب''',
+
+          // 'projectBudget' : 'ميزانية المشروع',
+
+          'payUsing': 'الدفع عن طريق',
+          'onlinePayments': 'الدفع اونلاين',
+          'addNewCard': 'إضافة بطاقة جديدة',
+          'payUsingWallet': 'الدفع من المحفظة',
+          'pay&Continue': 'دفع و استمرار',
+
+          // 17 Chat Page ==>
+
+          'chats': 'Chats',
+          'chatPagelastChat': '',
+
+          // 18 Profile Page ==>
+          'AsmaAhmedZarea': 'Asma Ahmed Zarea',
+          'view&EditProfile': 'View & Edit Profile',
+          'availableBalance': 'Available Balance',
+          'topup': 'Top Up',
+          'withdraw': 'Withdraw',
+          'notifications': 'Notifications',
+          'notificationsSub': '',
+          'settings': 'Settings',
+          'settingsSub': '',
+          'privacyPolicy': 'Privacy Policy',
+          'privacyPolicySub': '',
+          // 'terms&Conditions': '',
+          'terms&ConditionsSub': '',
+          'contactUs': 'Contact Us',
+          'contactUsSub': '',
+          'logout': 'Logout',
+
+          // 19 CreateMileStone Top Up Page ==>
+
+          // 'createMileStone': 'Create Milestones',
+          // 'createMilestoneAbout': '',
+
+          // 'projectBudget' : '',
+
+          // 'payUsing': 'Pay Using',
+          // 'onlinePayments': 'Online Payments',
+          // 'addNewCard': 'Add New Card',
+          // 'payUsingWallet': 'Pay using wallet',
+          'topUp&Balance': 'Top Up & Balance',
+
+          // 20 Add New Card Page  ==>
+
+          // 'addNewCard' : '',
+          'cardNumber': 'رقم البطاقة',
+          'cardHolder': 'اسم البطاقة',
+          'cardHolderNameField': 'خالد سعيد ',
+          'expiryDate': 'تاريخ الانتهاء',
+          'expiryDateField': '4/6/31',
+          'cvc': 'رمز الامان',
+          'cvcField': '821',
+          'saveThisFutureUse': 'حفظ البطاقة للاستخدام المستقبلى',
+          // 'addNewCard' : '',
+
+          // 21 Project success page ==>
+
+          'projectCreated': 'تم انشاء مشروع بنجاح!',
+          'projectCreatedAbout': '''لقد قمنا بعمل المشروع الخاص بك و ستجد كل 
+البيانات المطلوبة هناك''',
+          'backtoHomePage': 'العودة الى الرئيسية',
+
+
+          // Inside Chat Page ==> 
+
+          'nadaElsayed' : 'Nada Elsayed',
+          'online' : 'Online',
+          'onGoing' : 'OnGoing',
+          'designScoolCoverBanner' : 'Design Scool Cover Banner',
+          
+          
+          
+          'loremIpsumChat' : 'OnGoing',
+          // 'onGoing' : 'OnGoing',
+          // 'onGoing' : 'OnGoing',
+          // 'onGoing' : 'OnGoing',
+
+
+
+
+          //
+          //
         },
       };
 }
