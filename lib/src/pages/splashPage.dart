@@ -1,5 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
-import 'package:board_ui/src/pages/bottomBarProfile.dart';
+import 'package:board_ui/src/pages/employerHiredPage.dart';
 import 'package:board_ui/src/pages/loginWithPage.dart';
 import 'package:board_ui/src/pages/registerWithPage.dart';
 import 'package:board_ui/src/widgets/kText.dart';
@@ -29,7 +29,7 @@ class SplashPage extends StatelessWidget {
                 height: 30,
               ),
               GestureDetector(
-                onTap: () => Get.to(BottomBarProfile()),
+                onTap: () => Get.to(EmployerHirePage()),
                 child: Image.asset(
                   'assets/img/logo.png',
                   width: 330,

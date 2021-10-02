@@ -40,11 +40,11 @@ class _HomePageState extends State<HomePage>
 //
 
   final segmentName = {
-    'freelancer': 'Freelancer',
-    'employer': 'Employer',
+    'freelancer': 'freelancer'.tr,
+    'employer': 'employer'.tr,
   };
 //
-  var _value = 'employer';
+  var _value = 'freelancer';
 
   //
 
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage>
                               children: [
                                 TabBar(
                                   labelStyle: TextStyle(
-                                    fontFamily: AppTheme.semi,
+                                    fontFamily: AppTheme.semiAr,
                                     fontSize: 13,
                                   ),
                                   indicatorPadding: EdgeInsets.symmetric(
@@ -99,22 +99,22 @@ class _HomePageState extends State<HomePage>
                                   indicatorColor: AppTheme.white,
                                   indicatorWeight: 2,
                                   unselectedLabelStyle: TextStyle(
-                                    fontFamily: AppTheme.regular,
+                                    fontFamily: AppTheme.regulaAr,
                                   ),
                                   unselectedLabelColor: Colors.white70,
                                   labelColor: Colors.white,
                                   tabs: [
                                     Tab(
-                                      text: 'All',
+                                      text: 'all'.tr,
                                     ),
                                     Tab(
-                                      text: 'Open',
+                                      text: 'open'.tr,
                                     ),
                                     Tab(
-                                      text: 'Ongoing',
+                                      text: 'ongoing'.tr,
                                     ),
                                     Tab(
-                                      text: 'Done',
+                                      text: 'done'.tr,
                                     ),
                                   ],
                                   controller: _tabController,
@@ -180,15 +180,15 @@ class _HomePageState extends State<HomePage>
           ),
         ],
         activeStyle: TextStyle(
-          fontFamily: AppTheme.medium,
+          fontFamily: AppTheme.semiAr,
           color: AppTheme.primaryColor,
         ),
         inactiveStyle: TextStyle(
-          fontFamily: AppTheme.medium,
+          fontFamily: AppTheme.semiAr,
           color: AppTheme.white,
         ),
         itemPadding: EdgeInsets.symmetric(
-          horizontal: 45,
+          horizontal: 40,
           vertical: 10,
         ),
         segments: segmentName,

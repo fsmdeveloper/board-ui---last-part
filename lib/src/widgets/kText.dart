@@ -32,19 +32,18 @@ class KText extends StatelessWidget {
       style: TextStyle(
         fontSize: fontSize != null ? fontSize : 13,
         // //  arabic fonts enable ==>
-        fontFamily: fontFamily != null ? 'Cairo Regular' : 'Cairo Regular',
+        // fontFamily: fontFamily != null ? 'Cairo Regular' : 'Cairo Regular',
 
-        fontWeight: fontWeight != null ? fontWeight : FontWeight.bold,
+        // fontWeight: fontWeight != null ? fontWeight : FontWeight.bold,
 
         //  English fonts enable ==>
 
-        // fontFamily: fontFamily != null ? 'Poppins Regular' : 'Cairo Regular',
+        fontFamily: fontFamily != null ? 'Cairo Regular' : 'Poppins Regular',
 
-        // fontWeight: fontWeight != null ? fontWeight : FontWeight.normal,
+        fontWeight: fontWeight != null ? fontWeight : FontWeight.normal,
 
         color: color != null ? color : AppTheme.textColor,
       ),
-    
       maxLines: maxLines,
       textAlign: textAlign,
       textDirection: textDirection,

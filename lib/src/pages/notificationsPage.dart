@@ -1,4 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
@@ -76,31 +77,30 @@ class NotificationPage extends StatelessWidget {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           leadingWidth: 300,
-          title: Row(
-            children: [
-              SizedBox(height: 10),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                child: Row(
-                  children: [
-                    IconButton(
-                      onPressed: () => Get.back(),
-                      icon: Icon(
-                        EvaIcons.arrowIosBack,
-                        size: 24,
-                      ),
-                    ),
-                    SizedBox(width: 60),
-                    KText(
-                      text: 'notifications',
-                      color: AppTheme.textColor,
-                      fontFamily: 'Poppins Semi Bold',
-                      fontSize: 15,
-                    ),
-                  ],
+          title: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  onPressed: () => Get.back(),
+                  icon: Icon(
+                    Icons.arrow_back_ios,
+                    size: 16,
+                  ),
                 ),
-              ),
-            ],
+                Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: KText(
+                    text: 'notifications',
+                    color: AppTheme.textColor,
+                    fontFamily: 'Poppins Semi Bold',
+                    fontSize: 15,
+                  ),
+                ),
+                Container(),
+              ],
+            ),
           ),
         ),
         body: SingleChildScrollView(

@@ -37,12 +37,18 @@ class AppTheme {
   static String medium = 'Poppins Medium';
   static String regular = 'Poppins Regular';
 
+  static String boldAr = 'Poppins Bold';
+  static String semiAr = 'Poppins Semi Bold';
+  static String mediumAr = 'Poppins Medium';
+  static String regulaAr = 'Poppins Regular';
+
   // font Style Cairo
 
-  static String boldAr = 'Cairo Bold';
-  static String semiAr = 'Cairo Semi Bold';
-  static String mediumAr = 'Cairo Medium';
-  static String regulaAr = 'Cairo Regular';
+  // static String boldAr = 'Cairo Bold';
+  // static String semiAr = 'Cairo Semi Bold';
+  // static String mediumAr = 'Cairo Medium';
+  // static String regulaAr = 'Cairo Regular';
+
   //
 
   static FontWeight normal = FontWeight.normal;
@@ -65,8 +71,7 @@ class AppTheme {
   static BorderRadiusGeometry circular30 = BorderRadius.circular(30);
 
   static ThemeData appTheme = ThemeData(
-      fontFamily: 'Cairo Regular',
-      // fontFamily: locales == Locale('en') ? 'Cairo Regular' : 'Poppins Regular',
+      fontFamily: 'Poppins Regular',
       scaffoldBackgroundColor: AppTheme.white,
       appBarTheme: AppBarTheme(
         backgroundColor: AppTheme.white,

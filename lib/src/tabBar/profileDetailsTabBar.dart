@@ -1,7 +1,6 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 class ProfileDetailsBar extends StatelessWidget {
   ProfileDetailsBar({Key? key}) : super(key: key);
@@ -151,7 +150,7 @@ class ProfileDetailsBar extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 30),
                   Row(
                     children: [
                       KText(
@@ -174,7 +173,6 @@ class ProfileDetailsBar extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 30),
                   ListView(
                     shrinkWrap: true,
                     primary: false,

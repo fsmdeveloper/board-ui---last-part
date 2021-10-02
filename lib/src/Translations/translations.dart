@@ -35,7 +35,27 @@ start working today!''',
           'rememberMe': 'Remember me',
 
           //4 Home 1 Page ==>
+
+          // 'freelancer' : 'Freelancer',
+//           'employer' : 'Employer',
+          'all': 'All',
+//           'open' : 'Open',
+//           'onGoing' : 'Ongoing',
+          'done': 'Done',
+          'projectTitles': 'Design a WordPress website for fas ..',
+          'milestonesCreated': 'Milestones Created',
+          'muhammedZakria': 'Muhammed Zakria',
+
+          //
           //5 Home 2 Page ==>
+//           'freelancer' : 'Freelancer',
+//           'employer' : 'Employer',
+//           'all' : 'All',
+//           'open' : 'Open',
+//           'onGoing' : 'Ongoing',
+//           'done' : 'Done',
+          //  'milestonesCreated': 'Milestones Created',
+          // 'muhammedZakria' : 'Muhammed Zakria',
 
           //6 Search Page ==>
 
@@ -46,7 +66,7 @@ start working today!''',
           'projects': 'Projects',
           'withIn4days': 'Within 4 days',
 
-          'open': 'Open',
+          // 'open': 'Open',
           'projectTitle': '''Design a WordPress website for fashion b..''',
           'design': 'Design',
           'coding': 'Coding',
@@ -609,8 +629,23 @@ etretqr consectetur adipiscen''',
           'textFieldPassword': '**********',
           'forgetPassword': 'نسيت كلمة السر؟',
           'rememberMe': 'تذكرني دائما',
-          //4 Home 1 Page ==>
+          //4 Home 1 Page - Freelancer Tab==>
+
+          // 'freelancer' : 'Freelancer',
+          // 'employer' : 'Employer',
+          'all': 'الكل',
+          // 'open' : 'Open',
+          // 'onGoing' : 'Ongoing',
+          'done': 'مكتمل',
+          'projectTitles': ' تصميم موقع ووردبريس لمدونة اكسسوا',
+
+
+          'milestonesCreated': ' إيداع دفعتين',
+          'muhammedZakria': 'محمد زكريا',
           //5 Home 2 Page ==>
+
+          //  'milestonesCreated': 'Milestones Created',
+          // 'muhammedZakria' : 'Muhammed Zakria',
 
           //6 Search Page ==>
 

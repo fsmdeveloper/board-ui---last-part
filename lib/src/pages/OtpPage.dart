@@ -76,7 +76,7 @@ class _OtpPageState extends State<OtpPage> {
                 ),
                 KText(
                   text: 'enter4DigitAbout',
-                  fontSize: AppTheme.textSize11,
+                  fontSize: AppTheme.textSize13,
                   fontWeight: AppTheme.normal,
                   // fontFamily: 'Poppins Medium',
                   color: AppTheme.textColor2,

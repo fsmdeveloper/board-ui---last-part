@@ -537,85 +537,89 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                       SizedBox(
                         height: 20,
                       ),
-                      ListTile(
-                        leading: Transform.scale(
-                          scale: .80,
-                          child: Radio(
-                            activeColor: AppTheme.primaryColor,
-                            toggleable: true,
-                            value: 'null',
-                            groupValue: 'null',
-                            onChanged: (val) {
-                              setState(() {});
-                            },
-                          ),
-                        ),
-                        title: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            KText(
-                              text: 'paid',
+                      Column(
+                        children: [
+                          ListTile(
+                            leading: Transform.scale(
+                              scale: .80,
+                              child: Radio(
+                                activeColor: AppTheme.primaryColor,
+                                toggleable: true,
+                                value: 'null',
+                                groupValue: 'null',
+                                onChanged: (val) {
+                                  setState(() {});
+                                },
+                              ),
+                            ),
+                            title: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                KText(
+                                  text: 'paid',
+                                  fontSize: 11,
+                                  color: AppTheme.primaryColor,
+                                  fontFamily: 'Poppins Medium',
+                                ),
+                                SizedBox(height: 2),
+                                KText(
+                                  text: 'firstPartoftheProjectIsdone',
+                                  fontSize: 14,
+                                  fontFamily: 'Poppins Semi Bold',
+                                ),
+                                SizedBox(height: 2),
+                              ],
+                            ),
+                            subtitle: KText(
+                              text: '3DaysAgo',
                               fontSize: 11,
-                              color: AppTheme.primaryColor,
+                              color: Colors.grey,
                               fontFamily: 'Poppins Medium',
                             ),
-                            SizedBox(height: 2),
-                            KText(
-                              text: 'firstPartoftheProjectIsdone',
-                              fontSize: 14,
-                              fontFamily: 'Poppins Semi Bold',
-                            ),
-                            SizedBox(height: 2),
-                          ],
-                        ),
-                        subtitle: KText(
-                          text: '3DaysAgo',
-                          fontSize: 11,
-                          color: Colors.grey,
-                          fontFamily: 'Poppins Medium',
-                        ),
-                      ),
-                      SizedBox(height: 10),
-                      ListTile(
-                        leading: Transform.scale(
-                          scale: .60,
-                          child: Radio(
-                            activeColor: AppTheme.primaryColor,
-                            toggleable: true,
-                            value: 'null',
-                            groupValue: 'null',
-                            onChanged: (val) {
-                              setState(() {});
-                            },
                           ),
-                        ),
-                        title: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            KText(
-                              text: 'ongoing',
+                          SizedBox(height: 10),
+                          ListTile(
+                            leading: Transform.scale(
+                              scale: .60,
+                              child: Radio(
+                                activeColor: AppTheme.primaryColor,
+                                toggleable: true,
+                                value: 'null',
+                                groupValue: 'null',
+                                onChanged: (val) {
+                                  setState(() {});
+                                },
+                              ),
+                            ),
+                            title: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                KText(
+                                  text: 'ongoing',
+                                  fontSize: 11,
+                                  color: AppTheme.primaryColor,
+                                  fontFamily: 'Poppins Medium',
+                                ),
+                                SizedBox(height: 2),
+                                KText(
+                                  text: 'finalDeliveryoftheProject',
+                                  fontSize: 14,
+                                  fontFamily: 'Poppins Semi Bold',
+                                ),
+                              ],
+                            ),
+                            subtitle: KText(
+                              text: '3DaysAgo',
                               fontSize: 11,
-                              color: AppTheme.primaryColor,
+                              color: Colors.grey,
                               fontFamily: 'Poppins Medium',
                             ),
-                            SizedBox(height: 2),
-                            KText(
-                              text: 'finalDeliveryoftheProject',
-                              fontSize: 14,
-                              fontFamily: 'Poppins Semi Bold',
-                            ),
-                          ],
-                        ),
-                        subtitle: KText(
-                          text: '3DaysAgo',
-                          fontSize: 11,
-                          color: Colors.grey,
-                          fontFamily: 'Poppins Medium',
-                        ),
+                          ),
+                          SizedBox(height: 20),
+                        ],
                       ),
-                      SizedBox(height: 20),
                     ],
                   ),
                 ),
@@ -725,36 +729,30 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               ],
                             ),
                             Spacer(),
-                            RatingBarIndicator(
-                              rating: 4,
-                              itemBuilder: (context, index) => Icon(
-                                Icons.star,
-                                color: Colors.amber,
-                              ),
-                              itemCount: 4,
-                              itemSize: 20,
-                              direction: Axis.horizontal,
+                            Row(
+                              children: [
+                                RatingBar.builder(
+                                  itemSize: 20,
+                                  initialRating: 4,
+                                  direction: Axis.horizontal,
+                                  allowHalfRating: false,
+                                  itemCount: 4,
+                                  itemPadding:
+                                      EdgeInsets.symmetric(horizontal: 4.0),
+                                  itemBuilder: (context, _) => Icon(
+                                    Icons.star,
+                                    color: Colors.amber,
+                                  ),
+                                  onRatingUpdate: (rating) {
+                                    print(rating);
+                                  },
+                                ),
+                              ],
                             ),
                           ],
                         ),
                       ),
                       SizedBox(height: 10),
-                      // Padding(
-                      // padding: EdgeInsets.symmetric(horizontal: 10),
-                      //   child: Card(
-                      //     elevation: .10,
-                      //     child: Padding(
-                      //       padding: EdgeInsets.all(16),
-                      //       child: KText(
-                      //         text:
-                      //             'employerHiredField',
-                      //         fontSize: 12,
-                      //         fontFamily: 'Poppins Medium',
-                      //         color: Colors.grey,
-                      //       ),
-                      //     ),
-                      //   ),
-                      // ),
                       SizedBox(height: 20),
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 20),
@@ -800,6 +798,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                           ),
                         ),
                       ),
+                      SizedBox(height: 30),
                     ],
                   ),
                 ),

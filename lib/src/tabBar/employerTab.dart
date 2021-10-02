@@ -20,29 +20,29 @@ class EmployerBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 KText(
-                  text: 'Ongoing',
-                  fontSize: 13,
+                  text: 'ongoing',
+                  fontSize: 12,
                   fontWeight: FontWeight.w600,
                   color: AppTheme.primaryColor,
                 ),
                 // SizedBox(height: 10),
                 KText(
-                  text: 'bidAbout',
-                  fontSize: 18,
+                  text: 'projectTitles',
+                  fontSize: 17,
                   color: AppTheme.textColor,
-                  maxLines: 1,
+                  maxLines: 2,
                 ),
                 // SizedBox(height: 10),
                 Row(
                   children: [
                     KText(
                       text: '2 ',
-                      fontSize: AppTheme.textSize13,
+                      fontSize: AppTheme.textSize12,
                       color: AppTheme.textColor2,
                     ),
                     KText(
-                      text: 'Milestones Created  ',
-                      fontSize: AppTheme.textSize13,
+                      text: 'milestonesCreated',
+                      fontSize: AppTheme.textSize12,
                       color: AppTheme.textColor2,
                     ),
                     SizedBox(width: 5),
@@ -53,12 +53,12 @@ class EmployerBar extends StatelessWidget {
                     SizedBox(width: 5),
                     KText(
                       text: '4,000 ',
-                      fontSize: AppTheme.textSize13,
+                      fontSize: AppTheme.textSize12,
                       color: AppTheme.textColor2,
                     ),
                     KText(
                       text: 'sar',
-                      fontSize: AppTheme.textSize13,
+                      fontSize: AppTheme.textSize12,
                       color: AppTheme.textColor2,
                     ),
                   ],
@@ -85,7 +85,7 @@ class EmployerBar extends StatelessWidget {
                               children: [
                                 SizedBox(width: 8),
                                 KText(
-                                  text: 'Muhammed Zakria',
+                                  text: 'muhammedZakria',
                                   fontFamily: 'Poppins Medium',
                                   fontSize: 13,
                                 ),

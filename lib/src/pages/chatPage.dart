@@ -1,4 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
+import 'package:board_ui/src/pages/chatDetailsPage.dart';
 
 import 'package:board_ui/src/pages/insideChatPage.dart';
 import 'package:board_ui/src/widgets/kText.dart';
@@ -62,35 +63,35 @@ class ChatPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  GestureDetector(
-                    onTap: () => Get.back(),
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 50),
-                      child: Icon(
-                        Icons.arrow_back_ios,
-                        size: 18,
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    GestureDetector(
+                      onTap: () => Get.back(),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: Icon(
+                          Icons.arrow_back_ios,
+                          size: 18,
+                        ),
                       ),
                     ),
-                  ),
-                  KText(
-                    text: 'chats',
-                    fontFamily: 'Poppins Semi Bold',
-                    fontSize: 17,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(right: 20),
-                    child: IconButton(
-                      onPressed: () {},
+                    KText(
+                      text: 'chats',
+                      fontFamily: 'Poppins Semi Bold',
+                      fontSize: 17,
+                    ),
+                    IconButton(
+                      onPressed: () => Get.to(ChatDetailsPage()),
                       icon: Image.asset(
                         'assets/icon/archive.png',
                         width: 20,
                       ),
-                    ),
-                  )
-                ],
+                    )
+                  ],
+                ),
               ),
               SizedBox(height: 20),
               Padding(
@@ -144,6 +145,7 @@ class ChatPage extends StatelessWidget {
                                   fontSize: 9,
                                   color: AppTheme.textColor2,
                                   fontFamily: 'Poppins Medium',
+                                  textDirection: TextDirection.ltr,
                                 ),
                               ],
                             ),

@@ -1,5 +1,6 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/addNewCardPage.dart';
+import 'package:board_ui/src/pages/milestoreSuccessPage.dart';
 import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:board_ui/src/widgets/primaryButton.dart';
@@ -392,7 +393,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 25),
           child: primaryButton(
             'pay&Continue',
-            () => Get.back(),
+            () => Get.to(MilestoneSuccessPage()),
           ),
         ),
       ),
