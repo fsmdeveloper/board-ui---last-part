@@ -1,4 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/cupertino.dart';
@@ -41,37 +42,32 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 5),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          IconButton(
-                            onPressed: () => Get.back(),
-                            icon: Icon(
-                              EvaIcons.arrowIosBack,
-                              size: 24,
-                            ),
-                          ),
-                          SizedBox(width: 60),
+                          backButton(),
                           KText(
-                            text: 'Chat Details',
+                            text: 'chatDetails',
                             fontFamily: 'Poppins Semi Bold',
                             fontSize: 17,
                           ),
+                          Container(),
                         ],
                       ),
                     ),
-                    SizedBox(height: 50),
+                    SizedBox(height: 30),
                     GestureDetector(
                       onTap: () {},
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           KText(
-                            text: 'Ongoing',
+                            text: 'ongoing',
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             color: AppTheme.primaryColor,
                           ),
                           KText(
-                            text: 'Ends within 4 days',
+                            text: 'endsWithIn4days',
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             color: AppTheme.textColor2,
@@ -81,9 +77,10 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                     ),
                     SizedBox(height: 10),
                     KText(
-                      text: '''Design a WordPress website for fashi ...''',
-                      fontSize: 16,
+                      text: 'bidName',
+                      fontSize: AppTheme.textSize16,
                       fontFamily: 'poppins Semi Bold',
+                      maxLines: 1,
                       color: AppTheme.textColor,
                     ),
                     SizedBox(height: 10),
@@ -99,7 +96,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                           ),
                           children: [
                             TextSpan(
-                              text: 'SAR',
+                              text: 'sar'.tr,
                               style: TextStyle(
                                 fontSize: 12,
                                 color: AppTheme.textColor2,
@@ -111,7 +108,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                     ),
                     SizedBox(height: 40),
                     Text(
-                      'Chat Sides',
+                      'chatSides'.tr,
                       style: GoogleFonts.cairo(
                         fontSize: 14,
                         color: AppTheme.textColor2,
@@ -163,7 +160,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                             fontSize: 13,
                           ),
                           trailing: KText(
-                            text: 'Employer',
+                            text: 'employer',
                             fontSize: 13,
                             color: AppTheme.iconColor,
                           ),
@@ -197,7 +194,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                             fontSize: 13,
                           ),
                           trailing: KText(
-                            text: 'Freelancer',
+                            text: 'freelancer',
                             fontSize: 13,
                             color: AppTheme.iconColor,
                           ),
@@ -207,7 +204,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                     SizedBox(height: 30),
                     ListTile(
                       leading: KText(
-                        text: 'Hide Notifications',
+                        text: 'hideNotifications',
                         fontFamily: AppTheme.medium,
                         fontSize: 14,
                       ),
@@ -217,7 +214,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                           child: CupertinoSwitch(
                             activeColor: value1 == true
                                 ? AppTheme.iconColor
-                                : AppTheme.iconColor,
+                                : AppTheme.white,
                             value: value,
                             onChanged: (v) => setState(() => value = v),
                           ),
@@ -233,7 +230,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                     ),
                     ListTile(
                       leading: KText(
-                        text: 'Archive Chat',
+                        text: 'archiveChat',
                         fontFamily: AppTheme.medium,
                         fontSize: 14,
                       ),
@@ -243,7 +240,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                           child: CupertinoSwitch(
                             activeColor: value1 == true
                                 ? AppTheme.iconColor
-                                : AppTheme.iconColor,
+                                : AppTheme.white,
                             value: value,
                             onChanged: (v) => setState(() => value = v),
                           ),
@@ -269,7 +266,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                           GestureDetector(
                             onTap: () {},
                             child: KText(
-                              text: 'Block this Chat',
+                              text: 'blockThisChat',
                               fontSize: 14,
                             ),
                           ),
@@ -277,7 +274,7 @@ class _ChatDetailsPageState extends State<ChatDetailsPage> {
                           GestureDetector(
                             onTap: () {},
                             child: KText(
-                              text: 'Report This User',
+                              text: 'reportThisUser',
                               fontSize: 14,
                               color: HexColor('#E85454'),
                             ),

@@ -1,6 +1,6 @@
-
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class RefundPolicyPage extends StatelessWidget {
   const RefundPolicyPage({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class RefundPolicyPage extends StatelessWidget {
                     children: [
                       Container(),
                       KText(
-                        text: 'Refund Policy',
+                        text: 'refundPolicy',
                         fontSize: 17,
                         fontFamily: 'Poppins Semi Bold',
                       ),
@@ -37,64 +37,9 @@ class RefundPolicyPage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 30),
                   child: Text(
-                    '''Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-''',
+                    'refundAbout'.tr,
                     style: TextStyle(
-                      wordSpacing: 2,
                       color: Colors.black54,
-                      fontFamily: 'Poppins Medium',
                       fontSize: 12,
                     ),
                   ),

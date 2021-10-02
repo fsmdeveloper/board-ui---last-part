@@ -1,5 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
-import 'package:board_ui/src/pages/bottomBarHome.dart';
+import 'package:board_ui/src/pages/bottomBarProfile.dart';
 import 'package:board_ui/src/pages/loginWithPage.dart';
 import 'package:board_ui/src/pages/registerWithPage.dart';
 import 'package:board_ui/src/widgets/kText.dart';
@@ -29,7 +29,7 @@ class SplashPage extends StatelessWidget {
                 height: 30,
               ),
               GestureDetector(
-                onTap: () => Get.to(BottomBarHome()),
+                onTap: () => Get.to(BottomBarProfile()),
                 child: Image.asset(
                   'assets/img/logo.png',
                   width: 330,
@@ -43,7 +43,7 @@ class SplashPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     KText(
-                      text: 'dontHaveId'.tr,
+                      text: 'dontHaveId',
                       fontSize: AppTheme.textSize13,
                       color: AppTheme.textColor2,
                     ),
@@ -52,7 +52,7 @@ class SplashPage extends StatelessWidget {
                         RegisterWithPage(),
                       ),
                       child: KText(
-                        text: 'signUp'.tr,
+                        text: 'signUp',
                         color: AppTheme.textColor,
                         fontSize: AppTheme.textSize13,
                         fontWeight: FontWeight.bold,
@@ -81,7 +81,7 @@ class SplashPage extends StatelessWidget {
                   alignment: Alignment.center,
                   children: [
                     KText(
-                      text: 'login'.tr,
+                      text: 'login',
                       color: Colors.white,
                       fontSize: AppTheme.textSize14,
                       fontWeight: FontWeight.bold,

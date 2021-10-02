@@ -2,9 +2,10 @@ import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:get/get.dart';
 
-class ReviewsComponents extends StatelessWidget {
-  const ReviewsComponents({Key? key}) : super(key: key);
+class ReviewsBar extends StatelessWidget {
+  const ReviewsBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class ReviewsComponents extends StatelessWidget {
             children: [
               SizedBox(height: 40),
               Container(
-                height: 900,
+                height: 1500,
                 child: ListView.builder(
                   scrollDirection: Axis.vertical,
                   shrinkWrap: true,
@@ -39,7 +40,7 @@ class ReviewsComponents extends StatelessWidget {
                               Column(
                                 children: [
                                   KText(
-                                    text: '   Khalid Saied Morsy',
+                                    text: 'khalidSaiedMorsy',
                                     // fontFamily: 'Poppins Medium',
                                     fontSize: 13,
                                   ),
@@ -58,22 +59,22 @@ class ReviewsComponents extends StatelessWidget {
                                       ),
                                       SizedBox(width: 5),
                                       KText(
-                                        text: '(',
-                                        color: AppTheme.textColor2,
-                                        fontFamily: 'Poppins Medium',
-                                        fontSize: 8,
-                                      ),
-                                      KText(
-                                        text: ' 1200 Review ',
+                                        text: '( 1200 ',
                                         color: AppTheme.textColor2,
                                         fontFamily: 'Poppins Medium',
                                         fontSize: 11,
                                       ),
                                       KText(
-                                        text: ')',
+                                        text: 'review',
                                         color: AppTheme.textColor2,
                                         fontFamily: 'Poppins Medium',
-                                        fontSize: 8,
+                                        fontSize: 11,
+                                      ),
+                                      KText(
+                                        text: ' )',
+                                        color: AppTheme.textColor2,
+                                        fontFamily: 'Poppins Medium',
+                                        fontSize: 11,
                                       ),
                                     ],
                                   ),
@@ -94,16 +95,24 @@ class ReviewsComponents extends StatelessWidget {
                           ),
                         ),
                         SizedBox(height: 30),
-                        Text(
-                          '''Lorem ipsum dolor sit amet, consectetur adipisce
-nw elit, sed do eiusmodLorem ipsum dolor sit ami
-Lorem ipsum dolor sit amet, consectetur adipisce
-nw elit, sed do eiusmodLorem ipsum dolor sit ami
-etretqr consectetur adipiscen''',
-                          style: TextStyle(
-                            wordSpacing: 1,
-                            fontSize: 12,
-                            color: Colors.grey,
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.grey.shade50.withOpacity(.50),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 10,
+                              vertical: 10,
+                            ),
+                            child: Text(
+                              'reviewsAbout'.tr,
+                              style: TextStyle(
+                                wordSpacing: 1,
+                                fontSize: 12,
+                                color: Colors.grey,
+                              ),
+                            ),
                           ),
                         ),
                         SizedBox(height: 30),
@@ -113,7 +122,7 @@ etretqr consectetur adipiscen''',
                 ),
               ),
               SizedBox(
-                height: 100,
+                height: 300,
               ),
             ],
           ),

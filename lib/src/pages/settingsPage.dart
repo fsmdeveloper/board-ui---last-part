@@ -28,21 +28,24 @@ class _SettingsPageState extends State<SettingsPage> {
           child: Column(
             children: [
               SizedBox(height: 40),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(),
-                  KText(
-                    text: 'Notifications',
-                    fontSize: 17,
-                    fontFamily: 'Poppins Semi Bold',
-                  ),
-                  Icon(
-                    Icons.arrow_forward_ios,
-                    size: 18,
-                    color: Colors.black,
-                  ),
-                ],
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(),
+                    KText(
+                      text: 'notifications',
+                      fontSize: 17,
+                      fontFamily: 'Poppins Semi Bold',
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 18,
+                      color: Colors.black,
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: 50),
               Column(
@@ -50,21 +53,34 @@ class _SettingsPageState extends State<SettingsPage> {
                   Container(
                     color: Colors.grey.shade200,
                     child: GroovinExpansionTile(
-                      leading: Image.asset(
-                        'assets/icon/job-setting.png',
-                        width: 20,
+                      leading: Padding(
+                        padding: EdgeInsets.only(
+                          left: 20,
+                          right: 20,
+                        ),
+                        child: Image.asset(
+                          'assets/icon/job-setting.png',
+                          width: 20,
+                        ),
                       ),
                       title: KText(
-                        text: 'Jobs',
+                        text: 'jobs',
                         fontSize: 15,
                         fontFamily: 'Poppins Medium',
                       ),
-                      trailing: Icon(
-                        isExpanded == true
-                            ? Icons.expand_more
-                            : Icons.arrow_forward_ios,
-                        size: isExpanded == true ? 25 : 14,
-                        color: isExpanded == true ? Colors.black : Colors.grey,
+                      trailing: Padding(
+                        padding: EdgeInsets.only(
+                          left: 20,
+                          right: 20,
+                        ),
+                        child: Icon(
+                          isExpanded == true
+                              ? Icons.expand_more
+                              : Icons.arrow_forward_ios,
+                          size: isExpanded == true ? 25 : 14,
+                          color:
+                              isExpanded == true ? Colors.black : Colors.grey,
+                        ),
                       ),
                       onExpansionChanged: (value) {
                         setState(() => isExpanded = value);
@@ -86,93 +102,117 @@ class _SettingsPageState extends State<SettingsPage> {
                                   child: Column(
                                     children: [
                                       ListTile(
-                                        leading: KText(
-                                          text: 'Hide Notifications',
-                                          fontFamily: 'Poppins Medium',
-                                          fontSize: 14,
+                                        leading: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 20,
+                                            right: 20,
+                                          ),
+                                          child: KText(
+                                            text: 'hideNotifications',
+                                            fontFamily: 'Poppins Medium',
+                                            fontSize: 14,
+                                          ),
                                         ),
-                                        trailing: Transform.scale(
-                                          scale: .90,
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  color: Colors.grey.shade300
-                                                      .withOpacity(.80),
-                                                  spreadRadius: .10,
-                                                  blurRadius: 30,
-                                                  offset: Offset(5, 10),
-                                                ),
-                                              ],
-                                            ),
-                                            child: ShaderMask(
-                                              child: CupertinoSwitch(
-                                                activeColor: value1 == true
-                                                    ? AppTheme.iconColor
-                                                    : AppTheme.iconColor,
-                                                value: value1,
-                                                onChanged: (v) =>
-                                                    setState(() => value1 = v),
+                                        trailing: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 20,
+                                            right: 20,
+                                          ),
+                                          child: Transform.scale(
+                                            scale: .90,
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                    color: Colors.grey.shade300
+                                                        .withOpacity(.80),
+                                                    spreadRadius: .10,
+                                                    blurRadius: 30,
+                                                    offset: Offset(5, 10),
+                                                  ),
+                                                ],
                                               ),
-                                              shaderCallback: (r) {
-                                                return LinearGradient(
-                                                  colors: value1
-                                                      ? [
-                                                          AppTheme.white,
-                                                          AppTheme.white
-                                                        ]
-                                                      : [
-                                                          AppTheme.iconColor,
-                                                          AppTheme.iconColor
-                                                        ],
-                                                ).createShader(r);
-                                              },
+                                              child: ShaderMask(
+                                                child: CupertinoSwitch(
+                                                  activeColor: value1 == true
+                                                      ? AppTheme.iconColor
+                                                      : AppTheme.iconColor,
+                                                  value: value1,
+                                                  onChanged: (v) => setState(
+                                                      () => value1 = v),
+                                                ),
+                                                shaderCallback: (r) {
+                                                  return LinearGradient(
+                                                    colors: value1
+                                                        ? [
+                                                            AppTheme.white,
+                                                            AppTheme.white
+                                                          ]
+                                                        : [
+                                                            AppTheme.iconColor,
+                                                            AppTheme.iconColor
+                                                          ],
+                                                  ).createShader(r);
+                                                },
+                                              ),
                                             ),
                                           ),
                                         ),
                                       ),
                                       ListTile(
-                                        leading: KText(
-                                          text: 'Available Jobs',
-                                          fontFamily: 'Poppins Medium',
-                                          fontSize: 14,
+                                        leading: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 20,
+                                            right: 20,
+                                          ),
+                                          child: KText(
+                                            text: 'availableJobs',
+                                            fontFamily: 'Poppins Medium',
+                                            fontSize: 14,
+                                          ),
                                         ),
-                                        trailing: Transform.scale(
-                                          scale: .90,
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  color: Colors.grey.shade300
-                                                      .withOpacity(.80),
-                                                  spreadRadius: .10,
-                                                  blurRadius: 30,
-                                                  offset: Offset(5, 10),
-                                                ),
-                                              ],
-                                            ),
-                                            child: ShaderMask(
-                                              child: CupertinoSwitch(
-                                                activeColor: value1 == true
-                                                    ? AppTheme.iconColor
-                                                    : AppTheme.iconColor,
-                                                value: value1,
-                                                onChanged: (v) =>
-                                                    setState(() => value1 = v),
+                                        trailing: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 20,
+                                            right: 20,
+                                          ),
+                                          child: Transform.scale(
+                                            scale: .90,
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                    color: Colors.grey.shade300
+                                                        .withOpacity(.80),
+                                                    spreadRadius: .10,
+                                                    blurRadius: 30,
+                                                    offset: Offset(5, 10),
+                                                  ),
+                                                ],
                                               ),
-                                              shaderCallback: (r) {
-                                                return LinearGradient(
-                                                  colors: value1
-                                                      ? [
-                                                          AppTheme.white,
-                                                          AppTheme.white
-                                                        ]
-                                                      : [
-                                                          AppTheme.iconColor,
-                                                          AppTheme.iconColor
-                                                        ],
-                                                ).createShader(r);
-                                              },
+                                              child: ShaderMask(
+                                                child: CupertinoSwitch(
+                                                  activeColor: value1 == true
+                                                      ? AppTheme.iconColor
+                                                      : AppTheme.iconColor,
+                                                  value: value1,
+                                                  onChanged: (v) => setState(
+                                                      () => value1 = v),
+                                                ),
+                                                shaderCallback: (r) {
+                                                  return LinearGradient(
+                                                    colors: value1
+                                                        ? [
+                                                            AppTheme.white,
+                                                            AppTheme.white
+                                                          ]
+                                                        : [
+                                                            AppTheme.iconColor,
+                                                            AppTheme.iconColor
+                                                          ],
+                                                  ).createShader(r);
+                                                },
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -195,21 +235,34 @@ class _SettingsPageState extends State<SettingsPage> {
                   Container(
                     color: Colors.grey.shade200,
                     child: GroovinExpansionTile(
-                      leading: Image.asset(
-                        'assets/icon/account-settings.png',
-                        width: 20,
+                      leading: Padding(
+                        padding: EdgeInsets.only(
+                          left: 20,
+                          right: 20,
+                        ),
+                        child: Image.asset(
+                          'assets/icon/account-settings.png',
+                          width: 20,
+                        ),
                       ),
                       title: KText(
-                        text: 'Account Settings',
+                        text: 'accountSettings',
                         fontSize: 15,
                         fontFamily: 'Poppins Medium',
                       ),
-                      trailing: Icon(
-                        isExpanded == true
-                            ? Icons.expand_more
-                            : Icons.arrow_forward_ios,
-                        size: isExpanded == true ? 25 : 14,
-                        color: isExpanded == true ? Colors.black : Colors.grey,
+                      trailing: Padding(
+                        padding: EdgeInsets.only(
+                          left: 20,
+                          right: 20,
+                        ),
+                        child: Icon(
+                          isExpanded == true
+                              ? Icons.expand_more
+                              : Icons.arrow_forward_ios,
+                          size: isExpanded == true ? 25 : 14,
+                          color:
+                              isExpanded == true ? Colors.black : Colors.grey,
+                        ),
                       ),
                       onExpansionChanged: (value) {
                         setState(() => isExpanded = value);
@@ -233,68 +286,92 @@ class _SettingsPageState extends State<SettingsPage> {
                                     //     MainAxisAlignment.spaceBetween,
                                     children: [
                                       ListTile(
-                                        leading: KText(
-                                          text: 'Hide Notifications',
-                                          fontFamily: 'Poppins Medium',
-                                          fontSize: 14,
+                                        leading: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 20,
+                                            right: 20,
+                                          ),
+                                          child: KText(
+                                            text: 'hideNotifications',
+                                            fontFamily: 'Poppins Medium',
+                                            fontSize: 14,
+                                          ),
                                         ),
-                                        trailing: Transform.scale(
-                                          scale: .90,
-                                          child: ShaderMask(
-                                            child: CupertinoSwitch(
-                                              activeColor: value1 == true
-                                                  ? AppTheme.iconColor
-                                                  : AppTheme.iconColor,
-                                              value: value1,
-                                              onChanged: (v) =>
-                                                  setState(() => value1 = v),
+                                        trailing: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 20,
+                                            right: 20,
+                                          ),
+                                          child: Transform.scale(
+                                            scale: .90,
+                                            child: ShaderMask(
+                                              child: CupertinoSwitch(
+                                                activeColor: value1 == true
+                                                    ? AppTheme.iconColor
+                                                    : AppTheme.iconColor,
+                                                value: value1,
+                                                onChanged: (v) =>
+                                                    setState(() => value1 = v),
+                                              ),
+                                              shaderCallback: (r) {
+                                                return LinearGradient(
+                                                  colors: value1
+                                                      ? [
+                                                          AppTheme.white,
+                                                          AppTheme.white
+                                                        ]
+                                                      : [
+                                                          AppTheme.iconColor,
+                                                          AppTheme.iconColor
+                                                        ],
+                                                ).createShader(r);
+                                              },
                                             ),
-                                            shaderCallback: (r) {
-                                              return LinearGradient(
-                                                colors: value1
-                                                    ? [
-                                                        AppTheme.white,
-                                                        AppTheme.white
-                                                      ]
-                                                    : [
-                                                        AppTheme.iconColor,
-                                                        AppTheme.iconColor
-                                                      ],
-                                              ).createShader(r);
-                                            },
                                           ),
                                         ),
                                       ),
                                       ListTile(
-                                        leading: KText(
-                                          text: 'Available Jobs',
-                                          fontFamily: 'Poppins Medium',
-                                          fontSize: 14,
+                                        leading: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 20,
+                                            right: 20,
+                                          ),
+                                          child: KText(
+                                            text: 'availableJobs',
+                                            fontFamily: 'Poppins Medium',
+                                            fontSize: 14,
+                                          ),
                                         ),
-                                        trailing: Transform.scale(
-                                          scale: .90,
-                                          child: ShaderMask(
-                                            child: CupertinoSwitch(
-                                              activeColor: value1 == true
-                                                  ? AppTheme.iconColor
-                                                  : AppTheme.iconColor,
-                                              value: value1,
-                                              onChanged: (v) =>
-                                                  setState(() => value1 = v),
+                                        trailing: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: 20,
+                                            right: 20,
+                                          ),
+                                          child: Transform.scale(
+                                            scale: .90,
+                                            child: ShaderMask(
+                                              child: CupertinoSwitch(
+                                                activeColor: value1 == true
+                                                    ? AppTheme.iconColor
+                                                    : AppTheme.iconColor,
+                                                value: value1,
+                                                onChanged: (v) =>
+                                                    setState(() => value1 = v),
+                                              ),
+                                              shaderCallback: (r) {
+                                                return LinearGradient(
+                                                  colors: value1
+                                                      ? [
+                                                          AppTheme.white,
+                                                          AppTheme.white
+                                                        ]
+                                                      : [
+                                                          AppTheme.iconColor,
+                                                          AppTheme.iconColor
+                                                        ],
+                                                ).createShader(r);
+                                              },
                                             ),
-                                            shaderCallback: (r) {
-                                              return LinearGradient(
-                                                colors: value1
-                                                    ? [
-                                                        AppTheme.white,
-                                                        AppTheme.white
-                                                      ]
-                                                    : [
-                                                        AppTheme.iconColor,
-                                                        AppTheme.iconColor
-                                                      ],
-                                              ).createShader(r);
-                                            },
                                           ),
                                         ),
                                       ),
@@ -313,31 +390,31 @@ class _SettingsPageState extends State<SettingsPage> {
               SizedBox(height: 10),
               listTile1(
                 () => Get.to(RefundPolicyPage()),
-                'Refund Policy',
+                'refundPolicy',
                 'assets/icon/refund-setting.png',
               ),
               SizedBox(height: 10),
               listTile1(
                 () {},
-                'FAQs',
+                'faqs',
                 'assets/icon/faq-setting.png',
               ),
               SizedBox(height: 10),
               listTile1(
                 () {},
-                'Rate our App',
+                'rateOurApp',
                 'assets/icon/star.png',
               ),
               SizedBox(height: 10),
               listTile1(
                 () {},
-                'Change Password',
+                'changePassword',
                 'assets/icon/lock-setting.png',
               ),
               SizedBox(height: 10),
               listTile1(
                 () {},
-                'Logout',
+                'logout',
                 'assets/icon/logout-setting.png',
               ),
               SizedBox(height: 10),
@@ -356,9 +433,15 @@ class _SettingsPageState extends State<SettingsPage> {
     return ListTile(
       tileColor: Colors.grey.shade100,
       onTap: onTap,
-      leading: Image.asset(
-        img,
-        width: 20,
+      leading: Padding(
+        padding: EdgeInsets.only(
+          left: 20,
+          right: 20,
+        ),
+        child: Image.asset(
+          img,
+          width: 20,
+        ),
       ),
       title: KText(
         text: text,

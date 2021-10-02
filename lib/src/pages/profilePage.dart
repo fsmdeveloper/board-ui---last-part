@@ -42,7 +42,7 @@ class ProfilePage extends StatelessWidget {
                 title: Padding(
                   padding: EdgeInsets.only(left: 10),
                   child: KText(
-                    text: 'Asma Ahmed Zarea',
+                    text: 'AsmaAhmedZarea',
                     fontFamily: 'Poppins Medium',
                     fontSize: 16,
                   ),
@@ -50,12 +50,13 @@ class ProfilePage extends StatelessWidget {
                 subtitle: Padding(
                   padding: EdgeInsets.only(left: 10),
                   child: KText(
-                    text: 'View & Edit Profile',
+                    text: 'view&EditProfile',
+                    fontWeight: AppTheme.normal,
                     fontSize: 12,
                   ),
                 ),
                 trailing: IconButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(BottomBarProfile()),
                   icon: Icon(
                     Icons.arrow_forward_ios,
                     size: 18,
@@ -89,7 +90,7 @@ class ProfilePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         KText(
-                          text: 'Available Balance',
+                          text: 'availableBalance',
                           // fontFamily: 'Poppins Medium',
                           color: AppTheme.white,
                         ),
@@ -108,7 +109,7 @@ class ProfilePage extends StatelessWidget {
                               color: AppTheme.white,
                             ),
                             KText(
-                              text: 'SAR',
+                              text: 'sar',
                               fontSize: 15,
                               fontFamily: 'Poppins Medium',
                               color: Colors.white54,
@@ -129,13 +130,16 @@ class ProfilePage extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    SizedBox(width: 40),
+                                    // SizedBox(width: 40),
                                     Text(
-                                      'Top Up',
+                                      'topup'.tr,
                                       style: GoogleFonts.cairo(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold,
                                         color: AppTheme.primaryColor,
-                                        fontWeight: FontWeight.w700,
                                       ),
                                     ),
                                     SizedBox(width: 30),
@@ -158,13 +162,16 @@ class ProfilePage extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    SizedBox(width: 25),
+                                    // SizedBox(width: 25),
                                     Text(
-                                      'Withdraw',
+                                      'withdraw'.tr,
                                       style: GoogleFonts.cairo(
+                                        fontSize: 13,
                                         color: AppTheme.white,
-                                        fontWeight: FontWeight.w700,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     SizedBox(width: 25),
@@ -189,8 +196,11 @@ class ProfilePage extends StatelessWidget {
                 children: [
                   Padding(
                     padding: listtilePadding,
-                    child: listTile(() => Get.to(NotificationPage()),
-                        'Notifications', 'Check your latest notifications'),
+                    child: listTile(
+                      () => Get.to(NotificationPage()),
+                      'notifications',
+                      'notificationsSub',
+                    ),
                   ),
                   Divider(
                     color: Colors.grey.shade200,
@@ -199,8 +209,8 @@ class ProfilePage extends StatelessWidget {
                     padding: listtilePadding,
                     child: listTile(
                       () => Get.to(SettingsPage()),
-                      'Settings',
-                      'Set your preferred settings',
+                      'settings',
+                      'settingsSub',
                     ),
                   ),
                   Divider(
@@ -210,8 +220,8 @@ class ProfilePage extends StatelessWidget {
                     padding: listtilePadding,
                     child: listTile(
                       () => Get.to(PrivacyAndPolicy()),
-                      'Privacy Policy',
-                      'Check your latest privacy & policy',
+                      'privacyPolicy',
+                      'privacyPolicySub',
                     ),
                   ),
                   Divider(
@@ -221,8 +231,8 @@ class ProfilePage extends StatelessWidget {
                     padding: listtilePadding,
                     child: listTile(
                       () => Get.to(TermsAndConditionPage()),
-                      'Terms & Conditions',
-                      'Check your latest Terms & Conditions',
+                      'terms&Conditions',
+                      'terms&ConditionsSub',
                     ),
                   ),
                   Divider(
@@ -233,16 +243,17 @@ class ProfilePage extends StatelessWidget {
                     child: listTile(
                       () => Get.defaultDialog(
                         radius: 30,
-                        title: 'Contact Us',
+                        title: 'contactUs'.tr,
                         titleStyle: TextStyle(
                           fontSize: 16,
-                          fontFamily: 'Poppins Semi Bold',
+                          fontWeight: FontWeight.bold,
+                          fontFamily: AppTheme.boldAr,
                         ),
-                        middleText: 'Send a message to our team',
+                        middleText: 'middleTextContactUs'.tr,
                         middleTextStyle: TextStyle(
                           fontSize: 13,
                           color: AppTheme.textColor2,
-                          fontFamily: 'Poppins Medium',
+                          fontFamily: AppTheme.semiAr,
                         ),
                         actions: [
                           InkWell(
@@ -322,8 +333,8 @@ class ProfilePage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      'Contact Us',
-                      'Send us a message if you need help',
+                      'contactUs',
+                      'contactUsSub',
                     ),
                   ),
                   Divider(
@@ -331,12 +342,12 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ],
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 30),
-                child: TextButton(
-                  onPressed: () => Get.to(LoginWithPage()),
+              ListTile(
+                onTap: () => Get.to(LoginWithPage()),
+                leading: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 30),
                   child: KText(
-                    text: 'Logout',
+                    text: 'logout',
                     fontFamily: 'Poppins Medium',
                     fontSize: 14,
                     color: HexColor('#E85454'),

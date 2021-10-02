@@ -1,6 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/widgets/kText.dart';
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,7 +11,11 @@ class InsideChatPage extends StatefulWidget {
   @override
   _InsideChatPageState createState() => _InsideChatPageState();
 }
+//
 
+//
+
+//
 class _InsideChatPageState extends State<InsideChatPage> {
   @override
   Widget build(BuildContext context) {
@@ -20,8 +23,7 @@ class _InsideChatPageState extends State<InsideChatPage> {
       child: Scaffold(
         body: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+           
             children: [
               Stack(
                 children: [
@@ -43,14 +45,15 @@ class _InsideChatPageState extends State<InsideChatPage> {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           KText(
-                            text: 'Design School Cover Banner',
+                            text: 'designScoolCoverBanner',
                             fontWeight: FontWeight.w600,
                             color: AppTheme.iconColor,
                             fontSize: 13,
                           ),
                           Text(
-                            'Ongoing',
+                            'onGoing'.tr,
                             style: GoogleFonts.cairo(
+                              fontWeight: FontWeight.w600,
                               color: AppTheme.textColor2,
                               fontSize: 13,
                             ),
@@ -80,8 +83,8 @@ class _InsideChatPageState extends State<InsideChatPage> {
                                 child: GestureDetector(
                                   onTap: () => Get.back(),
                                   child: Icon(
-                                    EvaIcons.arrowIosBack,
-                                    size: 24,
+                                    Icons.arrow_back_ios,
+                                    size: 18,
                                     color: AppTheme.textColor,
                                   ),
                                 ),
@@ -116,12 +119,12 @@ class _InsideChatPageState extends State<InsideChatPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   KText(
-                                    text: 'Nada Elsayed',
+                                    text: 'nadaElsayed',
                                     fontFamily: 'Poppins Semi Bold',
                                     fontSize: 15,
                                   ),
                                   KText(
-                                    text: 'Online',
+                                    text: 'online',
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -142,132 +145,63 @@ class _InsideChatPageState extends State<InsideChatPage> {
                 ],
               ),
               SizedBox(height: 80),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
+
+              //
+              Directionality(
+                textDirection: TextDirection.ltr,
                 child: Column(
                   children: [
-                    Container(
-                      height: 100,
-                      width: Get.width,
-                      child: Row(
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      child: Column(
                         children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(60),
-                            child: Image.asset(
-                              'assets/img/chat-img-1.jpg',
-                              width: 40,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(left: 30),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                          Container(
+                            height: 100,
+                            width: Get.width,
+                            child: Row(
                               children: [
-                                KText(
-                                  text:
-                                      '''Lorem ipsum dolor sit amet, consectetur
-adipiscenw elitsed.''',
-                                  fontSize: 12.50,
-                                ),
-                                SizedBox(height: 5),
-                                KText(
-                                  text: '17:45',
-                                  fontSize: 12,
-                                  color: AppTheme.textColor2,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20),
-              Padding(
-                padding: EdgeInsets.only(left: 30, right: 100),
-                child: Column(
-                  children: [
-                    Container(
-                      height: 64,
-                      width: Get.width,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(18),
-                        color: AppTheme.iconColor,
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.all(15),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(height: 5),
-                            Text(
-                              'Nothing planned, and you?',
-                              style: GoogleFonts.roboto(
-                                fontSize: 13,
-                                color: AppTheme.white,
-                              ),
-                              maxLines: 100,
-                            ),
-                            Container(
-                              alignment: Alignment.bottomRight,
-                              child: Text(
-                                '18:04',
-                                style: GoogleFonts.roboto(
-                                  fontSize: 12,
-                                  color: AppTheme.white,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 50),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
-                child: Column(
-                  children: [
-                    Container(
-                      height: 100,
-                      width: Get.width,
-                      child: Row(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(60),
-                            child: Image.asset(
-                              'assets/img/chat-img-1.jpg',
-                              width: 40,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(left: 30),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Flexible(
-                                  flex: 2,
-                                  child: KText(
-                                    text:
-                                        '''Lorem ipsum dolor sit amet, consectetura 
-dipiscenw elit, sed do eiusmodLorem ipsu
-m dolor sit ametretqr consectetu.''',
-                                    fontSize: 12.50,
-                                    maxLines: 100,
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(60),
+                                  child: Image.asset(
+                                    'assets/img/chat-img-1.jpg',
+                                    width: 40,
                                   ),
                                 ),
-                                SizedBox(height: 5),
-                                KText(
-                                  text: 'Now',
-                                  fontSize: 12,
-                                  color: AppTheme.textColor2,
+                                Padding(
+                                  padding: EdgeInsets.only(left: 30),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(18),
+                                      color:
+                                          Colors.grey.shade50.withOpacity(.50),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 20,
+                                        vertical: 10,
+                                      ),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          KText(
+                                            text:
+                                                '''Lorem ipsum dolor sit amet, consectetur
+adipiscenw elitsed.''',
+                                            fontSize: 12.50,
+                                          ),
+                                          SizedBox(height: 5),
+                                          KText(
+                                            text: '17:45',
+                                            fontSize: 12,
+                                            color: AppTheme.textColor2,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
@@ -275,19 +209,145 @@ m dolor sit ametretqr consectetu.''',
                         ],
                       ),
                     ),
-                    SizedBox(height: 30),
+                    SizedBox(height: 20),
                     Padding(
-                      padding: EdgeInsets.only(left: 70),
-                      child: Row(
+                      padding: EdgeInsets.only(left: 30, right: 100),
+                      child: Column(
+                        children: [
+                          Container(
+                            width: Get.width,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(18),
+                              color: AppTheme.iconColor,
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.all(15),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(height: 5),
+                                  Text(
+                                    'Nothing planned, and you?',
+                                    style: GoogleFonts.roboto(
+                                      fontSize: 13,
+                                      color: AppTheme.white,
+                                    ),
+                                    maxLines: 100,
+                                  ),
+                                  Container(
+                                    alignment: Alignment.bottomRight,
+                                    child: Text(
+                                      '18:04',
+                                      style: GoogleFonts.roboto(
+                                        fontSize: 12,
+                                        color: AppTheme.white,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 50),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          typeChatLoad(AppTheme.textColor),
-                          SizedBox(width: 15),
-                          typeChatLoad(AppTheme.textColor.withOpacity(.60)),
-                          SizedBox(width: 15),
-                          typeChatLoad(AppTheme.textColor2),
+                          Container(
+                            height: 120,
+                            width: Get.width,
+                            child: Row(
+                              children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(60),
+                                  child: Image.asset(
+                                    'assets/img/chat-img-1.jpg',
+                                    width: 40,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 30),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(18),
+                                      color:
+                                          Colors.grey.shade50.withOpacity(.50),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 20,
+                                        vertical: 10,
+                                      ),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Flexible(
+                                            flex: 2,
+                                            child: KText(
+                                              text:
+                                                  '''Lorem ipsum dolor sit amet, consectetura 
+dipiscenw elit, sed do eiusmodLorem ipsu
+m dolor sit ametretqr consectetu.''',
+                                              fontSize: 12.50,
+                                              maxLines: 100,
+                                            ),
+                                          ),
+                                          SizedBox(height: 5),
+                                          KText(
+                                            text: 'Now',
+                                            fontSize: 12,
+                                            color: AppTheme.textColor2,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 30),
+                          Padding(
+                            padding: EdgeInsets.only(left: 70),
+                            child: Container(
+                              height: 40,
+                              width: 70,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(15),
+                                color: Colors.grey.shade50.withOpacity(.50),
+                              ),
+                              child: Center(
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 10,
+                                    vertical: 10,
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      typeChatLoad(AppTheme.textColor),
+                                      SizedBox(width: 15),
+                                      typeChatLoad(
+                                          AppTheme.textColor.withOpacity(.60)),
+                                      SizedBox(width: 15),
+                                      typeChatLoad(AppTheme.textColor2),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -298,78 +358,81 @@ m dolor sit ametretqr consectetu.''',
             ],
           ),
         ),
-        bottomSheet: Container(
-          height: 100,
-          width: Get.width,
-          decoration: BoxDecoration(
-            color: AppTheme.white,
-            boxShadow: [
-              BoxShadow(
-                color: AppTheme.textColor2.withOpacity(.80),
-                spreadRadius: 10,
-                blurRadius: 40,
-                offset: Offset(1, 30),
-              ),
-            ],
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(40),
-              topRight: Radius.circular(40),
-            ),
-          ),
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 35),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SizedBox(
-                  height: 45,
-                  width: 230,
-                  child: TextField(
-                    minLines: 1,
-                    maxLines: 5,
-                    decoration: InputDecoration(
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            width: 1.50,
-                            color: AppTheme.textColor2.withOpacity(.20)),
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
-                          width: 1.50,
-                          color: AppTheme.textColor2.withOpacity(.20),
-                        ),
-                      ),
-                      hintText: 'Add a comment',
-                      hintStyle: TextStyle(
-                        fontSize: 14,
-                        color: AppTheme.textColor2.withOpacity(.70),
-                      ),
-                      suffixIcon: Image.asset(
-                        'assets/icon/right_arrow.png',
-                        width: 22,
-                      ),
-                      contentPadding: EdgeInsets.only(left: 10),
-                      filled: false,
-                    ),
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Image.asset(
-                    'assets/icon/attach_file.png',
-                    width: 20,
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Image.asset(
-                    'assets/icon/mic.png',
-                    width: 20,
-                  ),
+        bottomSheet: Directionality(
+          textDirection: TextDirection.ltr,
+          child: Container(
+            height: 100,
+            width: Get.width,
+            decoration: BoxDecoration(
+              color: AppTheme.white,
+              boxShadow: [
+                BoxShadow(
+                  color: AppTheme.textColor2.withOpacity(.80),
+                  spreadRadius: 10,
+                  blurRadius: 40,
+                  offset: Offset(1, 30),
                 ),
               ],
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(40),
+                topRight: Radius.circular(40),
+              ),
+            ),
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 35),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SizedBox(
+                    height: 45,
+                    width: 230,
+                    child: TextField(
+                      minLines: 1,
+                      maxLines: 5,
+                      decoration: InputDecoration(
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                              width: 1.50,
+                              color: AppTheme.textColor2.withOpacity(.20)),
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: BorderSide(
+                            width: 1.50,
+                            color: AppTheme.textColor2.withOpacity(.20),
+                          ),
+                        ),
+                        hintText: 'Add a comment',
+                        hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: AppTheme.textColor2.withOpacity(.70),
+                        ),
+                        suffixIcon: Image.asset(
+                          'assets/icon/right_arrow.png',
+                          width: 22,
+                        ),
+                        contentPadding: EdgeInsets.only(left: 20),
+                        filled: false,
+                      ),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Image.asset(
+                      'assets/icon/attach_file.png',
+                      width: 20,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Image.asset(
+                      'assets/icon/mic.png',
+                      width: 20,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

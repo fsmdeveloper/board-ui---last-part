@@ -40,9 +40,7 @@ showDialouge(BuildContext context) {
           primary: false,
           itemBuilder: (context, index) => InkWell(
             onTap: () {
-              if (updateLocal(locales[index]['locale'], context) == null) {
-                Locale('ar');
-              } else {}
+              updateLocal(locales[index]['locale'], context);
             },
             child: Padding(
               padding: EdgeInsets.all(8.0),

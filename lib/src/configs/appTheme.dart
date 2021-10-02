@@ -66,7 +66,7 @@ class AppTheme {
 
   static ThemeData appTheme = ThemeData(
       fontFamily: 'Cairo Regular',
-      // fontFamily: 'Poppins Regular',
+      // fontFamily: locales == Locale('en') ? 'Cairo Regular' : 'Poppins Regular',
       scaffoldBackgroundColor: AppTheme.white,
       appBarTheme: AppBarTheme(
         backgroundColor: AppTheme.white,

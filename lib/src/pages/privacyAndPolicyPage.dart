@@ -1,5 +1,7 @@
+import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PrivacyAndPolicy extends StatelessWidget {
   const PrivacyAndPolicy({Key? key}) : super(key: key);
@@ -20,7 +22,7 @@ class PrivacyAndPolicy extends StatelessWidget {
                     children: [
                       Container(),
                       KText(
-                        text: 'Privacy Policy',
+                        text: 'privacyPolicy',
                         fontSize: 17,
                         fontFamily: 'Poppins Semi Bold',
                       ),
@@ -35,67 +37,11 @@ class PrivacyAndPolicy extends StatelessWidget {
                 SizedBox(height: 20),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 30),
-                  child: Text(
-                    '''Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-''',
-                    style: TextStyle(
-                      wordSpacing: 2,
-                      color: Colors.black54,
-                      fontFamily: 'Poppins Medium',
-                      fontSize: 12,
-                    ),
+                  child: KText(
+                    text: 'privacyPolicyAbout'.tr,
+                    color: Colors.black54,
+                    fontWeight: AppTheme.normal,
+                    fontSize: 12,
                   ),
                 ),
               ],

@@ -3,8 +3,8 @@ import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-class ProfileDetailsComponents extends StatelessWidget {
-  ProfileDetailsComponents({Key? key}) : super(key: key);
+class ProfileDetailsBar extends StatelessWidget {
+  ProfileDetailsBar({Key? key}) : super(key: key);
   final imgPortfolio = [
     {'img': 'assets/img/cata-3.jpg'},
     {'img': 'assets/img/cata-2.jpg'},
@@ -25,7 +25,7 @@ class ProfileDetailsComponents extends StatelessWidget {
                 children: [
                   SizedBox(height: 40),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -37,8 +37,9 @@ class ProfileDetailsComponents extends StatelessWidget {
                               fontFamily: 'Poppins Semi Bold',
                             ),
                             KText(
-                              text: 'Project Done',
-                              fontSize: 11,
+                              text: 'projectDone',
+                              fontSize: 10,
+                              color: Colors.black54,
                               fontFamily: 'Poppins Medium',
                             ),
                           ],
@@ -51,8 +52,9 @@ class ProfileDetailsComponents extends StatelessWidget {
                               fontFamily: 'Poppins Semi Bold',
                             ),
                             KText(
-                              text: 'On Time',
-                              fontSize: 11,
+                              text: 'onTime',
+                              fontSize: 10,
+                              color: Colors.black54,
                               fontFamily: 'Poppins Medium',
                             ),
                           ],
@@ -65,8 +67,9 @@ class ProfileDetailsComponents extends StatelessWidget {
                               fontFamily: 'Poppins Semi Bold',
                             ),
                             KText(
-                              text: 'Within Budget',
-                              fontSize: 11,
+                              text: 'withInBudget',
+                              fontSize: 10,
+                              color: Colors.black54,
                               fontFamily: 'Poppins Medium',
                             ),
                           ],
@@ -79,31 +82,41 @@ class ProfileDetailsComponents extends StatelessWidget {
                     color: Colors.grey.shade200,
                   ),
                   SizedBox(height: 10),
-                  KText(
-                    text: '''Lorem ipsum dolor sit amet, consectetur adipiscen
-elit, sed do eiusmodLorem ipsum dolor sit ametreti
-Lorem ipsum dolor sit amet, consectetur adipiscen
-elit, sed do eiusmodLorem ipsum dolor sit ametreti
-consectetur adipiscen elit, sed do eiusmod''',
-                    fontSize: 12.50,
-                    fontFamily: 'Poppins Medium',
-                    color: HexColor('#858585'),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.grey.shade50.withOpacity(.30),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 10,
+                      ),
+                      child: KText(
+                        text: 'profileAbout',
+                        fontSize: 11,
+                        fontWeight: AppTheme.normal,
+                        color: Colors.black45,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ),
                   SizedBox(height: 60),
                   Row(
                     children: [
                       KText(
-                        text: 'Portfolio',
+                        text: 'portfolio',
                         fontSize: 16,
                         fontFamily: 'Poppins Medium',
                       ),
                       Spacer(),
                       KText(
-                        text: 'View All  ',
+                        text: 'viewAll',
                         fontSize: 14,
                         color: AppTheme.iconColor,
                         fontFamily: 'Poppins Medium',
                       ),
+                      SizedBox(width: 5),
                       Icon(
                         Icons.arrow_forward_ios,
                         color: AppTheme.iconColor,
@@ -142,17 +155,18 @@ consectetur adipiscen elit, sed do eiusmod''',
                   Row(
                     children: [
                       KText(
-                        text: 'Skills',
+                        text: 'skills',
                         fontSize: 16,
                         fontFamily: 'Poppins Medium',
                       ),
                       Spacer(),
                       KText(
-                        text: 'View All  ',
+                        text: 'viewAll',
                         fontSize: 14,
                         color: AppTheme.iconColor,
                         fontFamily: 'Poppins Medium',
                       ),
+                      SizedBox(width: 5),
                       Icon(
                         Icons.arrow_forward_ios,
                         color: AppTheme.iconColor,
@@ -170,7 +184,7 @@ consectetur adipiscen elit, sed do eiusmod''',
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           KText(
-                            text: 'Graphic Design',
+                            text: 'graphicDesign',
                             fontSize: 15,
                             color: AppTheme.textColor.withOpacity(.70),
                             fontFamily: 'Poppins Medium',
@@ -204,7 +218,7 @@ consectetur adipiscen elit, sed do eiusmod''',
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           KText(
-                            text: 'Architecture',
+                            text: 'architecture',
                             fontSize: 15,
                             color: AppTheme.textColor.withOpacity(.70),
                             fontFamily: 'Poppins Medium',
@@ -238,7 +252,7 @@ consectetur adipiscen elit, sed do eiusmod''',
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           KText(
-                            text: 'Logo Design',
+                            text: 'logoDesign',
                             fontSize: 15,
                             color: AppTheme.textColor.withOpacity(.70),
                             fontFamily: 'Poppins Medium',

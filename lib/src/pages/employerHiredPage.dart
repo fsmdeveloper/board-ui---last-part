@@ -5,7 +5,6 @@ import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class EmployerHirePage extends StatefulWidget {
   const EmployerHirePage({Key? key}) : super(key: key);
@@ -43,7 +42,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                     Row(
                       children: [
                         KText(
-                          text: 'Ongoing',
+                          text: 'ongoing',
                           color: AppTheme.primaryColor,
                           fontFamily: 'Poppins Medium',
                           fontSize: 12,
@@ -55,7 +54,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                         ),
                         SizedBox(width: 8),
                         KText(
-                          text: 'Ends within 4 days',
+                          text: 'endsWithIn4days',
                           color: AppTheme.textColor2,
                           fontFamily: 'Poppins Medium',
                           fontSize: 12,
@@ -64,16 +63,13 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                     ),
                     SizedBox(height: 10),
                     KText(
-                      text: 'Design a school brochure',
+                      text: 'designAschoolBrochure',
                       fontSize: 19,
                       fontFamily: 'Poppins Semi Bold',
                     ),
                     SizedBox(height: 15),
                     KText(
-                      text:
-                          '''Lorem ipsum dolor sit amet, consectetur adipiscen
-elit, sed do eiusmodLorem ipsum dolor sit ametreti
-consectetur adipiscen elit, sed do eiusmod''',
+                      text: 'employerHiredAbout',
                       fontSize: 12.50,
                       fontFamily: 'Poppins Medium',
                       color: Colors.grey,
@@ -93,12 +89,12 @@ consectetur adipiscen elit, sed do eiusmod''',
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 KText(
-                                  text: 'Project File.pdf',
+                                  text: 'projectFilePdf',
                                   fontFamily: 'Poppins Medium',
                                   fontSize: 13,
                                 ),
                                 KText(
-                                  text: '14 April 2020',
+                                  text: 'projectCreateDate',
                                   color: Colors.grey,
                                   fontFamily: 'Poppins Medium',
                                   fontSize: 10,
@@ -123,7 +119,7 @@ consectetur adipiscen elit, sed do eiusmod''',
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 KText(
-                                  text: ' Muhammed',
+                                  text: 'muhammed',
                                   fontFamily: 'Poppins Medium',
                                   fontSize: 13,
                                 ),
@@ -152,7 +148,7 @@ consectetur adipiscen elit, sed do eiusmod''',
                     Divider(color: Colors.grey.shade100),
                     SizedBox(height: 10),
                     KText(
-                      text: 'Project Budget',
+                      text: 'projectBudget',
                       fontSize: 16,
                       fontFamily: 'Poppins Medium',
                     ),
@@ -169,18 +165,18 @@ consectetur adipiscen elit, sed do eiusmod''',
                             ),
                             children: [
                               TextSpan(
-                                text: 'SAR  ',
+                                text: 'sar'.tr,
                                 style: TextStyle(
                                   fontSize: 14,
                                   color: AppTheme.textColor2,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontFamily: AppTheme.semiAr,
                                 ),
                               ),
                             ],
                           ),
                         ),
                         KText(
-                          text: '~',
+                          text: '  ~',
                           color: AppTheme.iconColor,
                           fontSize: 17,
                         ),
@@ -194,11 +190,11 @@ consectetur adipiscen elit, sed do eiusmod''',
                             ),
                             children: [
                               TextSpan(
-                                text: 'SAR',
+                                text: 'sar'.tr,
                                 style: TextStyle(
                                   fontSize: 14,
                                   color: AppTheme.textColor2,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontFamily: AppTheme.semiAr,
                                 ),
                               ),
                             ],
@@ -233,7 +229,6 @@ consectetur adipiscen elit, sed do eiusmod''',
                     ),
                   ),
                   Positioned(
-                    right: 40,
                     top: 30,
                     left: 40,
                     child: Column(
@@ -243,7 +238,7 @@ consectetur adipiscen elit, sed do eiusmod''',
                             ClipRRect(
                               borderRadius: BorderRadius.circular(30),
                               child: Image.asset(
-                                'assets/img/bid-img-1.jpg',
+                                'assets/img/bid-img-2.jpg',
                                 width: 35,
                               ),
                             ),
@@ -251,54 +246,56 @@ consectetur adipiscen elit, sed do eiusmod''',
                             Row(
                               children: [
                                 Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    SizedBox(width: 8),
-                                    KText(
-                                      text: '   Khalid Saied Morsy',
-                                      color: AppTheme.white,
-                                      fontFamily: 'Poppins Medium',
-                                      fontSize: 13,
+                                    Row(
+                                      children: [
+                                        SizedBox(width: 8),
+                                        KText(
+                                          text: 'khalidSaiedMorsy',
+                                          fontFamily: AppTheme.medium,
+                                          color: AppTheme.white,
+                                          fontSize: AppTheme.textSize13,
+                                        ),
+                                        SizedBox(width: 10),
+                                      ],
                                     ),
-                                    Container(
-                                      alignment: Alignment.centerRight,
-                                      child: Row(
-                                        children: [
-                                          SizedBox(width: 5),
-                                          Icon(
-                                            Icons.star,
-                                            color: Colors.amber,
-                                            size: 14,
-                                          ),
-                                          SizedBox(width: 2),
-                                          KText(
-                                            text: '4.5',
-                                            color: Colors.white,
-                                            fontFamily: 'Poppins Medium',
-                                            fontSize: 11,
-                                          ),
-                                          SizedBox(width: 5),
-                                          KText(
-                                            text: '(',
-                                            color: Colors.white54,
-                                            fontFamily: 'Poppins Medium',
-                                            fontSize: 8,
-                                          ),
-                                          KText(
-                                            text: ' 1200 Review ',
-                                            color: Colors.white54,
-                                            fontFamily: 'Poppins Medium',
-                                            fontSize: 11,
-                                          ),
-                                          KText(
-                                            text: ')',
-                                            color: Colors.white54,
-                                            fontFamily: 'Poppins Medium',
-                                            fontSize: 8,
-                                          ),
-                                        ],
-                                      ),
+                                    Row(
+                                      children: [
+                                        SizedBox(width: 5),
+                                        Icon(
+                                          Icons.star,
+                                          color: Colors.amber,
+                                          size: 14,
+                                        ),
+                                        SizedBox(width: 2),
+                                        KText(
+                                          text: '4.5',
+                                          fontFamily: AppTheme.medium,
+                                          color: Colors.white,
+                                          fontSize: AppTheme.textSize11,
+                                        ),
+                                        SizedBox(width: 5),
+                                        KText(
+                                          text: '( 1200 ',
+                                          color: Colors.white54,
+                                          fontFamily: AppTheme.medium,
+                                          fontSize: 11,
+                                        ),
+                                        KText(
+                                          text: 'review',
+                                          color: Colors.white54,
+                                          fontFamily: AppTheme.medium,
+                                          fontSize: AppTheme.textSize11,
+                                        ),
+                                        KText(
+                                          text: ' )',
+                                          color: Colors.white54,
+                                          fontFamily: AppTheme.medium,
+                                          fontSize: 11,
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
@@ -306,7 +303,7 @@ consectetur adipiscen elit, sed do eiusmod''',
                             ),
                           ],
                         ),
-                        SizedBox(height: 10),
+                        SizedBox(height: 40),
                       ],
                     ),
                   ),
@@ -321,35 +318,47 @@ consectetur adipiscen elit, sed do eiusmod''',
                           text: TextSpan(
                             text: '11,240 ',
                             style: TextStyle(
-                              fontSize: 17,
+                              fontSize: AppTheme.textSize17,
                               color: AppTheme.white,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontFamily: AppTheme.semi,
                             ),
                             children: [
                               TextSpan(
-                                text: 'SAR',
+                                text: 'sar'.tr,
                                 style: TextStyle(
-                                  fontSize: 14,
+                                  fontSize: AppTheme.textSize14,
                                   color: Colors.white54,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontFamily: AppTheme.semiAr,
                                 ),
                               ),
                             ],
                           ),
                         ),
-                        Text(
-                          '4 Days',
-                          style: GoogleFonts.cairo(
-                            fontSize: 11,
-                            color: AppTheme.white,
-                            fontWeight: FontWeight.w600,
+                        RichText(
+                          text: TextSpan(
+                            text: '4 ',
+                            style: TextStyle(
+                              fontSize: AppTheme.textSize10,
+                              color: AppTheme.white,
+                              fontFamily: AppTheme.semi,
+                            ),
+                            children: [
+                              TextSpan(
+                                text: 'days'.tr,
+                                style: TextStyle(
+                                  fontSize: AppTheme.textSize11,
+                                  color: AppTheme.white,
+                                  fontFamily: AppTheme.semiAr,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
                     ),
                   ),
                   Positioned(
-                    top: 80,
+                    top: 90,
                     left: 40,
                     right: 40,
                     child: Container(
@@ -366,13 +375,11 @@ consectetur adipiscen elit, sed do eiusmod''',
                         ),
                         child: Center(
                           child: Text(
-                            '''Lorem ipsum dolor sit amet, consectetur adipisce
-nw elit, sed do eiusmodLorem ipsum dolor sit ami
-etretqr consectetur adipiscen''',
+                            'employerHiredBidAbout'.tr,
                             style: TextStyle(
                               wordSpacing: 1,
-                              fontSize: 11.50,
-                              fontFamily: 'Poppins Medium',
+                              fontSize: 11,
+                              fontFamily: AppTheme.semiAr,
                               color: Colors.white,
                             ),
                           ),
@@ -395,26 +402,22 @@ etretqr consectetur adipiscen''',
                               color: AppTheme.white,
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Padding(
-                              padding: EdgeInsets.only(
-                                left: 15,
-                                right: 10,
-                              ),
-                              child: Row(
-                                children: [
-                                  Image.asset(
-                                    'assets/icon/msg1.png',
-                                    width: 20,
-                                  ),
-                                  SizedBox(width: 20),
-                                  KText(
-                                    text: 'Chat with Freelancher',
-                                    fontSize: 14,
-                                    color: AppTheme.primaryColor,
-                                    fontFamily: 'Poppins Medium',
-                                  ),
-                                ],
-                              ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/icon/msg1.png',
+                                  width: 20,
+                                ),
+                                SizedBox(width: 20),
+                                KText(
+                                  text: 'chatWithFreelancer',
+                                  fontSize: 14,
+                                  color: AppTheme.primaryColor,
+                                  fontFamily: 'Poppins Medium',
+                                ),
+                              ],
                             ),
                           ),
                         ],
@@ -460,13 +463,13 @@ etretqr consectetur adipiscen''',
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             KText(
-                              text: 'Project Management',
+                              text: 'projectManagement',
                               fontSize: 16,
                               fontFamily: 'Poppins Semi Bold',
                             ),
                             // SizedBox(height: 5),
                             KText(
-                              text: 'Payment details related to the project',
+                              text: 'paymentsDetailsRelatedtotheProject',
                               fontSize: 12,
                               color: Colors.grey,
                               fontFamily: 'Poppins Medium',
@@ -503,7 +506,7 @@ etretqr consectetur adipiscen''',
                                   Container(
                                     alignment: Alignment.center,
                                     child: KText(
-                                      text: '  Create Milestone',
+                                      text: 'createMilestone',
                                       color: Colors.white,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w600,
@@ -552,14 +555,14 @@ etretqr consectetur adipiscen''',
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             KText(
-                              text: 'Paid',
+                              text: 'paid',
                               fontSize: 11,
                               color: AppTheme.primaryColor,
                               fontFamily: 'Poppins Medium',
                             ),
                             SizedBox(height: 2),
                             KText(
-                              text: 'First part of the project is done',
+                              text: 'firstPartoftheProjectIsdone',
                               fontSize: 14,
                               fontFamily: 'Poppins Semi Bold',
                             ),
@@ -567,7 +570,7 @@ etretqr consectetur adipiscen''',
                           ],
                         ),
                         subtitle: KText(
-                          text: '3 days ago',
+                          text: '3DaysAgo',
                           fontSize: 11,
                           color: Colors.grey,
                           fontFamily: 'Poppins Medium',
@@ -592,18 +595,24 @@ etretqr consectetur adipiscen''',
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             KText(
-                              text: 'Ongoing',
+                              text: 'ongoing',
                               fontSize: 11,
                               color: AppTheme.primaryColor,
                               fontFamily: 'Poppins Medium',
                             ),
                             SizedBox(height: 2),
                             KText(
-                              text: 'Final Delivery of the project',
+                              text: 'finalDeliveryoftheProject',
                               fontSize: 14,
                               fontFamily: 'Poppins Semi Bold',
                             ),
                           ],
+                        ),
+                        subtitle: KText(
+                          text: '3DaysAgo',
+                          fontSize: 11,
+                          color: Colors.grey,
+                          fontFamily: 'Poppins Medium',
                         ),
                       ),
                       SizedBox(height: 20),
@@ -625,12 +634,12 @@ etretqr consectetur adipiscen''',
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             KText(
-                              text: 'Project Completed',
+                              text: 'projectCompleted',
                               fontSize: 16,
                               fontFamily: 'Poppins Semi Bold',
                             ),
                             KText(
-                              text: 'Would you hire that freelancer again?',
+                              text: 'wouldYouHireThatFreelancerAgain',
                               fontSize: 12,
                               color: Colors.grey,
                               fontFamily: 'Poppins Medium',
@@ -675,7 +684,7 @@ etretqr consectetur adipiscen''',
                             Column(
                               children: [
                                 KText(
-                                  text: '   Khalid Saied Morsy',
+                                  text: 'khalidSaiedMorsy',
                                   // fontFamily: 'Poppins Medium',
                                   fontSize: 13,
                                 ),
@@ -694,19 +703,19 @@ etretqr consectetur adipiscen''',
                                     ),
                                     SizedBox(width: 5),
                                     KText(
-                                      text: '(',
-                                      color: AppTheme.textColor2,
-                                      fontFamily: 'Poppins Medium',
-                                      fontSize: 8,
-                                    ),
-                                    KText(
-                                      text: ' 1200 Review ',
+                                      text: '( 1200 ',
                                       color: AppTheme.textColor2,
                                       fontFamily: 'Poppins Medium',
                                       fontSize: 11,
                                     ),
                                     KText(
-                                      text: ')',
+                                      text: 'review',
+                                      color: AppTheme.textColor2,
+                                      fontFamily: 'Poppins Medium',
+                                      fontSize: 11,
+                                    ),
+                                    KText(
+                                      text: ' )',
                                       color: AppTheme.textColor2,
                                       fontFamily: 'Poppins Medium',
                                       fontSize: 8,
@@ -730,22 +739,42 @@ etretqr consectetur adipiscen''',
                         ),
                       ),
                       SizedBox(height: 10),
+                      // Padding(
+                      // padding: EdgeInsets.symmetric(horizontal: 10),
+                      //   child: Card(
+                      //     elevation: .10,
+                      //     child: Padding(
+                      //       padding: EdgeInsets.all(16),
+                      //       child: KText(
+                      //         text:
+                      //             'employerHiredField',
+                      //         fontSize: 12,
+                      //         fontFamily: 'Poppins Medium',
+                      //         color: Colors.grey,
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      SizedBox(height: 20),
                       Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 10),
-                        child: Card(
-                          elevation: .10,
-                          child: Padding(
-                            padding: EdgeInsets.all(16),
-                            child: KText(
-                              text:
-                                  '''Lorem ipsum dolor sit amet, consectetur adipisce
-nw elit, sed do eiusmodLorem ipsum dolor sit ami
-Lorem ipsum dolor sit amet, consectetur adipisce
-nw elit, sed do eiusmodLorem ipsum dolor sit ami
-etretqr consectetur adipiscen''',
-                              fontSize: 12,
-                              fontFamily: 'Poppins Medium',
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Container(
+                          height: 120,
+                          width: Get.width,
+                          child: TextField(
+                            maxLines: 200,
+                            style: TextStyle(
+                              fontSize: 13,
                               color: Colors.grey,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            decoration: InputDecoration(
+                              hintText: 'employerHiredField'.tr,
+                              hintStyle: TextStyle(
+                                color: AppTheme.textColor2,
+                                fontSize: 12,
+                              ),
+                              contentPadding: EdgeInsets.all(10),
                             ),
                           ),
                         ),
@@ -763,7 +792,7 @@ etretqr consectetur adipiscen''',
                           child: Container(
                             alignment: Alignment.center,
                             child: KText(
-                              text: 'Provide Feedback',
+                              text: 'provideFeadback',
                               color: Colors.white,
                               fontSize: 14,
                               fontFamily: 'Poppins Semi Bold',

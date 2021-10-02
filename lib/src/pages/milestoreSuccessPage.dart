@@ -40,14 +40,13 @@ class MilestoneSuccessPage extends StatelessWidget {
                 ),
                 SizedBox(height: 60),
                 KText(
-                  text: 'Milestone Created!',
+                  text: 'milestoneCreated',
                   fontSize: 23,
                   fontFamily: 'Poppins Semi Bold',
                 ),
                 SizedBox(height: 10),
                 KText(
-                  text: '''Payment has been made for your project
-and you'll find details there''',
+                  text: 'milestoneCreatedAbout',
                   fontSize: 13,
                   color: AppTheme.textColor2,
                   fontWeight: FontWeight.w600,
@@ -58,13 +57,13 @@ and you'll find details there''',
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     KText(
-                      text: 'Open',
+                      text: 'open',
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
                       color: AppTheme.primaryColor,
                     ),
                     KText(
-                      text: 'Ends within 4 days',
+                      text: 'endsWithIn4days',
                       fontSize: 12,
                       fontWeight: FontWeight.w600,
                       color: AppTheme.textColor2,
@@ -75,7 +74,7 @@ and you'll find details there''',
                 Container(
                   alignment: Alignment.centerLeft,
                   child: KText(
-                    text: '''Design a WordPress website for fas ...''',
+                    text: 'bidAbout',
                     fontSize: 15.50,
                     fontFamily: 'poppins Semi Bold',
                     color: AppTheme.textColor,
@@ -94,9 +93,10 @@ and you'll find details there''',
                         ),
                         children: [
                           TextSpan(
-                            text: 'SAR ',
+                            text: 'sar'.tr,
                             style: TextStyle(
                               fontSize: 12,
+                              fontFamily: AppTheme.semiAr,
                               color: AppTheme.textColor2,
                             ),
                           ),
@@ -104,7 +104,7 @@ and you'll find details there''',
                       ),
                     ),
                     KText(
-                      text: '~',
+                      text: ' ~',
                       color: AppTheme.iconColor,
                       fontSize: 16,
                     ),
@@ -118,8 +118,9 @@ and you'll find details there''',
                         ),
                         children: [
                           TextSpan(
-                            text: 'SAR',
+                            text: 'sar'.tr,
                             style: TextStyle(
+                              fontFamily: AppTheme.semiAr,
                               fontSize: 12,
                               color: AppTheme.textColor2,
                             ),
@@ -129,12 +130,12 @@ and you'll find details there''',
                     ),
                   ],
                 ),
-                SizedBox(height: 150),
+                SizedBox(height: 120),
                 GestureDetector(
                   onTap: () => Get.to(BottomBarHome()),
                   child: Container(
                     height: 50,
-                    width: double.infinity,
+                    width: Get.width,
                     decoration: BoxDecoration(
                       color: AppTheme.primaryColor,
                       borderRadius: BorderRadius.circular(10),
@@ -142,7 +143,7 @@ and you'll find details there''',
                     child: Container(
                       alignment: Alignment.center,
                       child: KText(
-                        text: 'Back to Project Page',
+                        text: 'backToprojectPage',
                         color: AppTheme.white,
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
@@ -150,7 +151,6 @@ and you'll find details there''',
                     ),
                   ),
                 ),
-                // SizedBox(height: 20),
               ],
             ),
           ),

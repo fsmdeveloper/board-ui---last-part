@@ -1,5 +1,6 @@
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class TermsAndConditionPage extends StatelessWidget {
   const TermsAndConditionPage({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class TermsAndConditionPage extends StatelessWidget {
                     children: [
                       Container(),
                       KText(
-                        text: 'Terms & Conditions',
+                        text: 'terms&Conditions',
                         fontSize: 17,
                         fontFamily: 'Poppins Semi Bold',
                       ),
@@ -36,64 +37,9 @@ class TermsAndConditionPage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 30),
                   child: Text(
-                    '''Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-Lorem ipsum dolor sit amet, consectetur
-adipiscenw  
-Lorem ipsum dolor sit amet, consectetur 
-adipiscenw elit, sed do eiusmodLorem ipsum dolor
-sit ametretqr
-''',
+                    'terms&ConditionsAbout'.tr,
                     style: TextStyle(
-                      wordSpacing: 2,
                       color: Colors.black54,
-                      fontFamily: 'Poppins Medium',
                       fontSize: 12,
                     ),
                   ),

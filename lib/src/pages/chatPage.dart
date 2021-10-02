@@ -76,7 +76,7 @@ class ChatPage extends StatelessWidget {
                     ),
                   ),
                   KText(
-                    text: 'Chats',
+                    text: 'chats',
                     fontFamily: 'Poppins Semi Bold',
                     fontSize: 17,
                   ),
@@ -191,11 +191,12 @@ class ChatPage extends StatelessWidget {
                               fontFamily: 'Poppins Medium',
                             ),
                             subtitle: KText(
-                              text: 'lorem ipsum dolor sit amlet amedlor ..',
+                              text: 'chatPagelastChat',
                               maxLines: 1,
                               fontSize: 11,
                               color: AppTheme.textColor2,
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.normal,
+                              // fontFamily: 'Poppins Medium',
                             ),
                             trailing: Padding(
                               padding: EdgeInsets.only(top: 20),
@@ -220,8 +221,6 @@ class ChatPage extends StatelessWidget {
       ),
     );
   }
-
- 
 
   Widget searchbar() {
     return Stack(

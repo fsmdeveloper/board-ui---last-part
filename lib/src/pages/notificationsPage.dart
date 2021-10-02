@@ -10,63 +10,63 @@ class NotificationPage extends StatelessWidget {
   final notificationData = [
     {
       'iconImg': 'assets/icon/notification-2.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-msg.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-2.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-msg.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-2.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-msg.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-2.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-msg.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-2.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
     {
       'iconImg': 'assets/icon/notification-msg.png',
-      'name': 'Mohammed Alaa',
-      'msg': 'sent a message regarding the project Create School Banner',
-      'time': '3 Hours ago',
+      'name': 'mohammedAlaa',
+      'msg': 'notificationsMsg',
+      'time': '3HoursAgo',
     },
   ];
   @override
@@ -92,7 +92,7 @@ class NotificationPage extends StatelessWidget {
                     ),
                     SizedBox(width: 60),
                     KText(
-                      text: 'Notifications',
+                      text: 'notifications',
                       color: AppTheme.textColor,
                       fontFamily: 'Poppins Semi Bold',
                       fontSize: 15,
@@ -110,27 +110,6 @@ class NotificationPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // SizedBox(height: 10),
-                // Padding(
-                //   padding: EdgeInsets.symmetric(horizontal: 10),
-                //   child: Row(
-                //     children: [
-                //       IconButton(
-                //         onPressed: () => Get.back(),
-                //         icon: Icon(
-                //           EvaIcons.arrowIosBack,
-                //           size: 24,
-                //         ),
-                //       ),
-                //       SizedBox(width: 60),
-                //       KText(
-                //         text: 'Notifications',
-                //         fontFamily: 'Poppins Semi Bold',
-                //         fontSize: 17,
-                //       ),
-                //     ],
-                //   ),
-                // ),
                 SizedBox(height: 20),
                 ListView.builder(
                   shrinkWrap: true,
@@ -148,18 +127,19 @@ class NotificationPage extends StatelessWidget {
                           ),
                           title: RichText(
                             text: TextSpan(
-                              text: '${item['name']} ',
+                              text: '${item['name']}'.tr,
                               style: TextStyle(
-                                fontFamily: 'Poppins Regular',
-                                fontWeight: FontWeight.w600,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: AppTheme.boldAr,
                                 color: AppTheme.iconColor,
                                 fontSize: 12,
                               ),
                               children: [
                                 TextSpan(
-                                  text: '${item['msg']}',
+                                  text: '${item['msg']}'.tr,
                                   style: TextStyle(
                                     color: AppTheme.textColor,
+                                    fontFamily: AppTheme.semiAr,
                                     fontWeight: FontWeight.w600,
                                     fontSize: 11,
                                   ),
@@ -170,7 +150,7 @@ class NotificationPage extends StatelessWidget {
                           subtitle: Padding(
                             padding: EdgeInsets.only(top: 6),
                             child: KText(
-                              text: '${item['time']}',
+                              text: '${item['time']}'.tr,
                               fontFamily: 'Poppins Regular',
                               color: AppTheme.textColor2,
                               fontSize: 11,

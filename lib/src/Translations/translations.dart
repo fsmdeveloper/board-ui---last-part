@@ -199,7 +199,7 @@ able to work with suitable freelancer ''',
           // 17 Chat Page ==>
 
           'chats': 'Chats',
-          'chatPagelastChat': '',
+          'chatPagelastChat': 'lorem ipsum dolor sit amlet amedlor ..',
 
           // 18 Profile Page ==>
           'AsmaAhmedZarea': 'Asma Ahmed Zarea',
@@ -208,15 +208,16 @@ able to work with suitable freelancer ''',
           'topup': 'Top Up',
           'withdraw': 'Withdraw',
           'notifications': 'Notifications',
-          'notificationsSub': '',
+          'notificationsSub': 'Check your latest notifications',
           'settings': 'Settings',
-          'settingsSub': '',
+          'settingsSub': 'Set your preferred settings',
           'privacyPolicy': 'Privacy Policy',
-          'privacyPolicySub': '',
+          'privacyPolicySub': 'Check our latest privacy & policy',
           // 'terms&Conditions': '',
-          'terms&ConditionsSub': '',
+          'terms&ConditionsSub': 'Check our latest Terms & Conditions',
           'contactUs': 'Contact Us',
-          'contactUsSub': '',
+          'contactUsSub': 'Send us a message if u need help',
+          'middleTextContactUs': 'Send a message to our team',
           'logout': 'Logout',
 
           // 19 CreateMileStone Top Up Page ==>
@@ -245,15 +246,335 @@ able to work with suitable freelancer ''',
           'saveThisFutureUse': 'Save this card for future use',
           // 'addNewCard' : '',
 
-
-         // 21 Project success page ==>
+          // 21 Project success page ==>
 
           'projectCreated': 'Project Created!',
           'projectCreatedAbout': '''We created a new project for you and you 
 will find all details there''',
           'backtoHomePage': 'Back to HomePage',
+
+          //22 Inside Chat Page ==>
+
+          'nadaElsayed': 'Nada Elsayed',
+          'online': 'Online',
+          'onGoing': 'OnGoing',
+          'designScoolCoverBanner': 'Design Scool Cover Banner',
+
+          //23 Add New card1 Page ==>
+
+          //   // 'addNewCard' : '',
+          // 'cardNumber': 'رقم البطاقة',
+          // 'cardHolder': 'اسم البطاقة',
+          // 'cardHolderNameField': 'خالد سعيد ',
+          // 'expiryDate': 'تاريخ الانتهاء',
+          // 'expiryDateField': '4/6/31',
+          // 'cvc': 'رمز الامان',
+          // 'cvcField': '821',
+          // 'saveThisFutureUse': 'حفظ البطاقة للاستخدام المستقبلى',
+          // // 'addNewCard' : '',
+
+          // 24 MileStones Success Page ==>
+
+          'milestoneCreated': 'Milestone Created!',
+          'milestoneCreatedAbout': '''Payment has been made for your project
+and you'll find details there''',
+          'backToprojectPage': 'Back to Project Page',
+
+          // 25 Employer Hired Page ==>
+
+          'ongoing': 'Ongoing',
+          // 'endsWithIn4days' : '',
+          // 'designAschoolBrochure': 'تصميم غلاف تعليمي لمدرسة',
+          'employerHiredAbout':
+              '''Lorem ipsum dolor sit amet, consectetur adipiscen
+elit, sed do eiusmodLorem ipsum dolor sit ametreti
+consectetur adipiscen elit, sed do eiusmod''',
+          // 'projectFilePdf': 'ملف الشرح للمشروع',
+          // 'projectCreateDate': '14 أبريل 2020',
+          // 'muhammed' : '',
+          // 'projectBudget': 'ميزانية المشروع',
+          // 'khalidSaiedMorsy': 'خالد سعيد عبد المنعم',
+          // 'review': 'تقييم',
+          // 'days': 'ايام',
+          'employerHiredBidAbout':
+              '''Lorem ipsum dolor sit amet, consectetur adipisce
+nw elit, sed do eiusmodLorem ipsum dolor sit ami
+etretqr consectetur adipiscen''',
+          'chatWithFreelancer': 'Chat with Freelancher',
+          'projectManagement': 'Project Management',
+          'paymentsDetailsRelatedtotheProject':
+              'Payment details related to the project',
+          'createMilestone': 'Create Milestone',
+          'paid': 'Paid',
+          'firstPartoftheProjectIsdone': 'First part of the project is done',
+          '3DaysAgo': '3 days ago',
+          'finalDeliveryoftheProject': 'Final Delivery of the project',
+          'projectCompleted': 'Project Completed',
+          'wouldYouHireThatFreelancerAgain':
+              'Would you hire that freelancer again?',
+          'employerHiredField':
+              '''Lorem ipsum dolor sit amet, consectetur adipisce
+nw elit, sed do eiusmodLorem ipsum dolor sit ami
+Lorem ipsum dolor sit amet, consectetur adipisce
+nw elit, sed do eiusmodLorem ipsum dolor sit ami
+etretqr consectetur adipiscen''',
+          'provideFeadback': 'Provide Feedback',
           //
+
+          // 26 Employer Project Page ==>
+
+          'edit': 'Edit',
+          // 'open' : '',
+          // 'endsWithIn4days' : '',
+
+          // 'avgBid' : '',
+          // 'bids' : '',
+          'acceptBid': 'Accept Bid',
+
           //
+
+          //27 Settings Page ==>
+
+          // 'notifications' : '',
+          'jobs': 'Jobs',
+          'hideNotifications': 'Hide Notifications',
+          'availableJobs': 'Available Jobs',
+          'accountSettings': 'Account Settings',
+          'refundPolicy': 'Refund Policy',
+          'faqs': 'FAQs',
+          'rateOurApp': 'Rate Our App',
+          'changePassword': 'Change Password',
+          // 'logout' : '',
+
+          //28 Refund Policy ==>
+
+          // 'refundPolicy' : 'سياسة الاسترجاع',
+          'refundAbout': '''Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+''',
+
+//
+
+// 29 Terms & Conditions Page ==>
+
+// 'terms&Conditions' : '',
+          'terms&ConditionsAbout': '''Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+''',
+
+//
+
+// 30 Privacy Policy Page ==>
+
+// 'privacyPolicy' : '',
+          'privacyPolicyAbout': '''Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+Lorem ipsum dolor sit amet, consectetur
+adipiscenw  
+Lorem ipsum dolor sit amet, consectetur 
+adipiscenw elit, sed do eiusmodLorem ipsum dolor
+sit ametretqr
+''',
+
+          // 31 Notifications Page ==>
+
+// 'notifications' : '',
+          '3HoursAgo': '3 Hours ago',
+          'notificationsMsg':
+              'sent a message regarding the project Create School Banner',
+          'mohammedAlaa': 'Mohammed Alaa',
+
+          //
+
+          // 32 Chat Details Page ==>
+
+          'chatDetails': 'Chat Details',
+          'chatSides': 'Chat Sides',
+
+          'bidName': '''Design a WordPress website for fashi ...''',
+
+          'employer': 'Employer',
+          'freelancer': 'Freelancer',
+          'archiveChat': 'Archive Chat',
+          'blockThisChat': 'Block this Chat',
+          'reportThisUser': 'Report This User',
+//
+
+          //33 Profile Details Page ==>
+
+          'profileDetails': 'Profile Details',
+          'reviews': 'Reviews',
+          'projectDone': 'Project Done',
+          'onTime': 'On Time',
+          'withInBudget': 'Within Budget',
+          'profileAbout': '''Lorem ipsum dolor sit amet, consectetur adipiscen
+elit, sed do eiusmodLorem ipsum dolor sit ametreti
+Lorem ipsum dolor sit amet, consectetur adipiscen
+elit, sed do eiusmodLorem ipsum dolor sit ametreti
+consectetur adipiscen elit, sed do eiusmod''',
+          'portfolio': 'Portfolio',
+          'skills': 'Skills',
+          'graphicDesign': 'Graphic Design',
+          'architecture': 'Architecture',
+          'logoDesign': 'Logo Design',
+
+          //
+
+          //33 Profile Reviews Tab  ==>
+          //
+          'reviewsAbout': '''Lorem ipsum dolor sit amet, consectetur adipisce
+nw elit, sed do eiusmodLorem ipsum dolor sit ami
+Lorem ipsum dolor sit amet, consectetur adipisce
+nw elit, sed do eiusmodLorem ipsum dolor sit ami
+etretqr consectetur adipiscen''',
         },
         //
 
@@ -381,7 +702,8 @@ will find all details there''',
 
           //11 Register Form Page ==>
 
-          'registerFormAbout': '''قم بتسجيل حساب جديد ببريدك الإلكتروني الخاص بك
+          'registerFormAbout':
+              '''قم بتسجيل حساب جديد ببريدك الإلكتروني الخاص بك
 و يمكنك البدء بالعمل اليوم''',
           // 'emailAddress': 'Email Address',
           // 'textFieldEmail' : '',
@@ -456,26 +778,27 @@ will find all details there''',
 
           // 17 Chat Page ==>
 
-          'chats': 'Chats',
-          'chatPagelastChat': '',
+          'chats': 'المحادثات',
+          'chatPagelastChat': 'التصميم بيكون عن طريق فيجما ..',
 
           // 18 Profile Page ==>
-          'AsmaAhmedZarea': 'Asma Ahmed Zarea',
-          'view&EditProfile': 'View & Edit Profile',
-          'availableBalance': 'Available Balance',
-          'topup': 'Top Up',
-          'withdraw': 'Withdraw',
-          'notifications': 'Notifications',
-          'notificationsSub': '',
-          'settings': 'Settings',
-          'settingsSub': '',
-          'privacyPolicy': 'Privacy Policy',
-          'privacyPolicySub': '',
+          'AsmaAhmedZarea': 'أسماء احمد زارع',
+          'view&EditProfile': 'الذهاب لملفك الشخصى و تعديله',
+          'availableBalance': 'الرصيد المتاح',
+          'topup': 'سحب الرصيد',
+          'withdraw': 'تعبئة الرصيد',
+          'notifications': 'الاشعارات',
+          'notificationsSub': 'الذهاب لمعرفة احدث الاشعارات الخاصة بك',
+          'settings': 'الاعدادات',
+          'settingsSub': 'ضبط الاعدادات الخاصة بحسابك',
+          'privacyPolicy': 'سياسة الخصوصية',
+          'privacyPolicySub': 'تفقد سياسة الخصوصية الخاصة بالتطبيق',
           // 'terms&Conditions': '',
-          'terms&ConditionsSub': '',
-          'contactUs': 'Contact Us',
-          'contactUsSub': '',
-          'logout': 'Logout',
+          'terms&ConditionsSub': 'تفقد الشروط و الاحكام الخاصة بالتطبيق',
+          'contactUs': 'تواصل معنا',
+          'contactUsSub': 'ارسل رسالة للفريق الخاص بالتطبيق',
+          'middleTextContactUs': 'ارسل رسالة للفريق الخاص بالتطبيق',
+          'logout': 'تسجيل الخروج',
 
           // 19 CreateMileStone Top Up Page ==>
 
@@ -488,7 +811,7 @@ will find all details there''',
           // 'onlinePayments': 'Online Payments',
           // 'addNewCard': 'Add New Card',
           // 'payUsingWallet': 'Pay using wallet',
-          'topUp&Balance': 'Top Up & Balance',
+          'topUp&Balance': 'تعبئة الرصيد',
 
           // 20 Add New Card Page  ==>
 
@@ -510,26 +833,253 @@ will find all details there''',
 البيانات المطلوبة هناك''',
           'backtoHomePage': 'العودة الى الرئيسية',
 
+          //22 Inside Chat Page ==>
 
-          // Inside Chat Page ==> 
+          'nadaElsayed': 'نــدى الســيد',
+          'online': 'متاح الان',
+          'onGoing': 'جارى العمل',
+          'designScoolCoverBanner': 'تصميم غلاف تعليمي لمدرسة',
 
-          'nadaElsayed' : 'Nada Elsayed',
-          'online' : 'Online',
-          'onGoing' : 'OnGoing',
-          'designScoolCoverBanner' : 'Design Scool Cover Banner',
-          
-          
-          
-          'loremIpsumChat' : 'OnGoing',
-          // 'onGoing' : 'OnGoing',
-          // 'onGoing' : 'OnGoing',
-          // 'onGoing' : 'OnGoing',
+          //23 Add New card1 Page ==>
 
+          //   // 'addNewCard' : '',
+          // 'cardNumber': 'رقم البطاقة',
+          // 'cardHolder': 'اسم البطاقة',
+          // 'cardHolderNameField': 'خالد سعيد ',
+          // 'expiryDate': 'تاريخ الانتهاء',
+          // 'expiryDateField': '4/6/31',
+          // 'cvc': 'رمز الامان',
+          // 'cvcField': '821',
+          // 'saveThisFutureUse': 'حفظ البطاقة للاستخدام المستقبلى',
+          // // 'addNewCard' : '',
 
+          // 24 MileStones Success Page ==>
 
+          'milestoneCreated': 'تم عمل دفعة للمشروع!',
+          'milestoneCreatedAbout': '''لقد قمنا بعمل المشروع الخاص بك و ستجد كل 
+البيانات المطلوبة هناك''',
+          'backToprojectPage': 'الانتقال لصفحة المشروع',
 
           //
           //
+
+          // 25 Employer Hired Page ==>
+
+          'ongoing': 'جارى العمل',
+          // 'endsWithIn4days' : '',
+          // 'designAschoolBrochure': 'تصميم غلاف تعليمي لمدرسة',
+          'employerHiredAbout':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+ع في أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك ل
+عكس تناسب المبدأ والمنهج والحكم ''',
+          // 'projectFilePdf': 'ملف الشرح للمشروع',
+          // 'projectCreateDate': '14 أبريل 2020',
+          // 'projectBudget': 'ميزانية المشروع',
+          // 'khalidSaiedMorsy': 'خالد سعيد عبد المنعم',
+          // 'review': 'تقييم',
+          // 'days': 'ايام',
+
+          'employerHiredBidAbout':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+ع في أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك ل
+عكس تناسب المبدأ والمنهج والحكم ''',
+          'chatWithFreelancer': 'التحدث الى المستقل',
+          'projectManagement': 'إدارة المشروع',
+          'paymentsDetailsRelatedtotheProject':
+              'تفاصيل المدفوعات الخاصة بالمشروع',
+          'createMilestone': 'قم بعمل دفعة للمشروع',
+          'paid': 'تم الدفع',
+          'firstPartoftheProjectIsdone': 'اكتمال الجزء الأول من المشروع',
+          '3DaysAgo': 'منذ ثلاثة ايام',
+          'finalDeliveryoftheProject': 'التسليم النهائي للمشروع',
+          'projectCompleted': 'اكتمل المشروع',
+          'wouldYouHireThatFreelancerAgain':
+              'هل انت سعيد بالعمل مع هذا المستقل مرة ثانية؟',
+          'employerHiredField':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+ع في أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك ل
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+عكس تناسب المبدأ والمنهج والحكم ''',
+          'provideFeadback': 'تقييم خدمة المستقل',
+
+          // 26 Employer Project Page ==>
+
+          'edit': 'تعديل',
+          // 'open' : '',
+          // 'endsWithIn4days' : '',
+
+          // 'avgBid' : '',
+          // 'bids' : '',
+          'acceptBid': 'قبول العــرض',
+
+          //
+
+          //27 Settings Page ==>
+
+          // 'notifications' : '',
+          'jobs': 'الوظائف',
+          'hideNotifications': 'إخفاء الاشعارات',
+          'availableJobs': 'المشاريع المتاحة',
+          'accountSettings': 'اعدادات الحساب',
+          'refundPolicy': 'سياسة الاسترجاع',
+          'faqs': 'أسئلة و اجوبة',
+          'rateOurApp': 'تقييم التطبيق',
+          'changePassword': 'تغيير كلمة السر',
+          // 'logout' : '',
+          //
+
+          //28 Refund Policy ==>
+
+          // 'refundPolicy' : 'سياسة الاسترجاع',
+          'refundAbout':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+''',
+
+// 29 Terms & Conditions Page ==>
+
+// 'terms&Conditions' : '',
+          'terms&ConditionsAbout':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل''',
+
+// 30 Privacy Policy Page ==>
+
+// 'privacyPolicy' : '',
+          'privacyPolicyAbout':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل''',
+
+          // 31 Notifications Page ==>
+
+// 'notifications' : '',
+          '3HoursAgo': 'منذ 3 ساعات',
+          'notificationsMsg':
+              ' قام بتعيينك لعمل مشروع إعادة تصميم موقع تجريبى لشركة برمجة خلال 3 أيام',
+          'mohammedAlaa': 'محمد علاء ',
+
+          // 32 Chat Details Page ==>
+
+          'chatDetails': 'تفاصيل المحادثة',
+          'chatSides': 'اطراف المحادثة',
+
+          'bidName': 'تصميم موقع ووردبريس لمدونة اكسسوارات رجا ...',
+
+          'employer': 'العميل',
+          'freelancer': 'المستقل',
+          'archiveChat': 'نقل المحادثة للارشيف',
+          'blockThisChat': 'حظر هذه المحادثة',
+          'reportThisUser': 'الإبلاغ عن الشخص',
+
+          //33 Profile Details Tab  ==>
+
+          'profileDetails': 'الصفحة الشخصية',
+          'reviews': 'التقييمات',
+          'projectDone': 'مشروع مكتمل',
+          'onTime': 'في التوقيت',
+          'withInBudget': 'فى نطاق السعر',
+          'profileAbout':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك للإسلام والسل
+ام يجتمعان في توفير السكينة والطمأنينة ولا غفاعكس تناسب المبدأ
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفاع في
+ أن كلمة الاسلام تجمع نفس حروفأ''',
+          'portfolio': 'سابقة الاعمال',
+          'skills': 'المهارات',
+          'graphicDesign': 'تصميم الجرافيكس',
+          'architecture': 'تصميم معمارى',
+          'logoDesign': 'تصميم لوجو',
+
+          //33 Profile Reviews Tab  ==>
+          'reviewsAbout':
+              '''الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+ع في أن كلمة الاسلام تجمع نفس حروف السلم والسلام وذلك ل
+الإسلام والسلام يجتمعان في توفير السكينة والطمأنينة ولا غفا
+عكس تناسب المبدأ والمنهج والحكم ''',
+//
         },
+
+        //
       };
 }
