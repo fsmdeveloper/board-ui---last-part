@@ -40,7 +40,7 @@ class PrivacyAndPolicy extends StatelessWidget {
                   child: KText(
                     text: 'privacyPolicyAbout'.tr,
                     color: Colors.black54,
-                    fontWeight: AppTheme.normal,
+                    fontWeight: AppTheme.regular,
                     fontSize: 12,
                   ),
                 ),

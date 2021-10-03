@@ -1,4 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
+import 'employerHiredPage.dart';
 import 'package:flutter/services.dart';
 import 'profilePage.dart';
 
@@ -11,7 +12,6 @@ import 'package:get/get.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 import 'searchPages.dart';
-import 'splashPage.dart';
 
 class BottomBarHome extends StatefulWidget {
   const BottomBarHome({Key? key}) : super(key: key);
@@ -36,7 +36,7 @@ class _BottomBarHomeState extends State<BottomBarHome> {
       ),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
-        backgroundColor: HexColor('FBFBFB'),
+        backgroundColor: HexColor('#fbfbfb'),
         body: PageStorage(
           bucket: bucket,
           child: _currentScreens,
@@ -53,7 +53,7 @@ class _BottomBarHomeState extends State<BottomBarHome> {
               child: MaterialButton(
                 onPressed: () {
                   setState(() {
-                    _currentScreens = SplashPage();
+                    _currentScreens = EmployerHirePage();
                     _currentTab = 5;
                   });
                 },

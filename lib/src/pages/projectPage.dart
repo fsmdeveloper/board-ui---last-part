@@ -28,7 +28,7 @@ class ProjectPage extends StatelessWidget {
                     KText(
                       text: 'open',
                       color: AppTheme.iconColor,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w600,
                       fontSize: AppTheme.textSize11,
                     ),
                     SizedBox(width: 8),
@@ -49,7 +49,7 @@ class ProjectPage extends StatelessWidget {
                 KText(
                   text: 'designAschoolBrochure',
                   fontSize: AppTheme.textSize19,
-                  fontFamily: AppTheme.semi,
+                  fontWeight: AppTheme.semi,
                 ),
                 SizedBox(height: 15),
                 KText(
@@ -74,13 +74,13 @@ class ProjectPage extends StatelessWidget {
                           children: [
                             KText(
                               text: 'projectFilePdf',
-                              fontFamily: AppTheme.medium,
+                              fontWeight: AppTheme.medium,
                               fontSize: AppTheme.textSize12,
                             ),
                             KText(
                               text: 'projectCreateDate',
                               color: AppTheme.grey,
-                              fontFamily: AppTheme.medium,
+                              fontWeight: AppTheme.medium,
                               fontSize: AppTheme.textSize10,
                             ),
                           ],
@@ -104,7 +104,7 @@ class ProjectPage extends StatelessWidget {
                           children: [
                             KText(
                               text: 'muhammed',
-                              fontFamily: AppTheme.medium,
+                              fontWeight: AppTheme.medium,
                               fontSize: AppTheme.textSize12,
                             ),
                             Row(
@@ -117,7 +117,7 @@ class ProjectPage extends StatelessWidget {
                                 SizedBox(width: 2),
                                 KText(
                                   text: '4.5',
-                                  fontFamily: AppTheme.medium,
+                                  fontWeight: AppTheme.medium,
                                   fontSize: AppTheme.textSize10,
                                 ),
                               ],
@@ -134,7 +134,7 @@ class ProjectPage extends StatelessWidget {
                 KText(
                   text: 'projectBudget',
                   fontSize: AppTheme.textSize14,
-                  fontFamily: AppTheme.medium,
+                  fontWeight: AppTheme.medium,
                 ),
                 SizedBox(height: 10),
                 Row(
@@ -143,9 +143,9 @@ class ProjectPage extends StatelessWidget {
                       text: TextSpan(
                         text: '10,000 ',
                         style: TextStyle(
-                          fontSize: AppTheme.textSize15,
+                          fontSize: AppTheme.textSize16,
                           color: AppTheme.textColor,
-                          fontFamily: AppTheme.semiAr,
+                          fontWeight: AppTheme.semi,
                         ),
                         children: [
                           TextSpan(
@@ -153,7 +153,7 @@ class ProjectPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: AppTheme.textSize12,
                               color: AppTheme.textColor2,
-                              fontFamily: AppTheme.semiAr,
+                              fontWeight: AppTheme.semi,
                             ),
                           ),
                         ],
@@ -168,9 +168,9 @@ class ProjectPage extends StatelessWidget {
                       text: TextSpan(
                         text: '  15,000 ',
                         style: TextStyle(
-                          fontSize: AppTheme.textSize15,
+                          fontSize: AppTheme.textSize16,
                           color: AppTheme.textColor,
-                          fontFamily: AppTheme.semiAr,
+                          fontWeight: AppTheme.semi,
                         ),
                         children: [
                           TextSpan(
@@ -178,7 +178,7 @@ class ProjectPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: AppTheme.textSize12,
                               color: AppTheme.textColor2,
-                              fontFamily: AppTheme.semiAr,
+                              fontWeight: AppTheme.semi,
                             ),
                           ),
                         ],
@@ -200,9 +200,9 @@ class ProjectPage extends StatelessWidget {
                       text: TextSpan(
                         text: '11,240 ',
                         style: TextStyle(
-                          fontSize: AppTheme.textSize17,
+                          fontSize: AppTheme.textSize16,
                           color: AppTheme.textColor,
-                          fontFamily: AppTheme.semi,
+                          fontWeight: AppTheme.semi,
                         ),
                         children: [
                           TextSpan(
@@ -210,7 +210,7 @@ class ProjectPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: AppTheme.textSize12,
                               color: AppTheme.textColor2,
-                              fontFamily: AppTheme.semiAr,
+                              fontWeight: AppTheme.semi,
                             ),
                           ),
                         ],
@@ -269,7 +269,7 @@ class ProjectPage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: AppTheme.textSize11,
                           color: AppTheme.textColor,
-                          fontFamily: AppTheme.semi,
+                          fontWeight: AppTheme.regular,
                         ),
                         children: [
                           TextSpan(
@@ -277,7 +277,7 @@ class ProjectPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: AppTheme.textSize11,
                               color: AppTheme.textColor,
-                              fontFamily: AppTheme.semiAr,
+                              fontWeight: AppTheme.regular,
                             ),
                           ),
                         ],
@@ -297,7 +297,7 @@ class ProjectPage extends StatelessWidget {
                           fontSize: AppTheme.textSize14,
                           // fontWeight: FontWeight.bold,
                           color: AppTheme.textColor,
-                          fontFamily: 'Cairo Bold',
+                          fontWeight: AppTheme.bold,
                         ),
                         children: [
                           TextSpan(
@@ -305,7 +305,7 @@ class ProjectPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: AppTheme.textSize12,
                               color: AppTheme.textColor,
-                              fontFamily: AppTheme.semiAr,
+                              fontWeight: AppTheme.semi,
                             ),
                           ),
                         ],
@@ -315,7 +315,7 @@ class ProjectPage extends StatelessWidget {
                     KText(
                       text: 'viewAll',
                       color: AppTheme.iconColor,
-                      fontFamily: AppTheme.medium,
+                      fontWeight: AppTheme.medium,
                       fontSize: AppTheme.textSize14,
                     ),
                     SizedBox(width: 5),
@@ -359,7 +359,7 @@ class ProjectPage extends StatelessWidget {
                                             SizedBox(width: 8),
                                             KText(
                                               text: 'khalidSaiedMorsy',
-                                              fontFamily: AppTheme.medium,
+                                              fontWeight: AppTheme.medium,
                                               fontSize: AppTheme.textSize13,
                                             ),
                                             SizedBox(width: 10),
@@ -387,26 +387,26 @@ class ProjectPage extends StatelessWidget {
                                             SizedBox(width: 2),
                                             KText(
                                               text: '4.5',
-                                              fontFamily: AppTheme.medium,
+                                              fontWeight: AppTheme.medium,
                                               fontSize: AppTheme.textSize11,
                                             ),
                                             SizedBox(width: 5),
                                             KText(
                                               text: '( 1200 ',
                                               color: AppTheme.textColor2,
-                                              fontFamily: AppTheme.medium,
+                                              fontWeight: AppTheme.medium,
                                               fontSize: 11,
                                             ),
                                             KText(
                                               text: 'review',
                                               color: AppTheme.textColor2,
-                                              fontFamily: AppTheme.medium,
+                                              fontWeight: AppTheme.medium,
                                               fontSize: AppTheme.textSize11,
                                             ),
                                             KText(
                                               text: ' )',
                                               color: AppTheme.textColor2,
-                                              fontFamily: AppTheme.medium,
+                                              fontWeight: AppTheme.medium,
                                               fontSize: 8,
                                             ),
                                           ],
@@ -423,9 +423,9 @@ class ProjectPage extends StatelessWidget {
                                           text: TextSpan(
                                             text: '11,240 ',
                                             style: TextStyle(
-                                              fontSize: AppTheme.textSize17,
+                                              fontSize: AppTheme.textSize16,
                                               color: AppTheme.textColor,
-                                              fontFamily: AppTheme.semi,
+                                              fontWeight: AppTheme.semi,
                                             ),
                                             children: [
                                               TextSpan(
@@ -433,7 +433,7 @@ class ProjectPage extends StatelessWidget {
                                                 style: TextStyle(
                                                   fontSize: AppTheme.textSize14,
                                                   color: AppTheme.textColor2,
-                                                  fontFamily: AppTheme.semiAr,
+                                                  fontWeight: AppTheme.semi,
                                                 ),
                                               ),
                                             ],
@@ -443,17 +443,19 @@ class ProjectPage extends StatelessWidget {
                                           text: TextSpan(
                                             text: '4 ',
                                             style: TextStyle(
-                                              fontSize: AppTheme.textSize10,
+                                              fontSize: AppTheme.textSize11,
                                               color: AppTheme.textColor,
-                                              fontFamily: AppTheme.semi,
+                                              fontFamily: 'Cairo Regular',
+                                              fontWeight: AppTheme.medium,
                                             ),
                                             children: [
                                               TextSpan(
                                                 text: 'days'.tr,
                                                 style: TextStyle(
                                                   fontSize: AppTheme.textSize11,
+                                                  fontFamily: 'Cairo Regular',
                                                   color: AppTheme.textColor,
-                                                  fontFamily: AppTheme.semiAr,
+                                                  fontWeight: AppTheme.regular,
                                                 ),
                                               ),
                                             ],
@@ -466,12 +468,23 @@ class ProjectPage extends StatelessWidget {
                               ],
                             ),
                             SizedBox(height: 20),
-                            KText(
-                              text: 'AboutGig',
-                              fontSize: AppTheme.textSize11,
-                              // fontFamily: AppTheme.medium,
-                              fontWeight: FontWeight.w500,
-                              color: AppTheme.grey,
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: Colors.grey.shade50,
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 20,
+                                  vertical: 20,
+                                ),
+                                child: KText(
+                                  text: 'AboutGig',
+                                  fontSize: AppTheme.textSize12,
+                                  fontWeight: FontWeight.w500,
+                                  color: AppTheme.grey,
+                                ),
+                              ),
                             ),
                             SizedBox(height: 30),
                           ],
@@ -486,7 +499,7 @@ class ProjectPage extends StatelessWidget {
                 KText(
                   text: 'requiredSkills',
                   fontSize: AppTheme.textSize14,
-                  fontFamily: AppTheme.semi,
+                  fontWeight: AppTheme.semi,
                 ),
                 SizedBox(height: 10),
                 Row(
@@ -495,24 +508,21 @@ class ProjectPage extends StatelessWidget {
                       text: 'photoshop',
                       fontSize: AppTheme.textSize12,
                       color: AppTheme.grey,
-                      fontWeight: AppTheme.normal,
-                      // fontFamily: AppTheme.medium,
+                      fontWeight: AppTheme.medium,
                     ),
                     SizedBox(width: 20),
                     KText(
                       text: 'design',
                       fontSize: AppTheme.textSize12,
                       color: AppTheme.grey,
-                      fontWeight: AppTheme.normal,
-                      fontFamily: AppTheme.medium,
+                      fontWeight: AppTheme.medium,
                     ),
                     SizedBox(width: 20),
                     KText(
                       text: 'socialMedia',
                       fontSize: AppTheme.textSize12,
                       color: AppTheme.grey,
-                      fontWeight: AppTheme.normal,
-                      fontFamily: AppTheme.medium,
+                      fontWeight: AppTheme.medium,
                     ),
                   ],
                 ),
@@ -522,15 +532,14 @@ class ProjectPage extends StatelessWidget {
                 KText(
                   text: 'projectCode',
                   fontSize: AppTheme.textSize16,
-                  fontFamily: AppTheme.semi,
+                  fontWeight: AppTheme.semi,
                 ),
                 SizedBox(height: 10),
                 KText(
                   text: '30446337',
-                  fontSize: AppTheme.textSize12,
+                  fontSize: AppTheme.textSize13,
                   color: AppTheme.grey,
-                  fontWeight: AppTheme.normal,
-                  fontFamily: AppTheme.medium,
+                  fontWeight: AppTheme.regular,
                 ),
                 SizedBox(
                   height: 50,
@@ -550,7 +559,7 @@ class ProjectPage extends StatelessWidget {
                         text: 'makeAbid',
                         color: Colors.white,
                         fontSize: AppTheme.textSize14,
-                        fontFamily: AppTheme.semi,
+                        fontWeight: AppTheme.semi,
                       ),
                     ),
                   ),

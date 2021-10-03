@@ -5,9 +5,11 @@ import 'package:get/get.dart';
 final searchPage = InputDecoration(
   border: InputBorder.none,
   focusedBorder: UnderlineInputBorder(
+    borderRadius: BorderRadius.circular(10),
     borderSide: BorderSide.none,
   ),
   enabledBorder: UnderlineInputBorder(
+    borderRadius: BorderRadius.circular(10),
     borderSide: BorderSide.none,
   ),
   prefixIcon: Icon(
@@ -15,15 +17,14 @@ final searchPage = InputDecoration(
     size: 27,
     color: AppTheme.textColor,
   ),
-  // Image.asset(
-  //   'assets/icon/search1.png',
-  //   color: AppTheme.textColor,
-  // ),
   hintText: 'searchFieldText'.tr,
+  fillColor: Colors.grey.shade50.withOpacity(.50),
+  filled: true,
   hintStyle: TextStyle(
     fontSize: 13,
-    fontFamily: 'Cairo Semi Bold',
-    fontWeight: FontWeight.bold,
+    fontWeight: AppTheme.regular,
+
+    // fontWeight: FontWeight.w600,
     color: AppTheme.textColor2,
   ),
 );

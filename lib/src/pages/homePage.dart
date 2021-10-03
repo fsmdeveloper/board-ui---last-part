@@ -8,6 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -52,6 +53,7 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: HexColor('#fbfbfb'),
         body: SingleChildScrollView(
           child: Container(
             height: 2000,
@@ -76,8 +78,8 @@ class _HomePageState extends State<HomePage>
                           KText(
                             text: 'Home',
                             color: AppTheme.white,
-                            fontSize: 20,
-                            fontFamily: AppTheme.semi,
+                            fontSize: 19,
+                            fontWeight: FontWeight.w600,
                           ),
                           SizedBox(height: 30),
                           advanceSegment(),
@@ -89,7 +91,7 @@ class _HomePageState extends State<HomePage>
                               children: [
                                 TabBar(
                                   labelStyle: TextStyle(
-                                    fontFamily: AppTheme.semiAr,
+                                    fontWeight: AppTheme.semi,
                                     fontSize: 13,
                                   ),
                                   indicatorPadding: EdgeInsets.symmetric(
@@ -99,7 +101,7 @@ class _HomePageState extends State<HomePage>
                                   indicatorColor: AppTheme.white,
                                   indicatorWeight: 2,
                                   unselectedLabelStyle: TextStyle(
-                                    fontFamily: AppTheme.regulaAr,
+                                    fontWeight: AppTheme.regular,
                                   ),
                                   unselectedLabelColor: Colors.white70,
                                   labelColor: Colors.white,
@@ -129,12 +131,12 @@ class _HomePageState extends State<HomePage>
                     Positioned(
                       left: 30,
                       right: 30,
-                      top: 220,
+                      top: 190,
                       child: Container(
                         height: 2000,
                         width: Get.width,
                         decoration: BoxDecoration(
-                          color: AppTheme.white,
+                          // color: HexColor('#fbfbfb'),
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20),
@@ -180,16 +182,16 @@ class _HomePageState extends State<HomePage>
           ),
         ],
         activeStyle: TextStyle(
-          fontFamily: AppTheme.semiAr,
+          fontWeight: AppTheme.semi,
           color: AppTheme.primaryColor,
         ),
         inactiveStyle: TextStyle(
-          fontFamily: AppTheme.semiAr,
+          fontWeight: AppTheme.semi,
           color: AppTheme.white,
         ),
         itemPadding: EdgeInsets.symmetric(
-          horizontal: 40,
-          vertical: 10,
+          horizontal: 50,
+          vertical: 12,
         ),
         segments: segmentName,
         controller: _advanceC,

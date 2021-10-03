@@ -51,7 +51,7 @@ class ProfilePage extends StatelessWidget {
                   padding: EdgeInsets.only(left: 10),
                   child: KText(
                     text: 'view&EditProfile',
-                    fontWeight: AppTheme.normal,
+                    fontWeight: AppTheme.regular,
                     fontSize: 12,
                   ),
                 ),
@@ -75,8 +75,8 @@ class ProfilePage extends StatelessWidget {
                         AppTheme.primaryColor,
                         HexColor('#359FB8').withOpacity(.90),
                       ],
-                      begin: Alignment.bottomLeft,
-                      end: Alignment.centerRight,
+                      end: Alignment.bottomLeft,
+                      begin: Alignment.centerRight,
                     ),
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -91,7 +91,7 @@ class ProfilePage extends StatelessWidget {
                       children: [
                         KText(
                           text: 'availableBalance',
-                          // fontFamily: 'Poppins Medium',
+                          fontSize: 15,
                           color: AppTheme.white,
                         ),
                         SizedBox(height: 5),
@@ -104,14 +104,14 @@ class ProfilePage extends StatelessWidget {
                             ),
                             KText(
                               text: '11,240',
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                               fontSize: 35,
                               color: AppTheme.white,
                             ),
                             KText(
                               text: 'sar',
                               fontSize: 15,
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                               color: Colors.white54,
                             ),
                           ],
@@ -247,13 +247,12 @@ class ProfilePage extends StatelessWidget {
                         titleStyle: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          fontFamily: AppTheme.boldAr,
                         ),
                         middleText: 'middleTextContactUs'.tr,
                         middleTextStyle: TextStyle(
                           fontSize: 13,
                           color: AppTheme.textColor2,
-                          fontFamily: AppTheme.semiAr,
+                          fontWeight: AppTheme.medium,
                         ),
                         actions: [
                           InkWell(
@@ -275,7 +274,7 @@ class ProfilePage extends StatelessWidget {
                                   KText(
                                     text: 'Yahoo',
                                     fontSize: 12,
-                                    fontFamily: 'Poppins Medium',
+                                    fontWeight: AppTheme.medium,
                                   ),
                                 ],
                               ),
@@ -300,7 +299,7 @@ class ProfilePage extends StatelessWidget {
                                   KText(
                                     text: 'Gmail',
                                     fontSize: 12,
-                                    fontFamily: 'Poppins Medium',
+                                    fontWeight: AppTheme.medium,
                                   ),
                                 ],
                               ),
@@ -325,7 +324,7 @@ class ProfilePage extends StatelessWidget {
                                   KText(
                                     text: 'Outlook',
                                     fontSize: 12,
-                                    fontFamily: 'Poppins Medium',
+                                    fontWeight: AppTheme.medium,
                                   ),
                                 ],
                               ),
@@ -348,7 +347,7 @@ class ProfilePage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 30),
                   child: KText(
                     text: 'logout',
-                    fontFamily: 'Poppins Medium',
+                    fontWeight: AppTheme.medium,
                     fontSize: 14,
                     color: HexColor('#E85454'),
                   ),

@@ -23,6 +23,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 30),
@@ -31,7 +32,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 Row(
                   children: [
@@ -68,8 +69,8 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                 ),
                 KText(
                   text: 'createMilestoneAbout',
-                  fontWeight: AppTheme.normal,
-                  fontSize: AppTheme.textSize12,
+                  fontWeight: AppTheme.regular,
+                  fontSize: AppTheme.textSize13,
                   color: AppTheme.textColor2,
                 ),
                 SizedBox(
@@ -102,6 +103,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                 KText(
                   text: 'projectBudget',
                   color: AppTheme.textColor,
+                  fontWeight: AppTheme.medium,
                   fontSize: AppTheme.textSize13,
                 ),
                 SizedBox(
@@ -120,6 +122,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                                 text: '10,000 ',
                                 style: TextStyle(
                                   fontSize: 12,
+                                  fontWeight: AppTheme.medium,
                                   color: AppTheme.textColor,
                                 ),
                                 children: [
@@ -128,7 +131,6 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppTheme.textColor2,
-                                      fontFamily: AppTheme.semiAr,
                                     ),
                                   ),
                                 ],
@@ -153,7 +155,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppTheme.textColor2,
-                                      fontFamily: AppTheme.semiAr,
+                                      fontWeight: AppTheme.medium,
                                     ),
                                   ),
                                 ],
@@ -181,7 +183,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: AppTheme.textColor2,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: AppTheme.medium,
                                 ),
                               ),
                             ],
@@ -198,7 +200,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                             style: TextStyle(
                               fontSize: 12,
                               color: AppTheme.textColor,
-                              fontFamily: AppTheme.semiAr,
+                              fontWeight: AppTheme.semi,
                             ),
                             children: [
                               TextSpan(
@@ -206,7 +208,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: AppTheme.textColor2,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: AppTheme.medium,
                                 ),
                               ),
                             ],
@@ -232,25 +234,32 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                   fontFamily: 'Poppins Semi Bold',
                 ),
                 SizedBox(height: 20),
-                ListTile(
-                  leading: Image.asset(
-                    'assets/icon/visa.png',
-                    width: 25,
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: AppTheme.textColor2.withOpacity(.10),
                   ),
-                  title: KText(
-                    text: 'onlinePayments',
-                    fontFamily: 'Poppins Medium',
-                    fontSize: 13,
-                    fontWeight: AppTheme.normal,
-                  ),
-                  trailing: CircleAvatar(
-                    backgroundColor: HexColor('#C63878'),
-                    radius: 11,
-                    child: Center(
-                      child: Icon(
-                        Icons.done,
-                        color: AppTheme.white,
-                        size: 14,
+                  child: ListTile(
+                    leading: Image.asset(
+                      'assets/icon/visa.png',
+                      width: 25,
+                    ),
+                    title: KText(
+                      text: 'onlinePayments',
+                      fontFamily: 'Poppins Medium',
+                      fontSize: 13,
+                      fontWeight: AppTheme.regular,
+                    ),
+                    trailing: CircleAvatar(
+                      backgroundColor: HexColor('#C63878'),
+                      radius: 11,
+                      child: Center(
+                        child: Icon(
+                          Icons.done,
+                          color: AppTheme.white,
+                          size: 14,
+                        ),
                       ),
                     ),
                   ),
@@ -259,13 +268,16 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                 GestureDetector(
                   onTap: () => Get.to(AddNewCardPages()),
                   child: Container(
-                    height: 40,
+                    height: 55,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: Colors.grey.shade50.withOpacity(.50),
+                      border: Border.all(
+                        color: AppTheme.textColor2.withOpacity(.10),
+                        style: BorderStyle.solid,
+                      ),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.only(left: 15, right: 15),
+                      padding: EdgeInsets.symmetric(horizontal: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -353,47 +365,52 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                   ),
                 ),
                 SizedBox(height: 20),
-                ListTile(
-                  leading: Image.asset(
-                    'assets/icon/cash.png',
-                    width: 25,
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: AppTheme.textColor2.withOpacity(.10),
                   ),
-                  title: KText(
-                    text: 'payUsingWallet',
-                    fontWeight: AppTheme.normal,
-                    fontSize: 13,
-                  ),
-                  trailing: RichText(
-                    text: TextSpan(
-                      text: ' 10,000 ',
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: AppTheme.textColor,
-                        fontFamily: 'Poppins Medium',
-                      ),
-                      children: [
-                        TextSpan(
-                          text: 'sar'.tr,
-                          style: TextStyle(
-                            fontSize: 11,
-                            color: AppTheme.textColor2,
-                            fontFamily: AppTheme.semiAr,
-                          ),
+                  child: ListTile(
+                    leading: Image.asset(
+                      'assets/icon/cash.png',
+                      width: 25,
+                    ),
+                    title: KText(
+                      text: 'payUsingWallet',
+                      fontWeight: AppTheme.regular,
+                      fontSize: 13,
+                    ),
+                    trailing: RichText(
+                      text: TextSpan(
+                        text: ' 10,000 ',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: AppTheme.textColor,
+                          fontFamily: 'Poppins Medium',
                         ),
-                      ],
+                        children: [
+                          TextSpan(
+                            text: 'sar'.tr,
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: AppTheme.textColor2,
+                              fontWeight: AppTheme.medium,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
+                ),
+                SizedBox(height: 50),
+                primaryButton(
+                  'pay&Continue',
+                  () => Get.to(MilestoneSuccessPage()),
                 ),
                 SizedBox(height: 20),
               ],
             ),
-          ),
-        ),
-        bottomSheet: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 25),
-          child: primaryButton(
-            'pay&Continue',
-            () => Get.to(MilestoneSuccessPage()),
           ),
         ),
       ),

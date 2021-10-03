@@ -49,15 +49,16 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: HexColor('#fbfbfb'),
         body: SingleChildScrollView(
-          child: Padding(
-            padding: AppTheme.paddingH30,
+          child: Scrollbar(
+           
             child: Column(
               children: [
                 SizedBox(height: 40),
                 Center(
                   child: KText(
-                    text: 'search'.tr,
+                    text: 'search',
                     // fontFamily: AppTheme.semi,
                     fontWeight: FontWeight.bold,
 
@@ -65,142 +66,158 @@ class _SearchPageState extends State<SearchPage> {
                   ),
                 ),
                 SizedBox(height: 40),
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: TextField(
-                    decoration: searchPage,
-                  ),
-                ),
-                SizedBox(height: 30),
-                Row(
-                  children: [
-                    KText(
-                      text: 'categories'.tr,
-                      // fontFamily: AppTheme.semi,
-                      fontSize: AppTheme.textSize15,
-                      color: AppTheme.textColor,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    Spacer(),
-                    KText(
-                      text: 'viewAll'.tr,
-                      // fontFamily: AppTheme.semi,
-                      fontSize: AppTheme.textSize13,
-                      color: AppTheme.iconColor,
-                    ),
-                    SizedBox(width: 5),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      size: 13,
-                      color: AppTheme.iconColor,
-                    ),
-                  ],
-                ),
-                SizedBox(height: 20),
                 Container(
-                  height: 100,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: catagoryData.length,
-                    shrinkWrap: true,
-                    primary: false,
-                    itemBuilder: (BuildContext context, int index) {
-                      final image = catagoryData[index];
-                      return Padding(
-                        padding: EdgeInsets.only(right: 20),
-                        child: Container(
-                          width: 100,
-                          child: Stack(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: Image.asset(
-                                  '${image['image']}',
-                                  width: Get.width,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                              Container(
-                                height: 120,
-                                width: 120,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  gradient: LinearGradient(
-                                    begin: Alignment.topCenter,
-                                    end: Alignment.bottomCenter,
-                                    colors: [
-                                      gradient1[index],
-                                      gradient2[index],
+                  decoration: BoxDecoration(
+                    color: AppTheme.white,
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: Padding(
+                    padding: AppTheme.paddingH30,
+                    child: Column(
+                      children: [
+                        SizedBox(height: 20),
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: TextField(
+                            decoration: searchPage,
+                          ),
+                        ),
+                        SizedBox(height: 30),
+                        Row(
+                          children: [
+                            KText(
+                              text: 'categories',
+                              // fontFamily: AppTheme.semi,
+                              fontSize: AppTheme.textSize15,
+                              color: AppTheme.textColor,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            Spacer(),
+                            KText(
+                              text: 'viewAll',
+                              // fontFamily: AppTheme.semi,
+                              fontSize: AppTheme.textSize13,
+                              color: AppTheme.iconColor,
+                            ),
+                            SizedBox(width: 5),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              size: 13,
+                              color: AppTheme.iconColor,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 20),
+                        Container(
+                          height: 100,
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: catagoryData.length,
+                            shrinkWrap: true,
+                            primary: false,
+                            itemBuilder: (BuildContext context, int index) {
+                              final image = catagoryData[index];
+                              return Padding(
+                                padding: EdgeInsets.only(right: 20),
+                                child: Container(
+                                  width: 100,
+                                  child: Stack(
+                                    children: [
+                                      ClipRRect(
+                                        borderRadius: BorderRadius.circular(10),
+                                        child: Image.asset(
+                                          '${image['image']}',
+                                          width: Get.width,
+                                          fit: BoxFit.fill,
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 120,
+                                        width: 120,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topCenter,
+                                            end: Alignment.bottomCenter,
+                                            colors: [
+                                              gradient1[index],
+                                              gradient2[index],
+                                            ],
+                                          ),
+                                        ),
+                                        child: Center(
+                                          child: KText(
+                                            text: '${image['categoriesTitle']}'
+                                                .tr,
+                                            fontSize: AppTheme.textSize15,
+                                            fontWeight: FontWeight.bold,
+                                            color: AppTheme.white,
+                                            // fontFamily: AppTheme.semi,
+                                          ),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),
-                                child: Center(
-                                  child: KText(
-                                    text: '${image['categoriesTitle']}'.tr,
-                                    fontSize: AppTheme.textSize15,
-                                    fontWeight: FontWeight.bold,
-                                    color: AppTheme.white,
-                                    // fontFamily: AppTheme.semi,
-                                  ),
-                                ),
-                              ),
-                            ],
+                              );
+                            },
                           ),
                         ),
-                      );
-                    },
-                  ),
-                ),
-                SizedBox(height: 40),
-                Row(
-                  children: [
-                    KText(
-                      text: 'projects'.tr,
-                      // fontFamily: AppTheme.semi,
-                      fontWeight: FontWeight.bold,
-                      fontSize: AppTheme.textSize14,
-                      color: AppTheme.textColor,
-                    ),
-                    Spacer(),
-                    KText(
-                      text: 'viewAll'.tr,
-                      // fontFamily: AppTheme.semi,
-                      fontSize: AppTheme.textSize13,
-                      color: AppTheme.iconColor,
-                    ),
-                    SizedBox(width: 5),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      size: 13,
-                      color: AppTheme.iconColor,
-                    ),
-                  ],
-                ),
-                SizedBox(height: 40),
-                ListView.builder(
-                  scrollDirection: Axis.vertical,
-                  itemCount: 3,
-                  shrinkWrap: true,
-                  primary: false,
-                  itemBuilder: (BuildContext context, int index) {
-                    return GestureDetector(
-                      onTap: () => Get.to(ProjectPage()),
-                      child: Container(
-                        height: 140,
-                        width: AppTheme.widthMax,
-                        child: Column(
+                        SizedBox(height: 40),
+                        Row(
                           children: [
-                            listViewContent(),
-                            SizedBox(height: 10),
-                            Divider(color: Colors.grey.shade100),
-                            SizedBox(height: 10),
+                            KText(
+                              text: 'projects'.tr,
+                              // fontFamily: AppTheme.semi,
+                              fontWeight: FontWeight.bold,
+                              fontSize: AppTheme.textSize14,
+                              color: AppTheme.textColor,
+                            ),
+                            Spacer(),
+                            KText(
+                              text: 'viewAll'.tr,
+                              // fontFamily: AppTheme.semi,
+                              fontSize: AppTheme.textSize13,
+                              color: AppTheme.iconColor,
+                            ),
+                            SizedBox(width: 5),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              size: 13,
+                              color: AppTheme.iconColor,
+                            ),
                           ],
                         ),
-                      ),
-                    );
-                  },
+                        SizedBox(height: 40),
+                        ListView.builder(
+                          scrollDirection: Axis.vertical,
+                          itemCount: 5,
+                          shrinkWrap: true,
+                          primary: false,
+                          itemBuilder: (BuildContext context, int index) {
+                            return GestureDetector(
+                              onTap: () => Get.to(ProjectPage()),
+                              child: Container(
+                                height: 140,
+                                width: AppTheme.widthMax,
+                                child: Column(
+                                  children: [
+                                    listViewContent(),
+                                    SizedBox(height: 10),
+                                    Divider(color: Colors.grey.shade100),
+                                    SizedBox(height: 10),
+                                  ],
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                        SizedBox(height: 120),
+                      ],
+                    ),
+                  ),
                 ),
-                SizedBox(height: 120),
               ],
             ),
           ),
@@ -220,12 +237,12 @@ class _SearchPageState extends State<SearchPage> {
             KText(
               text: 'open'.tr,
               fontSize: AppTheme.textSize11,
-              // fontFamily: AppTheme.medium,
+              fontWeight: FontWeight.w600,
               color: AppTheme.primaryColor,
             ),
             KText(
-              text: 'withIn4days'.tr,
-              fontWeight: FontWeight.bold,
+              text: 'endsWithIn4days',
+              fontWeight: FontWeight.w600,
               fontSize: AppTheme.textSize11,
               color: AppTheme.textColor2,
             ),
@@ -280,7 +297,6 @@ class _SearchPageState extends State<SearchPage> {
                 style: TextStyle(
                   fontSize: AppTheme.textSize11,
                   color: AppTheme.textColor,
-                  // fontFamily: AppTheme.semi,
                 ),
                 children: [
                   TextSpan(
@@ -288,7 +304,6 @@ class _SearchPageState extends State<SearchPage> {
                     style: TextStyle(
                       fontSize: AppTheme.textSize11,
                       color: AppTheme.textColor,
-                      fontFamily: AppTheme.semiAr,
                     ),
                   ),
                 ],
@@ -301,7 +316,7 @@ class _SearchPageState extends State<SearchPage> {
                 style: TextStyle(
                   fontSize: AppTheme.textSize13,
                   color: AppTheme.textColor,
-                  fontFamily: AppTheme.semi,
+                  fontWeight: AppTheme.semi,
                 ),
                 children: [
                   TextSpan(
@@ -309,7 +324,8 @@ class _SearchPageState extends State<SearchPage> {
                     style: TextStyle(
                       fontSize: AppTheme.textSize12,
                       color: AppTheme.textColor2,
-                      fontFamily: AppTheme.semiAr,
+                                                                fontWeight: AppTheme.medium,
+
                     ),
                   ),
                 ],
@@ -326,7 +342,7 @@ class _SearchPageState extends State<SearchPage> {
                 style: TextStyle(
                   fontSize: AppTheme.textSize13,
                   color: AppTheme.textColor,
-                  fontFamily: AppTheme.semi,
+                  fontWeight: AppTheme.semi,
                 ),
                 children: [
                   TextSpan(
@@ -334,7 +350,8 @@ class _SearchPageState extends State<SearchPage> {
                     style: TextStyle(
                       fontSize: AppTheme.textSize12,
                       color: AppTheme.textColor2,
-                      fontFamily: AppTheme.semiAr,
+                                                               fontWeight: AppTheme.medium,
+
                     ),
                   ),
                 ],

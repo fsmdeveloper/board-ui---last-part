@@ -53,7 +53,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 backButton(),
                 SizedBox(
@@ -62,15 +62,15 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                 KText(
                   text: 'projectDetails',
                   color: AppTheme.textColor,
-                  fontSize: AppTheme.textSize17,
-                  fontFamily: 'Poppins Semi Bold',
+                  fontSize: AppTheme.textSize18,
+                  fontWeight: FontWeight.bold,
                 ),
                 SizedBox(
                   height: 13,
                 ),
                 KText(
                   text: 'projectDetailsAbout',
-                  fontWeight: AppTheme.normal,
+                  fontWeight: AppTheme.regular,
                   fontSize: AppTheme.textSize13,
                   color: AppTheme.textColor2,
                 ),
@@ -105,7 +105,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                   text: 'projectDetailsTitle',
                   color: AppTheme.textColor,
                   fontSize: AppTheme.textSize13,
-                  fontFamily: 'Poppins Semi Bold',
+                  fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
                   height: 10,
@@ -134,7 +134,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                   text: 'projectDetailsProjectBudget',
                   color: AppTheme.textColor,
                   fontSize: AppTheme.textSize13,
-                  fontFamily: 'Poppins Semi Bold',
+                  fontWeight: FontWeight.w600,
                 ),
                 SizedBox(
                   height: 10,
@@ -153,7 +153,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                                 style: TextStyle(
                                   fontSize: 12,
                                   color: AppTheme.textColor,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontWeight: FontWeight.w700,
                                 ),
                                 children: [
                                   TextSpan(
@@ -161,7 +161,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppTheme.textColor2,
-                                      fontFamily: AppTheme.semiAr,
+                                      fontWeight: FontWeight.w700,
                                     ),
                                   ),
                                 ],
@@ -178,7 +178,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                                 style: TextStyle(
                                   fontSize: 12,
                                   color: AppTheme.textColor,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: FontWeight.w700,
                                 ),
                                 children: [
                                   TextSpan(
@@ -186,7 +186,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: AppTheme.textColor2,
-                                      fontFamily: AppTheme.semiAr,
+                                      fontWeight: FontWeight.w700,
                                     ),
                                   ),
                                 ],
@@ -206,7 +206,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                             style: TextStyle(
                               fontSize: 12,
                               color: AppTheme.textColor,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontWeight: FontWeight.w700,
                             ),
                             children: [
                               TextSpan(
@@ -214,7 +214,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: AppTheme.textColor2,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: FontWeight.w700,
                                 ),
                               ),
                             ],
@@ -231,7 +231,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                             style: TextStyle(
                               fontSize: 12,
                               color: AppTheme.textColor,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontWeight: FontWeight.w700,
                             ),
                             children: [
                               TextSpan(
@@ -239,7 +239,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                                 style: TextStyle(
                                   fontSize: 10,
                                   color: AppTheme.textColor2,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: FontWeight.w700,
                                 ),
                               ),
                             ],
@@ -260,7 +260,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                 SizedBox(height: 30),
                 KText(
                   text: 'bidDescription',
-                  fontFamily: 'Poppins Semi Bold',
+                  fontWeight: FontWeight.w600,
                   fontSize: 13,
                   color: AppTheme.textColor,
                 ),
@@ -285,7 +285,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                     ),
                   ),
                 ),
-                SizedBox(height: 50),
+                SizedBox(height: 60),
                 GestureDetector(
                   onTap: () => Get.to(PayMileStonePage()),
                   child: Container(
@@ -301,7 +301,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
                         text: 'continue',
                         color: AppTheme.white,
                         fontSize: 14,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
                   ),

@@ -1,5 +1,6 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/catagoryProjectsPages.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,7 +18,6 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 40),
@@ -28,18 +28,9 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                 SizedBox(
                   height: 40,
                 ),
-                GestureDetector(
-                  onTap: () => Get.back(),
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 10),
-                    child: Icon(
-                      Icons.arrow_back_ios,
-                      size: 18,
-                    ),
-                  ),
-                ),
+                backButton(),
                 SizedBox(
-                  height: 40,
+                  height: 30,
                 ),
                 KText(
                   text: 'register',
@@ -53,7 +44,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                 KText(
                   text: 'registerFormAbout',
                   fontSize: 13,
-                  fontWeight: AppTheme.normal,
+                  fontWeight: AppTheme.regular,
                   color: AppTheme.textColor2,
                 ),
                 SizedBox(
@@ -185,14 +176,14 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                     KText(
                       text: 'iAccept',
                       fontSize: 13,
-                      fontWeight: AppTheme.normal,
+                      fontWeight: FontWeight.w600,
                       color: AppTheme.textColor,
                       fontFamily: 'Poppins Regular',
                     ),
                     SizedBox(width: 5),
                     KText(
                       text: 'terms&Conditions',
-                      fontWeight: AppTheme.normal,
+                      fontWeight: AppTheme.regular,
                       fontSize: 13,
                       fontFamily: 'Poppins Regular',
                       color: AppTheme.iconColor,

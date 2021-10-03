@@ -11,6 +11,7 @@ class KText extends StatelessWidget {
   final int? maxLines;
   final FontWeight? fontWeight;
   final TextAlign? textAlign;
+  final double? wordSpacing;
 
   final TextDirection? textDirection;
 
@@ -23,6 +24,7 @@ class KText extends StatelessWidget {
     this.fontWeight,
     this.textAlign,
     this.textDirection,
+    this.wordSpacing,
   });
 
   @override
@@ -33,16 +35,16 @@ class KText extends StatelessWidget {
         fontSize: fontSize != null ? fontSize : 13,
         // //  arabic fonts enable ==>
         // fontFamily: fontFamily != null ? 'Cairo Regular' : 'Cairo Regular',
-
         // fontWeight: fontWeight != null ? fontWeight : FontWeight.bold,
 
         //  English fonts enable ==>
 
-        fontFamily: fontFamily != null ? 'Cairo Regular' : 'Poppins Regular',
+        fontFamily: fontFamily != null ? fontFamily : 'Cairo Regular',
 
         fontWeight: fontWeight != null ? fontWeight : FontWeight.normal,
 
         color: color != null ? color : AppTheme.textColor,
+        wordSpacing: wordSpacing,
       ),
       maxLines: maxLines,
       textAlign: textAlign,

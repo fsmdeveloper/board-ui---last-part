@@ -1,7 +1,6 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/projectDetailsPage.dart';
 import 'package:board_ui/src/widgets/kText.dart';
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -146,101 +145,114 @@ class CatagoryProjectsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          automaticallyImplyLeading: false,
-          title: Row(
+        backgroundColor: HexColor('#FBFBFB'),
+        body: SingleChildScrollView(
+          child: Column(
             children: [
+              SizedBox(height: 30),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    GestureDetector(
-                      onTap: () => Get.back(),
-                      child: Icon(
-                        EvaIcons.arrowIosBack,
-                        size: 24,
+                    Container(
+                      height: 35,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppTheme.white,
+                      ),
+                      child: IconButton(
+                        onPressed: () => Get.back(),
+                        icon: Padding(
+                          padding: EdgeInsets.only(left: 2),
+                          child: Icon(
+                            Icons.arrow_back_ios,
+                            size: 16,
+                          ),
+                        ),
                       ),
                     ),
-                    SizedBox(width: 70),
                     KText(
                       text: 'createNewProject',
                       fontFamily: 'Poppins Semi Bold',
                       fontSize: 17,
                     ),
+                    Container(),
                   ],
                 ),
               ),
-            ],
-          ),
-        ),
-        backgroundColor: HexColor('#FBFBFB'),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(height: 10),
+              Container(),
+              SizedBox(height: 30),
               Container(
                 height: Get.height,
-                width: Get.width,
-                color: Colors.white,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 30, right: 30),
-                  child: Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
-                        mainAxisSpacing: 20,
-                        crossAxisSpacing: 14,
-                        childAspectRatio: 1,
-                      ),
-                      shrinkWrap: true,
-                      primary: false,
-                      itemCount: catagoryData.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        final image = catagoryData[index];
-                        return GestureDetector(
-                          onTap: () => Get.to(ProjectDetailsPage()),
-                          child: Stack(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: Image.asset(
-                                  '${image['image']}',
-                                  width: Get.width,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                              Container(
-                                height: Get.height,
-                                width: Get.width,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  gradient: LinearGradient(
-                                    end: Alignment.topCenter,
-                                    begin: Alignment.bottomCenter,
-                                    colors: [
-                                      gradient1[index],
-                                      gradient2[index],
-                                    ],
-                                  ),
-                                ),
-                                child: Center(
-                                  child: KText(
-                                    text: '${image['title']}',
-                                    fontSize: 15,
-                                    color: AppTheme.white,
-                                    fontFamily: 'Poppins Semi Bold',
-                                  ),
-                                ),
-                              ),
-                            ],
+                // width: Get.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 30),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: GridView.builder(
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 3,
+                            mainAxisSpacing: 20,
+                            crossAxisSpacing: 14,
+                            childAspectRatio: 1,
                           ),
-                        );
-                      },
+                          shrinkWrap: true,
+                          primary: false,
+                          itemCount: catagoryData.length,
+                          itemBuilder: (BuildContext context, int index) {
+                            final image = catagoryData[index];
+                            return GestureDetector(
+                              onTap: () => Get.to(ProjectDetailsPage()),
+                              child: Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Image.asset(
+                                      '${image['image']}',
+                                      width: Get.width,
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                  Container(
+                                    height: Get.height,
+                                    width: Get.width,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      gradient: LinearGradient(
+                                        end: Alignment.topCenter,
+                                        begin: Alignment.bottomCenter,
+                                        colors: [
+                                          gradient1[index],
+                                          gradient2[index],
+                                        ],
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: KText(
+                                        text: '${image['title']}',
+                                        fontSize: 15,
+                                        color: AppTheme.white,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            );
+                          },
+                        ),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
               ),
             ],

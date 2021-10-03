@@ -18,23 +18,13 @@ Widget primaryButton(
         color: AppTheme.primaryColor,
         borderRadius: AppTheme.circular10,
       ),
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          KText(
-            text: title.tr,
-            color: Colors.white,
-            fontSize: AppTheme.textSize14,
-            fontWeight: FontWeight.bold,
-          ),
-          Positioned(
-            right: 20,
-            child: Image.asset(
-              'assets/icon/login.png',
-              height: 18,
-            ),
-          ),
-        ],
+      child: Center(
+        child: KText(
+          text: title.tr,
+          color: Colors.white,
+          fontSize: AppTheme.textSize14,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     ),
   );

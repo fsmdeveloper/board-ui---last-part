@@ -38,14 +38,14 @@ class RegisterWithPage extends StatelessWidget {
                   text: 'register',
                   color: HexColor('#323643'),
                   fontSize: 17,
-                  // fontFamily: 'Poppins Semi Bold',
+                  fontWeight: FontWeight.bold,
                 ),
                 SizedBox(
                   height: 13,
                 ),
                 KText(
                   text: 'registerAbout',
-                  fontSize: 12,
+                  fontSize: 12.50,
                   fontWeight: FontWeight.w500,
                   // fontFamily: 'Poppins Medium',
                   color: HexColor('#BCBCBC'),
@@ -53,69 +53,95 @@ class RegisterWithPage extends StatelessWidget {
                 SizedBox(
                   height: 50,
                 ),
-                ListTile(
-                  onTap: () {},
-                  leading: Icon(
-                    FontAwesomeIcons.facebookF,
-                    size: 20,
-                    color: HexColor('#F7D107'),
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: AppTheme.textColor2.withOpacity(.10),
                   ),
-                  title: KText(
-                    text: 'signupUsingFacebook',
-                    fontWeight: FontWeight.w500,
+                  child: ListTile(
+                    onTap: () {},
+                    leading: Icon(
+                      FontAwesomeIcons.facebookF,
+                      size: 20,
+                      color: HexColor('#F7D107'),
+                    ),
+                    title: KText(
+                      text: 'signupUsingFacebook',
+                      fontWeight: FontWeight.w500,
 
-                    // fontFamily: 'Poppins Medium',
-                    fontSize: 13,
+                      // fontFamily: 'Poppins Medium',
+                      fontSize: 13,
+                    ),
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
-                ListTile(
-                  onTap: () {},
-                  leading: Icon(
-                    FontAwesomeIcons.google,
-                    size: 20,
-                    color: HexColor('#F7D107'),
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: AppTheme.textColor2.withOpacity(.10),
                   ),
-                  title: KText(
-                    text: 'signupUsingGoogle',
-                    fontWeight: FontWeight.w500,
-                    fontSize: 13,
-                    fontFamily: 'Poppins Medium',
+                  child: ListTile(
+                    onTap: () {},
+                    leading: Icon(
+                      FontAwesomeIcons.google,
+                      size: 20,
+                      color: HexColor('#F7D107'),
+                    ),
+                    title: KText(
+                      text: 'signupUsingGoogle',
+                      fontSize: 13,
+                    ),
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
-                ListTile(
-                  onTap: () {},
-                  leading: Icon(
-                    FontAwesomeIcons.apple,
-                    size: 24,
-                    color: HexColor('#F7D107'),
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: AppTheme.textColor2.withOpacity(.10),
                   ),
-                  title: KText(
-                    text: 'signupUsingApple',
-                    // fontFamily: AppTheme.mediumAr,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 13,
+                  child: ListTile(
+                    onTap: () {},
+                    leading: Icon(
+                      FontAwesomeIcons.apple,
+                      size: 24,
+                      color: HexColor('#F7D107'),
+                    ),
+                    title: KText(
+                      text: 'signupUsingApple',
+                      // fontFamily: AppTheme.mediumAr,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 13,
+                    ),
                   ),
                 ),
                 SizedBox(
                   height: 200,
                 ),
-                ListTile(
-                  onTap: () => Get.to(RegisterPage()),
-                  leading: Image.asset(
-                    'assets/icon/gmail.png',
-                    width: 33,
-                    // color: HexColor('#F7D107'),
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: AppTheme.textColor2.withOpacity(.10),
                   ),
-                  title: KText(
-                    text: 'signupUsingEmail',
-                    fontWeight: FontWeight.w500,
-                    fontSize: 13,
+                  child: ListTile(
+                    onTap: () => Get.to(RegisterPage()),
+                    leading: Image.asset(
+                      'assets/icon/gmail.png',
+                      width: 33,
+                      // color: HexColor('#F7D107'),
+                    ),
+                    title: KText(
+                      text: 'signupUsingEmail',
+                      fontWeight: FontWeight.w500,
+                      fontSize: 13,
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -136,7 +162,7 @@ class RegisterWithPage extends StatelessWidget {
                       onTap: () => Get.to(LoginPage()),
                       child: KText(
                         text: 'login',
-                        fontSize: 13,
+                        fontSize: 13.50,
                         fontWeight: FontWeight.w700,
                       ),
                     ),

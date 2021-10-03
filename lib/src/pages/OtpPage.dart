@@ -1,5 +1,6 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/registerFormPage.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:board_ui/src/widgets/otpFormField.dart';
 import 'package:flutter/material.dart';
@@ -53,23 +54,17 @@ class _OtpPageState extends State<OtpPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
-                IconButton(
-                  onPressed: () => Get.back(),
-                  icon: Icon(
-                    Icons.arrow_back_ios,
-                    size: 16,
-                  ),
-                ),
+                backButton(),
                 SizedBox(
-                  height: 40,
+                  height: 30,
                 ),
                 KText(
                   text: 'otpVerfication',
                   color: HexColor('#323643'),
                   fontSize: AppTheme.textSize17,
-                  // fontFamily: 'Poppins Semi Bold',
+                  fontWeight: FontWeight.bold,
                 ),
                 SizedBox(
                   height: 13,
@@ -77,7 +72,7 @@ class _OtpPageState extends State<OtpPage> {
                 KText(
                   text: 'enter4DigitAbout',
                   fontSize: AppTheme.textSize13,
-                  fontWeight: AppTheme.normal,
+                  fontWeight: AppTheme.regular,
                   // fontFamily: 'Poppins Medium',
                   color: AppTheme.textColor2,
                 ),
@@ -161,7 +156,7 @@ class _OtpPageState extends State<OtpPage> {
                   ],
                 ),
                 SizedBox(
-                  height: 330,
+                  height: 370,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -169,7 +164,7 @@ class _OtpPageState extends State<OtpPage> {
                   children: [
                     KText(
                       text: 'dontReceiveCode',
-                      fontSize: AppTheme.textSize12,
+                      fontSize: 12.50,
                       color: AppTheme.textColor2,
                     ),
                     SizedBox(width: 5),
@@ -177,8 +172,8 @@ class _OtpPageState extends State<OtpPage> {
                       onTap: () {},
                       child: KText(
                         text: 'resend',
-                        fontSize: AppTheme.textSize12,
-                        // fontFamily: 'Poppins Semi Bold',
+                        fontSize: AppTheme.textSize13,
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
                   ],
@@ -203,8 +198,8 @@ class _OtpPageState extends State<OtpPage> {
                           child: KText(
                             text: 'confirmOtp',
                             color: Colors.white,
+                            fontWeight: FontWeight.w700,
                             fontSize: AppTheme.textSize14,
-                            // fontFamily: 'Poppins Semi Bold',
                           ),
                         ),
                         Positioned(

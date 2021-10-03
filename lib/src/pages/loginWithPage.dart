@@ -42,64 +42,57 @@ class LoginWithPage extends StatelessWidget {
                 SizedBox(
                   height: 50,
                 ),
-                ListTile(
-                  onTap: () {},
-                  leading: Icon(
-                    FontAwesomeIcons.facebookF,
-                    size: 20,
-                    color: AppTheme.iconColor,
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: AppTheme.textColor2.withOpacity(.10),
                   ),
-                  title: KText(
-                    text: 'loginWithFacebook'.tr,
-                    fontSize: AppTheme.textSize13,
-                    fontWeight: FontWeight.w500,
-                  ),
+                  child: listtile(
+                      () {}, FontAwesomeIcons.facebookF, 'loginWithFacebook'),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
-                ListTile(
-                  onTap: () {},
-                  leading: Icon(
-                    FontAwesomeIcons.google,
-                    size: 20,
-                    color: AppTheme.iconColor,
-                  ),
-                  title: KText(
-                    text: 'loginWithGoogle'.tr,
-                    fontSize: AppTheme.textSize13,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
+                Container(
+                    height: 55,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: AppTheme.textColor2.withOpacity(.10),
+                    ),
+                    child: listtile(
+                        () {}, FontAwesomeIcons.google, 'loginWithGoogle')),
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
-                ListTile(
-                  onTap: () {},
-                  leading: Icon(
-                    FontAwesomeIcons.apple,
-                    size: 24,
-                    color: AppTheme.iconColor,
-                  ),
-                  title: KText(
-                    text: 'loginWithApple'.tr,
-                    fontSize: AppTheme.textSize13,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
+                Container(
+                    height: 55,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: AppTheme.textColor2.withOpacity(.10),
+                    ),
+                    child: listtile(
+                        () {}, FontAwesomeIcons.apple, 'loginWithApple')),
                 SizedBox(
                   height: 200,
                 ),
-                ListTile(
-                  onTap: () => Get.to(LoginPage()),
-                  leading: Image.asset(
-                    'assets/icon/gmail.png',
-                    width: 33,
+                Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: AppTheme.textColor2.withOpacity(.10),
                   ),
-                  title: KText(
-                    text: 'loginWithEmail'.tr,
-                    fontSize: AppTheme.textSize13,
-                    fontWeight: FontWeight.w500,
+                  child: ListTile(
+                    onTap: () => Get.to(LoginPage()),
+                    leading: Image.asset(
+                      'assets/icon/gmail.png',
+                      width: 33,
+                    ),
+                    title: KText(
+                      text: 'loginWithEmail'.tr,
+                      fontSize: AppTheme.textSize13,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -119,7 +112,7 @@ class LoginWithPage extends StatelessWidget {
                       onTap: () => Get.to(RegisterWithPage()),
                       child: KText(
                         text: 'signUp'.tr,
-                        fontSize: AppTheme.textSize14,
+                        fontSize: AppTheme.textSize13,
                         // fontFamily: AppTheme.semi,
                         fontWeight: FontWeight.w600,
                       ),
@@ -129,6 +122,28 @@ class LoginWithPage extends StatelessWidget {
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+
+  Widget listtile(
+    void Function()? onTap,
+    IconData icon,
+    String name,
+  ) {
+    return Center(
+      child: ListTile(
+        onTap: onTap,
+        leading: Icon(
+          icon,
+          size: 20,
+          color: AppTheme.iconColor,
+        ),
+        title: KText(
+          text: name,
+          fontSize: AppTheme.textSize13,
+          fontWeight: FontWeight.w500,
         ),
       ),
     );

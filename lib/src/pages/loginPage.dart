@@ -34,15 +34,16 @@ class _LoginPageState extends State<LoginPage> {
                   height: 20,
                 ),
                 KText(
-                  text: 'login'.tr,
+                  text: 'login',
                   color: AppTheme.textColor,
+                  fontWeight: FontWeight.bold,
                   fontSize: AppTheme.textSize20,
                 ),
                 SizedBox(
                   height: 13,
                 ),
                 KText(
-                  text: 'loginAbout'.tr,
+                  text: 'loginAbout',
                   fontSize: AppTheme.textSize13,
                   color: AppTheme.textColor2,
                   fontWeight: FontWeight.w500,
@@ -60,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                       width: 15,
                     ),
                     KText(
-                      text: 'emailAddress'.tr,
+                      text: 'emailAddress',
                       fontWeight: FontWeight.bold,
                       fontSize: AppTheme.textSize13,
                     ),
@@ -96,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
                       width: 15,
                     ),
                     KText(
-                      text: 'password'.tr,
+                      text: 'password',
                       fontWeight: FontWeight.bold,
 
                       fontSize: AppTheme.textSize13,
@@ -139,21 +140,22 @@ class _LoginPageState extends State<LoginPage> {
                     checkBox(),
                     SizedBox(width: 15),
                     KText(
-                      text: 'rememberMe'.tr,
+                      text: 'rememberMe',
                       fontSize: AppTheme.textSize13,
                       fontWeight: FontWeight.w500,
-                      color: AppTheme.textColor,
+                      color: AppTheme.textColor2,
                     ),
                     Spacer(),
                     KText(
-                      text: 'forgetPassword'.tr,
+                      text: 'forgetPassword',
                       color: AppTheme.textColor,
+                      fontWeight: FontWeight.bold,
                       fontSize: AppTheme.textSize14,
                     ),
                   ],
                 ),
                 SizedBox(
-                  height: 210,
+                  height: 240,
                 ),
                 primaryButtonWithImg(
                   'login',

@@ -1,10 +1,13 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/PaymilestonePage.dart';
 import 'package:board_ui/src/pages/chatPage.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class EmployerHirePage extends StatefulWidget {
   const EmployerHirePage({Key? key}) : super(key: key);
@@ -31,21 +34,15 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    IconButton(
-                      onPressed: () => Get.back(),
-                      icon: Image.asset(
-                        'assets/icon/back.png',
-                        scale: 2.70,
-                      ),
-                    ),
+                    backButton(),
                     SizedBox(height: 15),
                     Row(
                       children: [
                         KText(
                           text: 'ongoing',
                           color: AppTheme.primaryColor,
-                          fontFamily: 'Poppins Medium',
-                          fontSize: 12,
+                          fontWeight: AppTheme.medium,
+                          fontSize: 11,
                         ),
                         SizedBox(width: 8),
                         CircleAvatar(
@@ -56,22 +53,22 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                         KText(
                           text: 'endsWithIn4days',
                           color: AppTheme.textColor2,
-                          fontFamily: 'Poppins Medium',
-                          fontSize: 12,
+                          fontWeight: AppTheme.regular,
+                          fontSize: 11,
                         ),
                       ],
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 15),
                     KText(
                       text: 'designAschoolBrochure',
-                      fontSize: 19,
-                      fontFamily: 'Poppins Semi Bold',
+                      fontSize: AppTheme.textSize18,
+                      fontWeight: AppTheme.semi,
                     ),
                     SizedBox(height: 15),
                     KText(
                       text: 'employerHiredAbout',
                       fontSize: 12.50,
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.regular,
                       color: Colors.grey,
                     ),
                     SizedBox(height: 20),
@@ -90,13 +87,13 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               children: [
                                 KText(
                                   text: 'projectFilePdf',
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.medium,
                                   fontSize: 13,
                                 ),
                                 KText(
                                   text: 'projectCreateDate',
                                   color: Colors.grey,
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.medium,
                                   fontSize: 10,
                                 ),
                               ],
@@ -120,7 +117,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               children: [
                                 KText(
                                   text: 'muhammed',
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.medium,
                                   fontSize: 13,
                                 ),
                                 Row(
@@ -133,7 +130,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                                     SizedBox(width: 2),
                                     KText(
                                       text: '4.5',
-                                      fontFamily: 'Poppins Medium',
+                                      fontWeight: AppTheme.medium,
                                       fontSize: 11,
                                     ),
                                   ],
@@ -149,8 +146,8 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                     SizedBox(height: 10),
                     KText(
                       text: 'projectBudget',
-                      fontSize: 16,
-                      fontFamily: 'Poppins Medium',
+                      fontSize: 15,
+                      fontWeight: AppTheme.regular,
                     ),
                     SizedBox(height: 10),
                     Row(
@@ -159,17 +156,17 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                           text: TextSpan(
                             text: '10,000 ',
                             style: TextStyle(
-                              fontSize: 17,
+                              fontSize: 16,
                               color: AppTheme.textColor,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontWeight: AppTheme.semi,
                             ),
                             children: [
                               TextSpan(
                                 text: 'sar'.tr,
                                 style: TextStyle(
-                                  fontSize: 14,
+                                  fontSize: 13,
                                   color: AppTheme.textColor2,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: AppTheme.medium,
                                 ),
                               ),
                             ],
@@ -184,17 +181,17 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                           text: TextSpan(
                             text: '  15,000 ',
                             style: TextStyle(
-                              fontSize: 17,
+                              fontSize: 16,
                               color: AppTheme.textColor,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontWeight: AppTheme.semi,
                             ),
                             children: [
                               TextSpan(
                                 text: 'sar'.tr,
                                 style: TextStyle(
-                                  fontSize: 14,
+                                  fontSize: 13,
                                   color: AppTheme.textColor2,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: AppTheme.medium,
                                 ),
                               ),
                             ],
@@ -218,7 +215,15 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                       width: Get.width,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: AppTheme.primaryColor,
+                        // color: AppTheme.primaryColor,
+                        gradient: LinearGradient(
+                          colors: [
+                            AppTheme.primaryColor,
+                            HexColor('#359FB8').withOpacity(.80),
+                          ],
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                        ),
                       ),
                       child: Padding(
                         padding: EdgeInsets.symmetric(
@@ -254,13 +259,13 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                                         SizedBox(width: 8),
                                         KText(
                                           text: 'khalidSaiedMorsy',
-                                          fontFamily: AppTheme.medium,
+                                          fontWeight: AppTheme.medium,
                                           color: AppTheme.white,
                                           fontSize: AppTheme.textSize13,
                                         ),
-                                        SizedBox(width: 10),
                                       ],
                                     ),
+                                    SizedBox(height: 2),
                                     Row(
                                       children: [
                                         SizedBox(width: 5),
@@ -272,7 +277,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                                         SizedBox(width: 2),
                                         KText(
                                           text: '4.5',
-                                          fontFamily: AppTheme.medium,
+                                          fontWeight: AppTheme.medium,
                                           color: Colors.white,
                                           fontSize: AppTheme.textSize11,
                                         ),
@@ -280,19 +285,19 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                                         KText(
                                           text: '( 1200 ',
                                           color: Colors.white54,
-                                          fontFamily: AppTheme.medium,
+                                          fontWeight: AppTheme.medium,
                                           fontSize: 11,
                                         ),
                                         KText(
                                           text: 'review',
                                           color: Colors.white54,
-                                          fontFamily: AppTheme.medium,
+                                          fontWeight: AppTheme.medium,
                                           fontSize: AppTheme.textSize11,
                                         ),
                                         KText(
                                           text: ' )',
                                           color: Colors.white54,
-                                          fontFamily: AppTheme.medium,
+                                          fontWeight: AppTheme.medium,
                                           fontSize: 11,
                                         ),
                                       ],
@@ -318,17 +323,17 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                           text: TextSpan(
                             text: '11,240 ',
                             style: TextStyle(
-                              fontSize: AppTheme.textSize17,
+                              fontSize: AppTheme.textSize15,
                               color: AppTheme.white,
-                              fontFamily: AppTheme.semi,
+                              fontWeight: AppTheme.semi,
                             ),
                             children: [
                               TextSpan(
                                 text: 'sar'.tr,
-                                style: TextStyle(
+                                style: GoogleFonts.cairo(
                                   fontSize: AppTheme.textSize14,
                                   color: Colors.white54,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: AppTheme.semi,
                                 ),
                               ),
                             ],
@@ -337,18 +342,18 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                         RichText(
                           text: TextSpan(
                             text: '4 ',
-                            style: TextStyle(
+                            style: GoogleFonts.cairo(
                               fontSize: AppTheme.textSize10,
                               color: AppTheme.white,
-                              fontFamily: AppTheme.semi,
+                              fontWeight: AppTheme.semi,
                             ),
                             children: [
                               TextSpan(
                                 text: 'days'.tr,
-                                style: TextStyle(
+                                style: GoogleFonts.cairo(
                                   fontSize: AppTheme.textSize11,
                                   color: AppTheme.white,
-                                  fontFamily: AppTheme.semiAr,
+                                  fontWeight: AppTheme.regular,
                                 ),
                               ),
                             ],
@@ -377,10 +382,10 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                           child: Text(
                             'employerHiredBidAbout'.tr,
                             style: TextStyle(
-                              wordSpacing: 1,
+                              wordSpacing: 1.20,
                               fontSize: 11,
-                              fontFamily: AppTheme.semiAr,
-                              color: Colors.white,
+                              fontWeight: AppTheme.regular,
+                              color: AppTheme.white,
                             ),
                           ),
                         ),
@@ -415,7 +420,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                                   text: 'chatWithFreelancer',
                                   fontSize: 14,
                                   color: AppTheme.primaryColor,
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.medium,
                                 ),
                               ],
                             ),
@@ -465,14 +470,14 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                             KText(
                               text: 'projectManagement',
                               fontSize: 16,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontWeight: AppTheme.semi,
                             ),
                             // SizedBox(height: 5),
                             KText(
                               text: 'paymentsDetailsRelatedtotheProject',
                               fontSize: 12,
                               color: Colors.grey,
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                             ),
                           ],
                         ),
@@ -560,13 +565,13 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                                   text: 'paid',
                                   fontSize: 11,
                                   color: AppTheme.primaryColor,
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.medium,
                                 ),
                                 SizedBox(height: 2),
                                 KText(
                                   text: 'firstPartoftheProjectIsdone',
                                   fontSize: 14,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontWeight: AppTheme.semi,
                                 ),
                                 SizedBox(height: 2),
                               ],
@@ -575,7 +580,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               text: '3DaysAgo',
                               fontSize: 11,
                               color: Colors.grey,
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                             ),
                           ),
                           SizedBox(height: 10),
@@ -600,13 +605,13 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                                   text: 'ongoing',
                                   fontSize: 11,
                                   color: AppTheme.primaryColor,
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.medium,
                                 ),
                                 SizedBox(height: 2),
                                 KText(
                                   text: 'finalDeliveryoftheProject',
                                   fontSize: 14,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontWeight: AppTheme.semi,
                                 ),
                               ],
                             ),
@@ -614,7 +619,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               text: '3DaysAgo',
                               fontSize: 11,
                               color: Colors.grey,
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                             ),
                           ),
                           SizedBox(height: 20),
@@ -640,13 +645,13 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                             KText(
                               text: 'projectCompleted',
                               fontSize: 16,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontWeight: AppTheme.semi,
                             ),
                             KText(
                               text: 'wouldYouHireThatFreelancerAgain',
                               fontSize: 12,
                               color: Colors.grey,
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                             ),
                           ],
                         ),
@@ -686,10 +691,12 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                             ),
                             SizedBox(width: 5),
                             Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 KText(
                                   text: 'khalidSaiedMorsy',
-                                  // fontFamily: 'Poppins Medium',
+                                  // fontWeight: AppTheme.medium,
                                   fontSize: 13,
                                 ),
                                 Row(
@@ -702,27 +709,27 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                                     SizedBox(width: 2),
                                     KText(
                                       text: '4.5',
-                                      fontFamily: 'Poppins Medium',
+                                      fontWeight: AppTheme.medium,
                                       fontSize: 11,
                                     ),
                                     SizedBox(width: 5),
                                     KText(
                                       text: '( 1200 ',
                                       color: AppTheme.textColor2,
-                                      fontFamily: 'Poppins Medium',
+                                      fontWeight: AppTheme.medium,
                                       fontSize: 11,
                                     ),
                                     KText(
                                       text: 'review',
                                       color: AppTheme.textColor2,
-                                      fontFamily: 'Poppins Medium',
+                                      fontWeight: AppTheme.medium,
                                       fontSize: 11,
                                     ),
                                     KText(
                                       text: ' )',
                                       color: AppTheme.textColor2,
-                                      fontFamily: 'Poppins Medium',
-                                      fontSize: 8,
+                                      fontWeight: AppTheme.medium,
+                                      fontSize: 11,
                                     ),
                                   ],
                                 ),
@@ -793,7 +800,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               text: 'provideFeadback',
                               color: Colors.white,
                               fontSize: 14,
-                              fontFamily: 'Poppins Semi Bold',
+                              fontWeight: AppTheme.semi,
                             ),
                           ),
                         ),
@@ -803,7 +810,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 180),
+              SizedBox(height: 150),
             ],
           ),
         ),

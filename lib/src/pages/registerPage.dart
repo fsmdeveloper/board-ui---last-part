@@ -21,7 +21,7 @@ class RegisterPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 backButton(),
                 SizedBox(
@@ -31,16 +31,16 @@ class RegisterPage extends StatelessWidget {
                   text: 'register',
                   color: AppTheme.textColor,
                   fontSize: AppTheme.textSize17,
-                  fontFamily: 'Poppins Semi Bold',
+                  fontWeight: FontWeight.bold,
                 ),
                 SizedBox(
                   height: 13,
                 ),
                 KText(
                   text: 'registerFormAbout',
-                  fontSize: AppTheme.textSize11,
-                  fontFamily: 'Poppins Medium',
+                  fontSize: 12.50,
                   color: AppTheme.textColor2,
+                  fontWeight: FontWeight.w500,
                 ),
                 SizedBox(
                   height: 100,
@@ -56,8 +56,8 @@ class RegisterPage extends StatelessWidget {
                     ),
                     KText(
                       text: 'emailAddress',
-                      fontSize: AppTheme.textSize12,
-                      fontFamily: 'Poppins Medium',
+                      fontSize: 12.50,
+                      fontWeight: FontWeight.w600,
                     ),
                   ],
                 ),
@@ -89,14 +89,17 @@ class RegisterPage extends StatelessWidget {
                   children: [
                     KText(
                       text: 'alreadyHaveAnaccount',
-                      fontSize: AppTheme.textSize12,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
                       color: AppTheme.textColor2,
                     ),
+                    SizedBox(width: 2),
                     GestureDetector(
                       onTap: () => Get.to(LoginPage()),
                       child: KText(
                         text: 'login',
-                        fontSize: AppTheme.textSize12,
+                        fontSize: 13.50,
+                        fontWeight: FontWeight.w700,
                       ),
                     ),
                   ],
@@ -121,6 +124,7 @@ class RegisterPage extends StatelessWidget {
                           child: KText(
                             text: 'registerAccount',
                             color: AppTheme.white,
+                            fontWeight: FontWeight.w700,
                             fontSize: AppTheme.textSize14,
                           ),
                         ),

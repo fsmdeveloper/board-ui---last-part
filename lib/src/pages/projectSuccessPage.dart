@@ -11,6 +11,7 @@ class ProjectSuccessPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 50),
@@ -42,122 +43,133 @@ class ProjectSuccessPage extends StatelessWidget {
                 KText(
                   text: 'projectCreated',
                   fontSize: AppTheme.textSize19,
-                  fontFamily: 'Poppins Semi Bold',
+                  fontWeight: AppTheme.bold,
                 ),
                 SizedBox(height: 10),
                 KText(
                   text: 'projectCreatedAbout',
                   fontSize: 13,
                   color: AppTheme.textColor2,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: AppTheme.regular,
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: 80),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    KText(
-                      text: 'open',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                      color: AppTheme.primaryColor,
-                    ),
-                    KText(
-                      text: 'endsWithIn4days',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                      color: AppTheme.textColor2,
-                    ),
-                  ],
-                ),
-                SizedBox(height: 10),
+                SizedBox(height: 40),
                 Container(
-                  alignment: Alignment.centerLeft,
-                  child: KText(
-                    text: 'projectTitle',
-                    fontSize: 15,
-                    maxLines: 1,
-                    fontFamily: 'poppins Semi Bold',
-                    color: AppTheme.textColor,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.grey.shade50,
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 10,
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            KText(
+                              text: 'open',
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                              color: AppTheme.primaryColor,
+                            ),
+                            KText(
+                              text: 'endsWithIn4days',
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                              color: AppTheme.textColor2,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          child: KText(
+                            text: 'bidAbout',
+                            fontSize: 14,
+                            maxLines: 1,
+                            fontFamily: 'poppins Semi Bold',
+                            color: AppTheme.textColor,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            RichText(
+                              text: TextSpan(
+                                text: ' 10,000 ',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  color: AppTheme.textColor,
+                                  fontFamily: 'Poppins Semi Bold',
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'sar'.tr,
+                                    style: TextStyle(
+                                      fontWeight: AppTheme.medium,
+                                      fontSize: 12,
+                                      color: AppTheme.textColor2,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            KText(
+                              text: ' ~',
+                              color: AppTheme.iconColor,
+                              fontSize: 16,
+                            ),
+                            RichText(
+                              text: TextSpan(
+                                text: ' 15,000 ',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  color: AppTheme.textColor,
+                                  fontFamily: 'Poppins Semi Bold',
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'sar'.tr,
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: AppTheme.medium,
+                                      color: AppTheme.textColor2,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                SizedBox(height: 10),
-                Row(
-                  children: [
-                    RichText(
-                      text: TextSpan(
-                        text: ' 10,000 ',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: AppTheme.textColor,
-                          fontFamily: 'Poppins Semi Bold',
-                        ),
-                        children: [
-                          TextSpan(
-                            text: 'sar'.tr,
-                            style: TextStyle(
-                              fontFamily: AppTheme.semiAr,
-                              fontSize: 12,
-                              color: AppTheme.textColor2,
-                            ),
-                          ),
-                        ],
+                SizedBox(height: 200),
+                GestureDetector(
+                  onTap: () => Get.to(BottomBarHome()),
+                  child: Container(
+                    height: 50,
+                    width: Get.width,
+                    decoration: BoxDecoration(
+                      color: AppTheme.primaryColor,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Container(
+                      alignment: Alignment.center,
+                      child: KText(
+                        text: 'backtoHomePage',
+                        color: AppTheme.white,
+                        fontSize: 14,
+                        fontWeight: AppTheme.semi,
                       ),
                     ),
-                    KText(
-                      text: ' ~',
-                      color: AppTheme.iconColor,
-                      fontSize: 16,
-                    ),
-                    RichText(
-                      text: TextSpan(
-                        text: ' 15,000 ',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: AppTheme.textColor,
-                          fontFamily: 'Poppins Semi Bold',
-                        ),
-                        children: [
-                          TextSpan(
-                            text: 'sar'.tr,
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontFamily: AppTheme.semiAr,
-                              color: AppTheme.textColor2,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ],
-            ),
-          ),
-        ),
-        bottomSheet: GestureDetector(
-          onTap: () => Get.to(BottomBarHome()),
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: 30,
-              vertical: 30,
-            ),
-            child: Container(
-              height: 50,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: AppTheme.primaryColor,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Container(
-                alignment: Alignment.center,
-                child: KText(
-                  text: 'backtoHomePage',
-                  color: AppTheme.white,
-                  fontSize: 15,
-                  fontFamily: AppTheme.semi,
-                ),
-              ),
             ),
           ),
         ),

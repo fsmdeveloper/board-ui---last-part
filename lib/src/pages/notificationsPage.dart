@@ -1,7 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
-import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
-import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -129,19 +127,17 @@ class NotificationPage extends StatelessWidget {
                             text: TextSpan(
                               text: '${item['name']}'.tr,
                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontFamily: AppTheme.boldAr,
+                                fontWeight: AppTheme.regular,
                                 color: AppTheme.iconColor,
-                                fontSize: 12,
+                                fontSize: 12.50,
                               ),
                               children: [
                                 TextSpan(
                                   text: '${item['msg']}'.tr,
                                   style: TextStyle(
                                     color: AppTheme.textColor,
-                                    fontFamily: AppTheme.semiAr,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 11,
+                                    fontWeight: AppTheme.regular,
+                                    fontSize: 12.50,
                                   ),
                                 ),
                               ],

@@ -43,7 +43,7 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
           child: Column(
             children: [
               Container(
-                height: Get.height,
+                height: 1250,
                 child: Column(
                   children: [
                     Stack(
@@ -130,7 +130,9 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
                                   padding: EdgeInsets.symmetric(horizontal: 30),
                                   child: TabBar(
                                     labelStyle: TextStyle(
-                                      fontFamily: AppTheme.semiAr,
+                                      fontWeight: AppTheme.medium,
+                                      letterSpacing: .50,
+                                      fontSize: 13,
                                     ),
                                     indicatorColor: AppTheme.iconColor,
                                     indicatorWeight: 3,
@@ -180,20 +182,20 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
                           ),
                         ),
                         Positioned(
-                          top: 195,
+                          top: 205,
                           child: KText(
                             text: 'Hadeer Taha',
-                            fontSize: AppTheme.textSize20,
-                            fontFamily: 'Poppins Semi Bold',
+                            fontSize: AppTheme.textSize18,
+                            fontWeight: AppTheme.bold,
                           ),
                         ),
                         Positioned(
-                          top: 225,
+                          top: 230,
                           child: KText(
                             text: '@Hadir0392',
                             fontWeight: FontWeight.normal,
                             color: AppTheme.textColor2,
-                            fontSize: AppTheme.textSize12,
+                            fontSize: AppTheme.textSize11,
                             textDirection: TextDirection.ltr,
                           ),
                         ),
@@ -202,7 +204,6 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
                   ],
                 ),
               ),
-              SizedBox(height: 400),
             ],
           ),
         ),

@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/projectSuccessPage.dart';
@@ -41,15 +40,15 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 10),
+                SizedBox(height: 30),
                 backButton(),
-                SizedBox(height: 20),
+                SizedBox(height: 30),
                 KText(
                   text: 'addNewCard',
                   fontFamily: 'Poppins Semi Bold',
                   fontSize: AppTheme.textSize19,
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 40),
                 Row(
                   children: [
                     Image.asset(
@@ -61,6 +60,7 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                     KText(
                       text: 'cardNumber',
                       color: creditColor,
+                      fontWeight: AppTheme.medium,
                       fontSize: 13,
                     )
                   ],
@@ -74,12 +74,14 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                   textInputAction: TextInputAction.next,
                   keyboardType: TextInputType.number,
                   style: GoogleFonts.cairo(
+                    fontWeight: AppTheme.medium,
                     fontSize: 14,
                   ),
                   decoration: InputDecoration(
                     hintText: 'XXXX      XXXX      XXXX      XXXX',
                     hintStyle: TextStyle(
                       fontSize: 14,
+                      color: AppTheme.textColor2,
                     ),
                     counterText: '',
                   ),
@@ -98,7 +100,7 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                       text: 'cardHolder',
                       color: creditColor,
                       fontSize: 13,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: AppTheme.medium,
                     ),
                   ],
                 ),
@@ -111,8 +113,9 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                   decoration: InputDecoration(
                     hintText: 'cardHolderNameField'.tr,
                     hintStyle: TextStyle(
-                      fontSize: 14,
-                      fontFamily: AppTheme.semiAr,
+                      fontSize: 12,
+                      color: AppTheme.textColor2,
+                      fontWeight: AppTheme.medium,
                     ),
                     counterText: '',
                   ),
@@ -149,7 +152,7 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                                         text: 'expiryDate',
                                         color: creditColor,
                                         fontSize: 13,
-                                        fontWeight: FontWeight.w600,
+                                        fontWeight: AppTheme.medium,
                                       )
                                     ],
                                   ),
@@ -168,7 +171,8 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                                       hintText: 'expiryDateField'.tr,
                                       hintStyle: TextStyle(
                                         fontSize: 11,
-                                        fontFamily: 'poppins Regular'.tr,
+                                        color: AppTheme.textColor2,
+                                        fontWeight: AppTheme.medium,
                                       ),
                                       counterText: '',
                                     ),
@@ -187,9 +191,6 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Row(
-                                    // mainAxisAlignment: MainAxisAlignment.start,
-                                    // crossAxisAlignment:
-                                    //     CrossAxisAlignment.start,
                                     children: [
                                       Image.asset(
                                         'assets/icon/lock1.png',
@@ -201,7 +202,7 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                                         text: 'cvc',
                                         color: creditColor,
                                         fontSize: 13,
-                                        fontWeight: FontWeight.w600,
+                                        fontWeight: AppTheme.medium,
                                       )
                                     ],
                                   ),
@@ -218,7 +219,8 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                                       hintText: 'cvcField'.tr,
                                       hintStyle: TextStyle(
                                         fontSize: 11,
-                                        fontFamily: 'poppins Regular',
+                                        color: AppTheme.textColor2,
+                                        fontWeight: AppTheme.medium,
                                       ),
                                       counterText: '',
                                     ),
@@ -245,17 +247,17 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                     KText(
                       text: 'saveThisFutureUse',
                       fontSize: AppTheme.textSize14,
-                      fontWeight: AppTheme.normal,
-                      fontFamily: AppTheme.regulaAr,
+                      fontWeight: AppTheme.regular,
+                      color: AppTheme.textColor,
                     ),
                   ],
                 ),
-                SizedBox(height: 170),
+                SizedBox(height: 190),
                 GestureDetector(
                   onTap: () => Get.to(ProjectSuccessPage()),
                   child: Container(
                     height: 50,
-                    width: double.infinity,
+                    width: Get.width,
                     decoration: BoxDecoration(
                       color: AppTheme.primaryColor,
                       borderRadius: BorderRadius.circular(10),
@@ -266,7 +268,7 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                         text: 'addNewCard',
                         color: Colors.white,
                         fontSize: AppTheme.textSize14,
-                        fontFamily: AppTheme.semi,
+                        fontWeight: AppTheme.semi,
                       ),
                     ),
                   ),

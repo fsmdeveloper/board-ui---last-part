@@ -1,5 +1,6 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/refundPolicyPages.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -37,12 +38,21 @@ class _SettingsPageState extends State<SettingsPage> {
                     KText(
                       text: 'notifications',
                       fontSize: 17,
-                      fontFamily: 'Poppins Semi Bold',
+                      fontWeight: AppTheme.bold,
                     ),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      size: 18,
-                      color: Colors.black,
+                    Container(
+                      height: 35,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppTheme.textColor2.withOpacity(.05),
+                      ),
+                      child: IconButton(
+                        onPressed: () => Get.back(),
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          size: 16,
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -66,7 +76,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       title: KText(
                         text: 'jobs',
                         fontSize: 15,
-                        fontFamily: 'Poppins Medium',
+                        fontWeight: AppTheme.medium,
                       ),
                       trailing: Padding(
                         padding: EdgeInsets.only(
@@ -109,8 +119,8 @@ class _SettingsPageState extends State<SettingsPage> {
                                           ),
                                           child: KText(
                                             text: 'hideNotifications',
-                                            fontFamily: 'Poppins Medium',
-                                            fontSize: 14,
+                                            fontWeight: AppTheme.medium,
+                                            fontSize: 13,
                                           ),
                                         ),
                                         trailing: Padding(
@@ -167,8 +177,8 @@ class _SettingsPageState extends State<SettingsPage> {
                                           ),
                                           child: KText(
                                             text: 'availableJobs',
-                                            fontFamily: 'Poppins Medium',
-                                            fontSize: 14,
+                                            fontWeight: AppTheme.medium,
+                                            fontSize: 13,
                                           ),
                                         ),
                                         trailing: Padding(
@@ -248,7 +258,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       title: KText(
                         text: 'accountSettings',
                         fontSize: 15,
-                        fontFamily: 'Poppins Medium',
+                        fontWeight: AppTheme.medium,
                       ),
                       trailing: Padding(
                         padding: EdgeInsets.only(
@@ -293,8 +303,8 @@ class _SettingsPageState extends State<SettingsPage> {
                                           ),
                                           child: KText(
                                             text: 'hideNotifications',
-                                            fontFamily: 'Poppins Medium',
-                                            fontSize: 14,
+                                            fontWeight: AppTheme.medium,
+                                            fontSize: 13,
                                           ),
                                         ),
                                         trailing: Padding(
@@ -338,8 +348,8 @@ class _SettingsPageState extends State<SettingsPage> {
                                           ),
                                           child: KText(
                                             text: 'availableJobs',
-                                            fontFamily: 'Poppins Medium',
-                                            fontSize: 14,
+                                            fontWeight: AppTheme.medium,
+                                            fontSize: 13,
                                           ),
                                         ),
                                         trailing: Padding(
@@ -446,7 +456,7 @@ class _SettingsPageState extends State<SettingsPage> {
       title: KText(
         text: text,
         fontSize: 15,
-        fontFamily: 'Poppins Medium',
+        fontWeight: AppTheme.medium,
       ),
     );
   }

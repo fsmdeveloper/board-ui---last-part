@@ -2,6 +2,7 @@ import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/chatDetailsPage.dart';
 
 import 'package:board_ui/src/pages/insideChatPage.dart';
+import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -64,20 +65,11 @@ class ChatPage extends StatelessWidget {
             children: [
               SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
+                padding: EdgeInsets.symmetric(horizontal: 25),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    GestureDetector(
-                      onTap: () => Get.back(),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 10),
-                        child: Icon(
-                          Icons.arrow_back_ios,
-                          size: 18,
-                        ),
-                      ),
-                    ),
+                    backButton(),
                     KText(
                       text: 'chats',
                       fontFamily: 'Poppins Semi Bold',
@@ -138,13 +130,13 @@ class ChatPage extends StatelessWidget {
                                 KText(
                                   text: '${item['name']}',
                                   fontSize: 13,
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.medium,
                                 ),
                                 KText(
                                   text: '${item['userName']}',
                                   fontSize: 9,
                                   color: AppTheme.textColor2,
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.regular,
                                   textDirection: TextDirection.ltr,
                                 ),
                               ],
@@ -190,23 +182,22 @@ class ChatPage extends StatelessWidget {
                             title: KText(
                               text: 'Nada Abdelhamid',
                               fontSize: 14,
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                             ),
                             subtitle: KText(
                               text: 'chatPagelastChat',
                               maxLines: 1,
                               fontSize: 11,
                               color: AppTheme.textColor2,
-                              fontWeight: AppTheme.normal,
-                              // fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.regular,
                             ),
                             trailing: Padding(
                               padding: EdgeInsets.only(top: 20),
                               child: KText(
                                 text: '14:01',
-                                fontSize: 11,
+                                fontSize: 10,
                                 color: AppTheme.iconColor,
-                                fontFamily: 'Poppins Medium',
+                                fontWeight: AppTheme.medium,
                               ),
                             ),
                           ),

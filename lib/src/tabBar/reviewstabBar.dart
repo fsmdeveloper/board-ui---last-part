@@ -39,10 +39,13 @@ class ReviewsBar extends StatelessWidget {
                               SizedBox(width: 5),
                               Column(
                                 children: [
-                                  KText(
-                                    text: 'khalidSaiedMorsy',
-                                    // fontFamily: 'Poppins Medium',
-                                    fontSize: 13,
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 5),
+                                    child: KText(
+                                      text: 'khalidSaiedMorsy',
+                                      // fontFamily: 'Poppins Medium',
+                                      fontSize: 13,
+                                    ),
                                   ),
                                   Row(
                                     children: [
@@ -98,7 +101,7 @@ class ReviewsBar extends StatelessWidget {
                         Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.grey.shade50.withOpacity(.50),
+                            border: Border.all(color: Colors.grey.shade50),
                           ),
                           child: Padding(
                             padding: EdgeInsets.symmetric(

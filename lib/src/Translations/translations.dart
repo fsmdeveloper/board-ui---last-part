@@ -120,7 +120,7 @@ etretqr consectetur adipiscen''',
 // 'makeAbid' : 'Make a Bid',
 
           //9 Bid Placed Page ==>
-          'bidPlaced': '!Bid Placed',
+          'bidPlaced': 'Bid Placed!',
           'bidPlaceAbout': '''Your bid has been placed successfully and
 we wish you good luck''',
           // 'endsWithIn4days': '',
@@ -550,7 +550,7 @@ sit ametretqr
           '3HoursAgo': '3 Hours ago',
           'notificationsMsg':
               'sent a message regarding the project Create School Banner',
-          'mohammedAlaa': 'Mohammed Alaa',
+          'mohammedAlaa': 'Mohammed Alaa ',
 
           //
 

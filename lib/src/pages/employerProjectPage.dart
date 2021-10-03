@@ -5,10 +5,9 @@ import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class EmployerProjectPage extends StatelessWidget {
-  
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -38,13 +37,13 @@ class EmployerProjectPage extends StatelessWidget {
                           children: [
                             KText(
                               text: 'edit',
-                              fontFamily: 'Poppins Medium',
-                              fontSize: 13,
+                              fontWeight: AppTheme.medium,
+                              fontSize: 12,
                             ),
                             SizedBox(width: 10),
                             Icon(
                               Icons.edit,
-                              size: 16,
+                              size: 15,
                             ),
                           ],
                         ),
@@ -58,7 +57,7 @@ class EmployerProjectPage extends StatelessWidget {
                     KText(
                       text: 'open',
                       color: AppTheme.iconColor,
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.medium,
                       fontSize: 12,
                     ),
                     SizedBox(width: 8),
@@ -70,22 +69,22 @@ class EmployerProjectPage extends StatelessWidget {
                     KText(
                       text: 'endsWithIn4days',
                       color: AppTheme.textColor2,
-                      fontFamily: 'Poppins Medium',
-                      fontSize: 12,
+                      fontWeight: AppTheme.regular,
+                      fontSize: 11,
                     ),
                   ],
                 ),
                 SizedBox(height: 10),
                 KText(
                   text: 'designAschoolBrochure',
-                  fontSize: 19,
-                  fontFamily: 'Poppins Semi Bold',
+                  fontSize: 17,
+                  fontWeight: AppTheme.bold,
                 ),
                 SizedBox(height: 15),
                 KText(
                   text: 'employerHiredAbout',
                   fontSize: 12.50,
-                  fontWeight: AppTheme.normal,
+                  fontWeight: AppTheme.regular,
                   color: Colors.grey,
                 ),
                 SizedBox(height: 20),
@@ -104,13 +103,13 @@ class EmployerProjectPage extends StatelessWidget {
                           children: [
                             KText(
                               text: 'projectFilePdf',
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                               fontSize: 13,
                             ),
                             KText(
                               text: 'projectCreateDate',
                               color: Colors.grey,
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                               fontSize: 10,
                             ),
                           ],
@@ -134,7 +133,7 @@ class EmployerProjectPage extends StatelessWidget {
                           children: [
                             KText(
                               text: 'muhammed',
-                              fontFamily: 'Poppins Medium',
+                              fontWeight: AppTheme.medium,
                               fontSize: 13,
                             ),
                             Row(
@@ -147,7 +146,7 @@ class EmployerProjectPage extends StatelessWidget {
                                 SizedBox(width: 2),
                                 KText(
                                   text: '4.5',
-                                  fontFamily: 'Poppins Medium',
+                                  fontWeight: AppTheme.medium,
                                   fontSize: 11,
                                 ),
                               ],
@@ -159,12 +158,12 @@ class EmployerProjectPage extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 10),
-                Divider(color: Colors.grey.shade100),
+                Divider(color: Colors.grey.shade200),
                 SizedBox(height: 10),
                 KText(
                   text: 'projectBudget',
-                  fontSize: 16,
-                  fontFamily: 'Poppins Medium',
+                  fontSize: 15,
+                  fontWeight: AppTheme.medium,
                 ),
                 SizedBox(height: 10),
                 Row(
@@ -173,17 +172,17 @@ class EmployerProjectPage extends StatelessWidget {
                       text: TextSpan(
                         text: '10,000 ',
                         style: TextStyle(
-                          fontSize: 17,
+                          fontSize: 16,
                           color: AppTheme.textColor,
-                          fontFamily: 'Poppins Semi Bold',
+                          fontWeight: AppTheme.medium,
                         ),
                         children: [
                           TextSpan(
                             text: 'sar'.tr,
                             style: TextStyle(
-                              fontSize: 14,
+                              fontSize: 13,
                               color: AppTheme.textColor2,
-                              fontFamily: AppTheme.regulaAr,
+                              fontWeight: AppTheme.medium,
                             ),
                           ),
                         ],
@@ -198,17 +197,17 @@ class EmployerProjectPage extends StatelessWidget {
                       text: TextSpan(
                         text: '  15,000 ',
                         style: TextStyle(
-                          fontSize: 17,
+                          fontSize: 16,
                           color: AppTheme.textColor,
-                          fontFamily: 'Poppins Semi Bold',
+                          fontWeight: AppTheme.medium,
                         ),
                         children: [
                           TextSpan(
                             text: 'sar'.tr,
                             style: TextStyle(
-                              fontSize: 14,
+                              fontSize: 13,
                               color: AppTheme.textColor2,
-                              fontFamily: AppTheme.regulaAr,
+                              fontWeight: AppTheme.medium,
                             ),
                           ),
                         ],
@@ -217,12 +216,12 @@ class EmployerProjectPage extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 10),
-                Divider(color: Colors.grey.shade100),
+                Divider(color: Colors.grey.shade200),
                 SizedBox(height: 10),
                 KText(
                   text: 'avgBid',
-                  fontSize: 16,
-                  fontFamily: 'Poppins Medium',
+                  fontSize: 15,
+                  fontWeight: AppTheme.medium,
                 ),
                 SizedBox(height: 10),
                 Row(
@@ -231,17 +230,17 @@ class EmployerProjectPage extends StatelessWidget {
                       text: TextSpan(
                         text: '11,240 ',
                         style: TextStyle(
-                          fontSize: 17,
+                          fontSize: 16,
                           color: AppTheme.textColor,
-                          fontFamily: 'Poppins Semi Bold',
+                          fontWeight: AppTheme.semi,
                         ),
                         children: [
                           TextSpan(
                             text: 'sar'.tr,
                             style: TextStyle(
-                              fontSize: 14,
+                              fontSize: 13,
                               color: AppTheme.textColor2,
-                              fontFamily: AppTheme.semiAr,
+                              fontWeight: AppTheme.medium,
                             ),
                           ),
                         ],
@@ -294,29 +293,14 @@ class EmployerProjectPage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(width: 30),
-                    // RichText(
-                    //   text: TextSpan(
-                    //     text: '60',
-                    //     style: TextStyle(
-                    //       fontFamily: AppTheme.semiAr,
-                    //       fontSize: 13,
-                    //     ),
-                    //     children: [
-
-                    //       TextSpan()
-
-                    //     ]
-                    //   ),
-
-                    // ),
                     KText(
                       text: '60 ',
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.regular,
                       fontSize: 13,
                     ),
                     KText(
                       text: 'bids',
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.regular,
                       fontSize: 13,
                     ),
                   ],
@@ -328,20 +312,19 @@ class EmployerProjectPage extends StatelessWidget {
                   children: [
                     KText(
                       text: 'bids',
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.medium,
                       fontSize: 16,
                     ),
                     KText(
                       text: ' (39)',
-                      fontWeight: AppTheme.normal,
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.regular,
                       fontSize: 16,
                     ),
                     Spacer(),
                     KText(
                       text: 'viewAll',
                       color: AppTheme.iconColor,
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.medium,
                       fontSize: 14,
                     ),
                     SizedBox(width: 5),
@@ -386,7 +369,7 @@ class EmployerProjectPage extends StatelessWidget {
                                             SizedBox(width: 8),
                                             KText(
                                               text: 'khalidSaiedMorsy',
-                                              fontFamily: 'Poppins Medium',
+                                              fontWeight: AppTheme.medium,
                                               fontSize: 13,
                                             ),
                                           ],
@@ -402,27 +385,27 @@ class EmployerProjectPage extends StatelessWidget {
                                             SizedBox(width: 2),
                                             KText(
                                               text: '4.5',
-                                              fontFamily: 'Poppins Medium',
+                                              fontWeight: AppTheme.medium,
                                               fontSize: 11,
                                             ),
                                             SizedBox(width: 5),
                                             KText(
-                                              text: '( 1200',
+                                              text: '( 1200 ',
                                               color: AppTheme.textColor2,
-                                              fontFamily: 'Poppins Medium',
-                                              fontSize: 11,
+                                              fontWeight: AppTheme.medium,
+                                              fontSize: 10,
                                             ),
                                             KText(
                                               text: 'review',
                                               color: AppTheme.textColor2,
-                                              fontFamily: 'Poppins Medium',
-                                              fontSize: 11,
+                                              fontWeight: AppTheme.medium,
+                                              fontSize: 10,
                                             ),
                                             KText(
                                               text: ' )',
                                               color: AppTheme.textColor2,
-                                              fontFamily: 'Poppins Medium',
-                                              fontSize: 11,
+                                              fontWeight: AppTheme.medium,
+                                              fontSize: 10,
                                             ),
                                           ],
                                         ),
@@ -449,7 +432,7 @@ class EmployerProjectPage extends StatelessWidget {
                                             style: TextStyle(
                                               fontSize: 14,
                                               color: AppTheme.textColor2,
-                                              fontFamily: AppTheme.regulaAr,
+                                              fontWeight: AppTheme.medium,
                                             ),
                                           ),
                                         ],
@@ -458,18 +441,18 @@ class EmployerProjectPage extends StatelessWidget {
                                     RichText(
                                       text: TextSpan(
                                         text: '4 ',
-                                        style: TextStyle(
-                                          fontSize: AppTheme.textSize10,
-                                          color: AppTheme.white,
-                                          fontFamily: AppTheme.semi,
+                                        style: GoogleFonts.cairo(
+                                          fontSize: AppTheme.textSize11,
+                                          color: AppTheme.textColor,
+                                          fontWeight: AppTheme.medium,
                                         ),
                                         children: [
                                           TextSpan(
                                             text: 'days'.tr,
-                                            style: TextStyle(
-                                              fontSize: AppTheme.textSize11,
-                                              color: AppTheme.white,
-                                              fontFamily: AppTheme.semiAr,
+                                            style: GoogleFonts.cairo(
+                                              fontSize: AppTheme.textSize10,
+                                              color: AppTheme.textColor,
+                                              fontWeight: AppTheme.regular,
                                             ),
                                           ),
                                         ],
@@ -485,11 +468,15 @@ class EmployerProjectPage extends StatelessWidget {
                                   color: Colors.grey.shade50.withOpacity(.50),
                                   borderRadius: BorderRadius.circular(10)),
                               child: Padding(
-                                padding: EdgeInsets.all(16),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 10,
+                                  vertical: 10,
+                                ),
                                 child: KText(
                                   text: 'employerHiredBidAbout'.tr,
                                   fontSize: 11.50,
-                                  fontFamily: 'Poppins Medium',
+                                  wordSpacing: 2,
+                                  fontWeight: AppTheme.regular,
                                   color: Colors.grey,
                                 ),
                               ),
@@ -508,9 +495,9 @@ class EmployerProjectPage extends StatelessWidget {
                                         borderRadius: BorderRadius.circular(10),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.only(
-                                          left: 15,
-                                          right: 10,
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 15,
+                                          vertical: 10,
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
@@ -526,7 +513,7 @@ class EmployerProjectPage extends StatelessWidget {
                                               text: 'acceptBid',
                                               fontSize: 14,
                                               color: AppTheme.white,
-                                              fontFamily: 'Poppins Medium',
+                                              fontWeight: AppTheme.medium,
                                             ),
                                             SizedBox(width: 0),
                                             Container(),
@@ -571,7 +558,7 @@ class EmployerProjectPage extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 10),
-                Divider(color: Colors.grey.shade100),
+                Divider(color: Colors.grey.shade200),
                 SizedBox(height: 10),
                 KText(
                   text: 'requiredSkills',
@@ -585,26 +572,26 @@ class EmployerProjectPage extends StatelessWidget {
                       text: 'photoshop',
                       fontSize: 14,
                       color: Colors.grey,
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.medium,
                     ),
                     SizedBox(width: 20),
                     KText(
                       text: 'design',
                       fontSize: 14,
                       color: Colors.grey,
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.medium,
                     ),
                     SizedBox(width: 20),
                     KText(
                       text: 'socialMedia',
                       fontSize: 14,
                       color: Colors.grey,
-                      fontFamily: 'Poppins Medium',
+                      fontWeight: AppTheme.medium,
                     ),
                   ],
                 ),
                 SizedBox(height: 10),
-                Divider(color: Colors.grey.shade100),
+                Divider(color: Colors.grey.shade200),
                 SizedBox(height: 10),
                 KText(
                   text: 'projectCode',
@@ -616,7 +603,7 @@ class EmployerProjectPage extends StatelessWidget {
                   text: '30446337',
                   fontSize: 14,
                   color: Colors.grey,
-                  fontFamily: 'Poppins Medium',
+                  fontWeight: AppTheme.regular,
                 ),
                 SizedBox(
                   height: 100,

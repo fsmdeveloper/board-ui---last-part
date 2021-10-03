@@ -18,13 +18,15 @@ class AppTheme {
 
   static double textSize20 = 20;
   static double textSize19 = 19;
+  static double textSize18 = 18;
 
   static double textSize17 = 17;
   static double textSize16 = 16;
 
-  static double textSize15 = 15; //Main Button textSize
-  static double textSize14 = 14;
+  static double textSize15 = 15; 
+  static double textSize14 = 14; //Main Button textSize
   static double textSize13 = 13;
+
   static double textSize12 = 12;
   static double textSize11 = 11;
 
@@ -32,26 +34,10 @@ class AppTheme {
 
   // font Style Poppins
 
-  static String bold = 'Poppins Bold';
-  static String semi = 'Poppins Semi Bold';
-  static String medium = 'Poppins Medium';
-  static String regular = 'Poppins Regular';
-
-  static String boldAr = 'Poppins Bold';
-  static String semiAr = 'Poppins Semi Bold';
-  static String mediumAr = 'Poppins Medium';
-  static String regulaAr = 'Poppins Regular';
-
-  // font Style Cairo
-
-  // static String boldAr = 'Cairo Bold';
-  // static String semiAr = 'Cairo Semi Bold';
-  // static String mediumAr = 'Cairo Medium';
-  // static String regulaAr = 'Cairo Regular';
-
-  //
-
-  static FontWeight normal = FontWeight.normal;
+  static FontWeight bold = FontWeight.bold;
+  static FontWeight semi = FontWeight.w700;
+  static FontWeight medium = FontWeight.w600;
+  static FontWeight regular = FontWeight.normal;
 
   static double height50 = 50;
   static double height55 = 55;
@@ -71,7 +57,7 @@ class AppTheme {
   static BorderRadiusGeometry circular30 = BorderRadius.circular(30);
 
   static ThemeData appTheme = ThemeData(
-      fontFamily: 'Poppins Regular',
+      fontFamily: 'Cairo Regular',
       scaffoldBackgroundColor: AppTheme.white,
       appBarTheme: AppBarTheme(
         backgroundColor: AppTheme.white,

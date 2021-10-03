@@ -13,17 +13,27 @@ Widget listTile(
     subtitle: KText(
       text: subText,
       color: AppTheme.textColor2,
+      fontWeight: AppTheme.regular,
       fontSize: 11,
     ),
     title: KText(
       text: text,
-      fontFamily: 'Poppins Medium',
+      fontWeight: AppTheme.medium,
       fontSize: 15,
     ),
-    trailing: Icon(
-      Icons.arrow_forward_ios,
-      size: 18,
-      color: Colors.black,
+    trailing: Container(
+      width: 35,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: AppTheme.textColor2.withOpacity(.05),
+      ),
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Icon(
+          Icons.arrow_forward_ios,
+          size: 16,
+        ),
+      ),
     ),
   );
 }

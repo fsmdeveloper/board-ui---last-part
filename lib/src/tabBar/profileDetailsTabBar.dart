@@ -1,6 +1,7 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProfileDetailsBar extends StatelessWidget {
   ProfileDetailsBar({Key? key}) : super(key: key);
@@ -20,83 +21,85 @@ class ProfileDetailsBar extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 25),
             child: Container(
+              height: 2000,
               child: Column(
                 children: [
                   SizedBox(height: 40),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            KText(
-                              text: '99%',
-                              fontSize: 15,
-                              fontFamily: 'Poppins Semi Bold',
-                            ),
-                            KText(
-                              text: 'projectDone',
-                              fontSize: 10,
-                              color: Colors.black54,
-                              fontFamily: 'Poppins Medium',
-                            ),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            KText(
-                              text: '83%',
-                              fontSize: 15,
-                              fontFamily: 'Poppins Semi Bold',
-                            ),
-                            KText(
-                              text: 'onTime',
-                              fontSize: 10,
-                              color: Colors.black54,
-                              fontFamily: 'Poppins Medium',
-                            ),
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            KText(
-                              text: '70%',
-                              fontSize: 15,
-                              fontFamily: 'Poppins Semi Bold',
-                            ),
-                            KText(
-                              text: 'withInBudget',
-                              fontSize: 10,
-                              color: Colors.black54,
-                              fontFamily: 'Poppins Medium',
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Divider(
-                    color: Colors.grey.shade200,
-                  ),
-                  SizedBox(height: 10),
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Colors.grey.shade50.withOpacity(.30),
+                      color: Colors.grey.shade50,
                     ),
                     child: Padding(
                       padding: EdgeInsets.symmetric(
-                        horizontal: 10,
-                        vertical: 10,
+                        horizontal: 20,
+                        vertical: 20,
                       ),
-                      child: KText(
-                        text: 'profileAbout',
-                        fontSize: 11,
-                        fontWeight: AppTheme.normal,
-                        color: Colors.black45,
-                        textAlign: TextAlign.center,
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                children: [
+                                  KText(
+                                    text: '99%',
+                                    fontSize: 15,
+                                    fontWeight: AppTheme.medium,
+                                  ),
+                                  KText(
+                                    text: 'projectDone',
+                                    fontSize: 10,
+                                    color: Colors.black54,
+                                    fontWeight: AppTheme.regular,
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  KText(
+                                    text: '83%',
+                                    fontSize: 15,
+                                    fontWeight: AppTheme.medium,
+                                  ),
+                                  KText(
+                                    text: 'onTime',
+                                    fontSize: 10,
+                                    color: Colors.black54,
+                                    fontWeight: AppTheme.regular,
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  KText(
+                                    text: '70%',
+                                    fontSize: 15,
+                                    fontWeight: AppTheme.medium,
+                                  ),
+                                  KText(
+                                    text: 'withInBudget',
+                                    fontSize: 10,
+                                    color: Colors.black54,
+                                    fontWeight: AppTheme.regular,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 10),
+                          Divider(
+                            color: Colors.grey.shade200,
+                          ),
+                          SizedBox(height: 10),
+                          KText(
+                            text: 'profileAbout',
+                            fontSize: 12,
+                            fontWeight: AppTheme.regular,
+                            color: Colors.black45,
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
                       ),
                     ),
                   ),

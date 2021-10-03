@@ -1,5 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
-import 'package:board_ui/src/pages/employerHiredPage.dart';
+import 'package:board_ui/src/pages/bottomBarHome.dart';
 import 'package:board_ui/src/pages/loginWithPage.dart';
 import 'package:board_ui/src/pages/registerWithPage.dart';
 import 'package:board_ui/src/widgets/kText.dart';
@@ -29,7 +29,7 @@ class SplashPage extends StatelessWidget {
                 height: 30,
               ),
               GestureDetector(
-                onTap: () => Get.to(EmployerHirePage()),
+                onTap: () => Get.to(BottomBarHome()),
                 child: Image.asset(
                   'assets/img/logo.png',
                   width: 330,
@@ -61,42 +61,40 @@ class SplashPage extends StatelessWidget {
                   ],
                 ),
               ),
-            ],
-          ),
-        ),
-        bottomSheet: GestureDetector(
-          onTap: () => Get.to(LoginWithPage()),
-          child: Padding(
-            padding: AppTheme.paddingH30,
-            child: Padding(
-              padding: EdgeInsets.only(bottom: 40),
-              child: Container(
-                height: AppTheme.height50,
-                width: AppTheme.widthMax,
-                decoration: BoxDecoration(
-                  color: AppTheme.primaryColor,
-                  borderRadius: AppTheme.circular10,
-                ),
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    KText(
-                      text: 'login',
-                      color: Colors.white,
-                      fontSize: AppTheme.textSize14,
-                      fontWeight: FontWeight.bold,
+              SizedBox(height: 50),
+              GestureDetector(
+                onTap: () => Get.to(LoginWithPage()),
+                child: Padding(
+                  padding: AppTheme.paddingH30,
+                  child: Container(
+                    height: AppTheme.height50,
+                    width: AppTheme.widthMax,
+                    decoration: BoxDecoration(
+                      color: AppTheme.primaryColor,
+                      borderRadius: AppTheme.circular10,
                     ),
-                    Positioned(
-                      right: 20,
-                      child: Image.asset(
-                        'assets/icon/login.png',
-                        height: 18,
-                      ),
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        KText(
+                          text: 'login',
+                          color: Colors.white,
+                          fontSize: AppTheme.textSize14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        Positioned(
+                          right: 20,
+                          child: Image.asset(
+                            'assets/icon/login.png',
+                            height: 18,
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
-            ),
+            ],
           ),
         ),
       ),

@@ -23,7 +23,6 @@ class _InsideChatPageState extends State<InsideChatPage> {
       child: Scaffold(
         body: SingleChildScrollView(
           child: Column(
-           
             children: [
               Stack(
                 children: [
@@ -160,25 +159,31 @@ class _InsideChatPageState extends State<InsideChatPage> {
                             width: Get.width,
                             child: Row(
                               children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(60),
-                                  child: Image.asset(
-                                    'assets/img/chat-img-1.jpg',
-                                    width: 40,
+                                Padding(
+                                  padding: EdgeInsets.only(top: 55),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(60),
+                                    child: Image.asset(
+                                      'assets/img/chat-img-1.jpg',
+                                      width: 40,
+                                    ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.only(left: 30),
+                                  padding: EdgeInsets.only(left: 15),
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(18),
-                                      color:
-                                          Colors.grey.shade50.withOpacity(.50),
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(18),
+                                        topRight: Radius.circular(18),
+                                        bottomRight: Radius.circular(18),
+                                      ),
+                                      color: Colors.grey.shade50,
                                     ),
                                     child: Padding(
                                       padding: EdgeInsets.symmetric(
-                                        horizontal: 20,
-                                        vertical: 10,
+                                        horizontal: 15,
+                                        vertical: 15,
                                       ),
                                       child: Column(
                                         mainAxisAlignment:
@@ -186,11 +191,14 @@ class _InsideChatPageState extends State<InsideChatPage> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          KText(
-                                            text:
-                                                '''Lorem ipsum dolor sit amet, consectetur
+                                          Expanded(
+                                            child: KText(
+                                              text:
+                                                  '''Lorem ipsum dolor sit amet, consectetur
 adipiscenw elitsed.''',
-                                            fontSize: 12.50,
+                                              fontSize: 12.50,
+                                              maxLines: 100,
+                                            ),
                                           ),
                                           SizedBox(height: 5),
                                           KText(
@@ -210,18 +218,21 @@ adipiscenw elitsed.''',
                       ),
                     ),
                     SizedBox(height: 20),
-                    Padding(
-                      padding: EdgeInsets.only(left: 30, right: 100),
-                      child: Column(
-                        children: [
-                          Container(
-                            width: Get.width,
+                    Column(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(
+                            left: 30,
+                            right: 100,
+                          ),
+                          child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(18),
                               color: AppTheme.iconColor,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(15),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 10),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -235,6 +246,7 @@ adipiscenw elitsed.''',
                                     ),
                                     maxLines: 100,
                                   ),
+                                  SizedBox(height: 10),
                                   Container(
                                     alignment: Alignment.bottomRight,
                                     child: Text(
@@ -249,8 +261,8 @@ adipiscenw elitsed.''',
                               ),
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                     SizedBox(height: 50),
                     Padding(
@@ -264,25 +276,31 @@ adipiscenw elitsed.''',
                             width: Get.width,
                             child: Row(
                               children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(60),
-                                  child: Image.asset(
-                                    'assets/img/chat-img-1.jpg',
-                                    width: 40,
+                                Padding(
+                                  padding: EdgeInsets.only(top: 75),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(60),
+                                    child: Image.asset(
+                                      'assets/img/chat-img-1.jpg',
+                                      width: 40,
+                                    ),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.only(left: 30),
+                                  padding: EdgeInsets.only(left: 15),
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(18),
-                                      color:
-                                          Colors.grey.shade50.withOpacity(.50),
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(18),
+                                        topLeft: Radius.circular(18),
+                                        bottomRight: Radius.circular(18),
+                                      ),
+                                      color: Colors.grey.shade50,
                                     ),
                                     child: Padding(
                                       padding: EdgeInsets.symmetric(
-                                        horizontal: 20,
-                                        vertical: 10,
+                                        horizontal: 15,
+                                        vertical: 15,
                                       ),
                                       child: Column(
                                         mainAxisAlignment:
@@ -297,14 +315,14 @@ adipiscenw elitsed.''',
                                                   '''Lorem ipsum dolor sit amet, consectetura 
 dipiscenw elit, sed do eiusmodLorem ipsu
 m dolor sit ametretqr consectetu.''',
-                                              fontSize: 12.50,
+                                              fontSize: 12,
                                               maxLines: 100,
                                             ),
                                           ),
-                                          SizedBox(height: 5),
+                                          SizedBox(height: 8),
                                           KText(
                                             text: 'Now',
-                                            fontSize: 12,
+                                            fontSize: 10,
                                             color: AppTheme.textColor2,
                                           ),
                                         ],
@@ -315,15 +333,19 @@ m dolor sit ametretqr consectetu.''',
                               ],
                             ),
                           ),
-                          SizedBox(height: 30),
+                          SizedBox(height: 10),
                           Padding(
-                            padding: EdgeInsets.only(left: 70),
+                            padding: EdgeInsets.only(left: 55),
                             child: Container(
                               height: 40,
                               width: 70,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.grey.shade50.withOpacity(.50),
+                                borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(15),
+                                  bottomLeft: Radius.circular(15),
+                                  bottomRight: Radius.circular(15),
+                                ),
+                                color: Colors.grey.shade50,
                               ),
                               child: Center(
                                 child: Padding(
@@ -417,18 +439,34 @@ m dolor sit ametretqr consectetu.''',
                       ),
                     ),
                   ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Image.asset(
-                      'assets/icon/attach_file.png',
-                      width: 20,
+                  Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.grey.shade50,
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Image.asset(
+                        'assets/icon/attach_file.png',
+                        width: 20,
+                      ),
                     ),
                   ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Image.asset(
-                      'assets/icon/mic.png',
-                      width: 20,
+                  Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.grey.shade50,
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Image.asset(
+                        'assets/icon/mic.png',
+                        width: 20,
+                      ),
                     ),
                   ),
                 ],

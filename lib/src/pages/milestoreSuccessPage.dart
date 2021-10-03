@@ -13,7 +13,7 @@ class MilestoneSuccessPage extends StatelessWidget {
       child: Scaffold(
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 50),
+            padding: EdgeInsets.symmetric(horizontal: 40),
             child: Column(
               children: [
                 SizedBox(height: 140),
@@ -42,93 +42,110 @@ class MilestoneSuccessPage extends StatelessWidget {
                 KText(
                   text: 'milestoneCreated',
                   fontSize: 23,
-                  fontFamily: 'Poppins Semi Bold',
+                  fontWeight: AppTheme.bold,
                 ),
                 SizedBox(height: 10),
                 KText(
                   text: 'milestoneCreatedAbout',
                   fontSize: 13,
                   color: AppTheme.textColor2,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: AppTheme.regular,
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 80),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    KText(
-                      text: 'open',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                      color: AppTheme.primaryColor,
-                    ),
-                    KText(
-                      text: 'endsWithIn4days',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
-                      color: AppTheme.textColor2,
-                    ),
-                  ],
-                ),
-                SizedBox(height: 10),
                 Container(
-                  alignment: Alignment.centerLeft,
-                  child: KText(
-                    text: 'bidAbout',
-                    fontSize: 15.50,
-                    fontFamily: 'poppins Semi Bold',
-                    color: AppTheme.textColor,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.grey.shade50,
                   ),
-                ),
-                SizedBox(height: 10),
-                Row(
-                  children: [
-                    RichText(
-                      text: TextSpan(
-                        text: ' 10,000 ',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: AppTheme.textColor,
-                          fontFamily: 'Poppins Semi Bold',
-                        ),
-                        children: [
-                          TextSpan(
-                            text: 'sar'.tr,
-                            style: TextStyle(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 10,
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            KText(
+                              text: 'open',
                               fontSize: 12,
-                              fontFamily: AppTheme.semiAr,
+                              fontWeight: AppTheme.regular,
+                              color: AppTheme.primaryColor,
+                            ),
+                            KText(
+                              text: 'endsWithIn4days',
+                              fontSize: 12,
+                              fontWeight: AppTheme.regular,
                               color: AppTheme.textColor2,
                             ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    KText(
-                      text: ' ~',
-                      color: AppTheme.iconColor,
-                      fontSize: 16,
-                    ),
-                    RichText(
-                      text: TextSpan(
-                        text: ' 15,000 ',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: AppTheme.textColor,
-                          fontFamily: 'Poppins Semi Bold',
+                          ],
                         ),
-                        children: [
-                          TextSpan(
-                            text: 'sar'.tr,
-                            style: TextStyle(
-                              fontFamily: AppTheme.semiAr,
-                              fontSize: 12,
-                              color: AppTheme.textColor2,
-                            ),
+                        SizedBox(height: 10),
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          child: KText(
+                            text: 'bidAbout',
+                            fontSize: 15.50,
+                            fontWeight: AppTheme.bold,
+                            wordSpacing: 1.20,
+                            color: AppTheme.textColor,
                           ),
-                        ],
-                      ),
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            RichText(
+                              text: TextSpan(
+                                text: ' 10,000 ',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  color: AppTheme.textColor,
+                                  fontWeight: AppTheme.semi,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'sar'.tr,
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: AppTheme.medium,
+                                      color: AppTheme.textColor2,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            KText(
+                              text: ' ~',
+                              color: AppTheme.iconColor,
+                              fontSize: 16,
+                            ),
+                            RichText(
+                              text: TextSpan(
+                                text: ' 15,000 ',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  color: AppTheme.textColor,
+                                  fontWeight: AppTheme.semi,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: 'sar'.tr,
+                                    style: TextStyle(
+                                      fontWeight: AppTheme.medium,
+                                      fontSize: 12,
+                                      color: AppTheme.textColor2,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
                 SizedBox(height: 120),
                 GestureDetector(
