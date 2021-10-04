@@ -7,6 +7,7 @@ import 'package:board_ui/src/widgets/searchFields.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class SearchPage extends StatefulWidget {
@@ -52,7 +53,6 @@ class _SearchPageState extends State<SearchPage> {
         backgroundColor: HexColor('#fbfbfb'),
         body: SingleChildScrollView(
           child: Scrollbar(
-           
             child: Column(
               children: [
                 SizedBox(height: 40),
@@ -301,7 +301,7 @@ class _SearchPageState extends State<SearchPage> {
                 children: [
                   TextSpan(
                     text: 'bids'.tr,
-                    style: TextStyle(
+                    style: GoogleFonts.cairo(
                       fontSize: AppTheme.textSize11,
                       color: AppTheme.textColor,
                     ),
@@ -321,11 +321,10 @@ class _SearchPageState extends State<SearchPage> {
                 children: [
                   TextSpan(
                     text: 'sar'.tr,
-                    style: TextStyle(
+                    style: GoogleFonts.cairo(
                       fontSize: AppTheme.textSize12,
                       color: AppTheme.textColor2,
-                                                                fontWeight: AppTheme.medium,
-
+                      fontWeight: AppTheme.medium,
                     ),
                   ),
                 ],
@@ -347,11 +346,10 @@ class _SearchPageState extends State<SearchPage> {
                 children: [
                   TextSpan(
                     text: 'sar'.tr,
-                    style: TextStyle(
+                    style: GoogleFonts.cairo(
                       fontSize: AppTheme.textSize12,
                       color: AppTheme.textColor2,
-                                                               fontWeight: AppTheme.medium,
-
+                      fontWeight: AppTheme.medium,
                     ),
                   ),
                 ],

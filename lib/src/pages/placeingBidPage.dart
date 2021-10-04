@@ -208,8 +208,7 @@ class PlaceingBidPage extends StatelessWidget {
                             hintText: '..',
                             hintStyle: TextStyle(
                               fontSize: 13,
-                                                                      fontWeight: AppTheme.medium,
-
+                              fontWeight: AppTheme.medium,
                               color: AppTheme.textColor2,
                             ),
                             contentPadding:
@@ -288,7 +287,6 @@ class PlaceingBidPage extends StatelessWidget {
                           decoration: InputDecoration(
                             hintText: 'bidDescriptionField'.tr,
                             hintStyle: TextStyle(
-                             
                               fontWeight: FontWeight.w500,
                               color: AppTheme.textColor2,
                               fontSize: 11,

@@ -43,7 +43,7 @@ class ProfilePage extends StatelessWidget {
                   padding: EdgeInsets.only(left: 10),
                   child: KText(
                     text: 'AsmaAhmedZarea',
-                    fontFamily: 'Poppins Medium',
+                    fontWeight: AppTheme.medium,
                     fontSize: 16,
                   ),
                 ),

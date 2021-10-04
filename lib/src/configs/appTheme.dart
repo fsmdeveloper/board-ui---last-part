@@ -23,7 +23,7 @@ class AppTheme {
   static double textSize17 = 17;
   static double textSize16 = 16;
 
-  static double textSize15 = 15; 
+  static double textSize15 = 15;
   static double textSize14 = 14; //Main Button textSize
   static double textSize13 = 13;
 
@@ -57,30 +57,31 @@ class AppTheme {
   static BorderRadiusGeometry circular30 = BorderRadius.circular(30);
 
   static ThemeData appTheme = ThemeData(
-      fontFamily: 'Cairo Regular',
-      scaffoldBackgroundColor: AppTheme.white,
-      appBarTheme: AppBarTheme(
-        backgroundColor: AppTheme.white,
-        elevation: 0,
-        iconTheme: IconThemeData(
-          color: AppTheme.textColor,
+    fontFamily: 'Poppins Regular',
+    scaffoldBackgroundColor: AppTheme.white,
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppTheme.white,
+      elevation: 0,
+      iconTheme: IconThemeData(
+        color: AppTheme.textColor,
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      border: OutlineInputBorder(
+        borderSide: BorderSide.none,
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
+        borderSide: BorderSide(
+          color: Colors.grey.shade100,
         ),
       ),
-      inputDecorationTheme: InputDecorationTheme(
-        border: OutlineInputBorder(
-          borderSide: BorderSide.none,
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
+        borderSide: BorderSide(
+          color: Colors.grey.shade100,
         ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(
-            color: Colors.grey.shade100,
-          ),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide(
-            color: Colors.grey.shade100,
-          ),
-        ),
-      ));
+      ),
+    ),
+  );
 }

@@ -1,7 +1,6 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class ProfileDetailsBar extends StatelessWidget {
   ProfileDetailsBar({Key? key}) : super(key: key);

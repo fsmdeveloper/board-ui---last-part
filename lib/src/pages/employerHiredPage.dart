@@ -163,7 +163,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                             children: [
                               TextSpan(
                                 text: 'sar'.tr,
-                                style: TextStyle(
+                                style: GoogleFonts.cairo(
                                   fontSize: 13,
                                   color: AppTheme.textColor2,
                                   fontWeight: AppTheme.medium,
@@ -188,7 +188,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                             children: [
                               TextSpan(
                                 text: 'sar'.tr,
-                                style: TextStyle(
+                                style: GoogleFonts.cairo(
                                   fontSize: 13,
                                   color: AppTheme.textColor2,
                                   fontWeight: AppTheme.medium,

@@ -2,6 +2,7 @@ import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NotificationPage extends StatelessWidget {
   NotificationPage({Key? key}) : super(key: key);
@@ -92,7 +93,7 @@ class NotificationPage extends StatelessWidget {
                   child: KText(
                     text: 'notifications',
                     color: AppTheme.textColor,
-                    fontFamily: 'Poppins Semi Bold',
+                    fontWeight: AppTheme.bold,
                     fontSize: 15,
                   ),
                 ),
@@ -126,7 +127,7 @@ class NotificationPage extends StatelessWidget {
                           title: RichText(
                             text: TextSpan(
                               text: '${item['name']}'.tr,
-                              style: TextStyle(
+                              style: GoogleFonts.cairo(
                                 fontWeight: AppTheme.regular,
                                 color: AppTheme.iconColor,
                                 fontSize: 12.50,
@@ -134,7 +135,7 @@ class NotificationPage extends StatelessWidget {
                               children: [
                                 TextSpan(
                                   text: '${item['msg']}'.tr,
-                                  style: TextStyle(
+                                  style: GoogleFonts.cairo(
                                     color: AppTheme.textColor,
                                     fontWeight: AppTheme.regular,
                                     fontSize: 12.50,

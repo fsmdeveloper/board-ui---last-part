@@ -179,7 +179,7 @@ class EmployerProjectPage extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: 'sar'.tr,
-                            style: TextStyle(
+                            style: GoogleFonts.cairo(
                               fontSize: 13,
                               color: AppTheme.textColor2,
                               fontWeight: AppTheme.medium,
@@ -204,7 +204,7 @@ class EmployerProjectPage extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: 'sar'.tr,
-                            style: TextStyle(
+                            style: GoogleFonts.cairo(
                               fontSize: 13,
                               color: AppTheme.textColor2,
                               fontWeight: AppTheme.medium,
@@ -237,7 +237,7 @@ class EmployerProjectPage extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: 'sar'.tr,
-                            style: TextStyle(
+                            style: GoogleFonts.cairo(
                               fontSize: 13,
                               color: AppTheme.textColor2,
                               fontWeight: AppTheme.medium,
@@ -429,7 +429,7 @@ class EmployerProjectPage extends StatelessWidget {
                                         children: [
                                           TextSpan(
                                             text: 'sar'.tr,
-                                            style: TextStyle(
+                                            style: GoogleFonts.cairo(
                                               fontSize: 14,
                                               color: AppTheme.textColor2,
                                               fontWeight: AppTheme.medium,
@@ -563,7 +563,7 @@ class EmployerProjectPage extends StatelessWidget {
                 KText(
                   text: 'requiredSkills',
                   fontSize: 16,
-                  fontFamily: 'Poppins semi bold',
+                  fontWeight: AppTheme.medium,
                 ),
                 SizedBox(height: 10),
                 Row(
@@ -596,7 +596,7 @@ class EmployerProjectPage extends StatelessWidget {
                 KText(
                   text: 'projectCode',
                   fontSize: 16,
-                  fontFamily: 'Poppins semi bold',
+                  fontWeight: AppTheme.medium,
                 ),
                 SizedBox(height: 10),
                 KText(

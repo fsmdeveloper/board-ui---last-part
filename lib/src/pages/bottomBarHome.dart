@@ -1,5 +1,5 @@
 import 'package:board_ui/src/configs/appTheme.dart';
-import 'employerHiredPage.dart';
+import 'projectPage.dart';
 import 'package:flutter/services.dart';
 import 'profilePage.dart';
 
@@ -53,7 +53,7 @@ class _BottomBarHomeState extends State<BottomBarHome> {
               child: MaterialButton(
                 onPressed: () {
                   setState(() {
-                    _currentScreens = EmployerHirePage();
+                    _currentScreens = ProjectPage();
                     _currentTab = 5;
                   });
                 },

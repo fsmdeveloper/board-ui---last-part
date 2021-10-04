@@ -39,7 +39,7 @@ class KText extends StatelessWidget {
 
         //  English fonts enable ==>
 
-        fontFamily: fontFamily != null ? fontFamily : 'Cairo Regular',
+        // fontFamily: fontFamily != null ? fontFamily : 'Cairo Regular',
 
         fontWeight: fontWeight != null ? fontWeight : FontWeight.normal,
 

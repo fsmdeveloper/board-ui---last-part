@@ -8,6 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class HomePage extends StatefulWidget {
@@ -31,7 +32,6 @@ class _HomePageState extends State<HomePage>
     super.initState();
   }
 
-//
   @override
   void dispose() {
     _tabController.dispose();
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage>
         backgroundColor: HexColor('#fbfbfb'),
         body: SingleChildScrollView(
           child: Container(
-            height: 2000,
+            height: 1000,
             child: Column(
               children: [
                 Stack(
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage>
                         children: [
                           SizedBox(height: 30),
                           KText(
-                            text: 'Home',
+                            text: 'home',
                             color: AppTheme.white,
                             fontSize: 19,
                             fontWeight: FontWeight.w600,
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage>
                             child: Column(
                               children: [
                                 TabBar(
-                                  labelStyle: TextStyle(
+                                  labelStyle: GoogleFonts.cairo(
                                     fontWeight: AppTheme.semi,
                                     fontSize: 13,
                                   ),
@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage>
                                   ),
                                   indicatorColor: AppTheme.white,
                                   indicatorWeight: 2,
-                                  unselectedLabelStyle: TextStyle(
+                                  unselectedLabelStyle: GoogleFonts.cairo(
                                     fontWeight: AppTheme.regular,
                                   ),
                                   unselectedLabelColor: Colors.white70,
@@ -133,7 +133,7 @@ class _HomePageState extends State<HomePage>
                       right: 30,
                       top: 190,
                       child: Container(
-                        height: 2000,
+                        height: 1000,
                         width: Get.width,
                         decoration: BoxDecoration(
                           // color: HexColor('#fbfbfb'),
@@ -181,11 +181,11 @@ class _HomePageState extends State<HomePage>
             color: Colors.transparent,
           ),
         ],
-        activeStyle: TextStyle(
+        activeStyle: GoogleFonts.cairo(
           fontWeight: AppTheme.semi,
           color: AppTheme.primaryColor,
         ),
-        inactiveStyle: TextStyle(
+        inactiveStyle: GoogleFonts.cairo(
           fontWeight: AppTheme.semi,
           color: AppTheme.white,
         ),

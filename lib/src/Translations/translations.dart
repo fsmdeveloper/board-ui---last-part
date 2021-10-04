@@ -38,6 +38,7 @@ start working today!''',
 
           // 'freelancer' : 'Freelancer',
 //           'employer' : 'Employer',
+          'home': 'Home',
           'all': 'All',
 //           'open' : 'Open',
 //           'onGoing' : 'Ongoing',
@@ -630,7 +631,7 @@ etretqr consectetur adipiscen''',
           'forgetPassword': 'نسيت كلمة السر؟',
           'rememberMe': 'تذكرني دائما',
           //4 Home 1 Page - Freelancer Tab==>
-
+          'home': 'الرئيسية',
           // 'freelancer' : 'Freelancer',
           // 'employer' : 'Employer',
           'all': 'الكل',
@@ -638,7 +639,6 @@ etretqr consectetur adipiscen''',
           // 'onGoing' : 'Ongoing',
           'done': 'مكتمل',
           'projectTitles': ' تصميم موقع ووردبريس لمدونة اكسسوا',
-
 
           'milestonesCreated': ' إيداع دفعتين',
           'muhammedZakria': 'محمد زكريا',
@@ -737,8 +737,7 @@ etretqr consectetur adipiscen''',
 
           //11 Register Form Page ==>
 
-          'registerFormAbout':
-              '''قم بتسجيل حساب جديد ببريدك الإلكتروني الخاص بك
+          'registerFormAbout': '''قم بتسجيل حساب جديد ببريدك الإلكتروني الخاص بك
 و يمكنك البدء بالعمل اليوم''',
           // 'emailAddress': 'Email Address',
           // 'textFieldEmail' : '',

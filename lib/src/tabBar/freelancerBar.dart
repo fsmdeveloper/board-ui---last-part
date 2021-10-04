@@ -16,7 +16,7 @@ class FreelancerBar extends StatelessWidget {
         child: ListView.builder(
           shrinkWrap: true,
           primary: false,
-          itemCount: 20,
+          itemCount: 5,
           itemBuilder: (BuildContext context, int index) {
             return Column(
               children: [
@@ -69,7 +69,7 @@ class FreelancerBar extends StatelessWidget {
                                 radius: 2,
                               ),
                               SizedBox(width: 5),
-                              KText( 
+                              KText(
                                 text: '4,000 ',
                                 fontSize: AppTheme.textSize12,
                                 color: AppTheme.textColor2,

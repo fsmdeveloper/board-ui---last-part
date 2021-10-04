@@ -7,7 +7,13 @@ import 'package:board_ui/src/widgets/selectLanguageDialouge.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  late bool isLanguageEnglish = true;
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -6,6 +6,7 @@ import 'package:board_ui/src/widgets/backButton.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProjectPage extends StatelessWidget {
   const ProjectPage({Key? key}) : super(key: key);
@@ -274,7 +275,7 @@ class ProjectPage extends StatelessWidget {
                         children: [
                           TextSpan(
                             text: 'bids'.tr,
-                            style: TextStyle(
+                            style: GoogleFonts.cairo(
                               fontSize: AppTheme.textSize11,
                               color: AppTheme.textColor,
                               fontWeight: AppTheme.regular,
@@ -565,7 +566,7 @@ class ProjectPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 120,
                 ),
               ],
             ),
