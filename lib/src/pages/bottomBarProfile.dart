@@ -116,7 +116,7 @@ class _BottomBarProfileState extends State<BottomBarProfile> {
                   },
                   child: Image.asset(
                     'assets/icon/share.png',
-                    width: 18.51,
+                    width: 17.51,
                     color: _currentTab == 1
                         ? AppTheme.primaryColor
                         : AppTheme.textColor,
