@@ -2,7 +2,6 @@ import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/bottomBarHome.dart';
 import 'package:board_ui/src/pages/loginWithPage.dart';
 import 'package:board_ui/src/pages/registerWithPage.dart';
-import 'package:board_ui/src/tests/fontTest.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:board_ui/src/widgets/selectLanguageDialouge.dart';
 import 'package:flutter/material.dart';
@@ -36,7 +35,7 @@ class _SplashPageState extends State<SplashPage> {
                 height: 30,
               ),
               GestureDetector(
-                onTap: () => Get.to(TestFonts()),
+                onTap: () => Get.to(BottomBarHome()),
                 child: Image.asset(
                   'assets/img/logo.png',
                   width: 330,

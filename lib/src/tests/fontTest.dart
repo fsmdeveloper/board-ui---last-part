@@ -54,24 +54,7 @@ class _TestFontsState extends State<TestFonts> {
     );
   }
 
-  fontFamily(Locale locale, BuildContext context, int index) async {
-    try {
-      FlatButton(
-        padding: EdgeInsets.all(8),
-        child: Text(
-          fonts[index],
-          style: GoogleFonts.getFont(fonts[index],
-              fontSize: 32, color: Colors.white),
-        ),
-        onPressed: () => setState(() {
-          font = fonts[index];
-        }),
-        color: Colors.black,
-      );
-    } catch (e) {
-      print(e);
-    }
-  }
+
 }
 
 
@@ -82,17 +65,4 @@ class _TestFontsState extends State<TestFonts> {
 
 
 
-  // void updateProduct({required String id, required Map<String, dynamic> item}) {
-  //   _firestore
-  //       .collection('products')
-  //       .doc('id')
-  //       .update({
-  //         'title': title.value = item['title'],
-  //         'price': price.value = item['price'],
-  //         'discount': discount.value = item['discount'],
-  //         'rating': rating.value = item['rating'],
-  //         'description': description.value = item['description'],
-  //       })
-  //       .then((value) => print('Product Added'))
-  //       .catchError((error) => print('Failed to added product: $error'));
-  // }
+  
