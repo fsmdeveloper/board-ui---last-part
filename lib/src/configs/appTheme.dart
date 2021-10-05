@@ -57,7 +57,7 @@ class AppTheme {
   static BorderRadiusGeometry circular30 = BorderRadius.circular(30);
 
   static ThemeData appTheme = ThemeData(
-    fontFamily: 'Cairo Regular',
+    fontFamily: 'Poppins Regular',
     scaffoldBackgroundColor: AppTheme.white,
     appBarTheme: AppBarTheme(
       backgroundColor: AppTheme.white,

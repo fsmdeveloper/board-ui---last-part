@@ -16,7 +16,7 @@ class EmployerBar extends StatelessWidget {
         child: ListView.builder(
           shrinkWrap: true,
           primary: false,
-          itemCount: 5,
+          itemCount: 4,
           itemBuilder: (BuildContext context, int index) {
             return Column(
               children: [

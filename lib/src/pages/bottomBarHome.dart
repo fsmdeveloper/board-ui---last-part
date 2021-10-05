@@ -8,7 +8,7 @@ import 'chatPage.dart';
 import 'homePage.dart';
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:hexcolor/hexcolor.dart';
 
 import 'searchPages.dart';
@@ -41,29 +41,32 @@ class _BottomBarHomeState extends State<BottomBarHome> {
           bucket: bucket,
           child: _currentScreens,
         ),
-        floatingActionButton: Container(
-          height: 70,
-          width: 70,
-          child: FittedBox(
-            alignment: Alignment.bottomCenter,
-            child: FloatingActionButton(
-              elevation: 0,
-              backgroundColor: AppTheme.primaryColor,
-              onPressed: () {},
-              child: MaterialButton(
-                onPressed: () {
-                  setState(() {
-                    _currentScreens = ProjectPage();
-                    _currentTab = 5;
-                  });
-                },
-                child: Image.asset(
-                  'assets/icon/add.png',
-                  color: Colors.white,
-                  // color: _currentTab == 5
-                  //     ? AppTheme.primaryColor
-                  //     : AppTheme.textColor,
-                  width: 21.31,
+        floatingActionButton: Padding(
+          padding: EdgeInsets.only(top: 20),
+          child: Container(
+            height: 70,
+            width: 70,
+            child: FittedBox(
+              alignment: Alignment.bottomCenter,
+              child: FloatingActionButton(
+                elevation: 0,
+                backgroundColor: AppTheme.primaryColor,
+                onPressed: () {},
+                child: MaterialButton(
+                  onPressed: () {
+                    setState(() {
+                      _currentScreens = ProjectPage();
+                      _currentTab = 5;
+                    });
+                  },
+                  child: Image.asset(
+                    'assets/icon/add.png',
+                    color: Colors.white,
+                    // color: _currentTab == 5
+                    //     ? AppTheme.primaryColor
+                    //     : AppTheme.textColor,
+                    width: 21.31,
+                  ),
                 ),
               ),
             ),
@@ -76,8 +79,8 @@ class _BottomBarHomeState extends State<BottomBarHome> {
           // shape: CircularNotchedRectangle(),
           notchMargin: 10,
           child: Container(
-            width: Get.width,
-            height: 70,
+            // width: Get.width,
+            height: 60,
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -88,7 +91,7 @@ class _BottomBarHomeState extends State<BottomBarHome> {
               ],
             ),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 MaterialButton(
                   onPressed: () {
@@ -120,7 +123,7 @@ class _BottomBarHomeState extends State<BottomBarHome> {
                         : AppTheme.textColor,
                   ),
                 ),
-                SizedBox(width: 45),
+                SizedBox(width: 40),
                 MaterialButton(
                   onPressed: () {
                     setState(() {
