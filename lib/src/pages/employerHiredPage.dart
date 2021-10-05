@@ -203,7 +203,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                 ),
               ),
               Stack(
-                // clipBehavior: Clip.none,
+                clipBehavior: Clip.none,
                 children: [
                   Padding(
                     padding: EdgeInsets.symmetric(
@@ -399,30 +399,33 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                     child: GestureDetector(
                       onTap: () => Get.to(ChatPage()),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Container(
-                            height: 50,
-                            width: 250,
-                            decoration: BoxDecoration(
-                              color: AppTheme.white,
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  'assets/icon/msg1.png',
-                                  width: 20,
-                                ),
-                                SizedBox(width: 20),
-                                KText(
-                                  text: 'chatWithFreelancer',
-                                  fontSize: 14,
-                                  color: AppTheme.primaryColor,
-                                  fontWeight: AppTheme.medium,
-                                ),
-                              ],
+                          Expanded(
+                            child: Container(
+                              height: 50,
+                              width: Get.width,
+                              decoration: BoxDecoration(
+                                color: AppTheme.white,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    'assets/icon/msg1.png',
+                                    width: 20,
+                                  ),
+                                  SizedBox(width: 20),
+                                  KText(
+                                    text: 'chatWithFreelancer',
+                                    fontSize: 14,
+                                    color: AppTheme.primaryColor,
+                                    fontWeight: AppTheme.medium,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ],
@@ -432,24 +435,20 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                   Positioned(
                     right: 40,
                     bottom: 40,
-                    child: Row(
-                      children: [
-                        Container(
-                          height: 50,
-                          width: 50,
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.white54,
-                            ),
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Image.asset(
-                            'assets/icon/expand_arrow.png',
-                            scale: 2.50,
-                            color: Colors.white70,
-                          ),
+                    child: Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.white54,
                         ),
-                      ],
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Image.asset(
+                        'assets/icon/expand_arrow.png',
+                        scale: 2.50,
+                        color: Colors.white70,
+                      ),
                     ),
                   ),
                 ],

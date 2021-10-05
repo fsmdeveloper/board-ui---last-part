@@ -38,30 +38,33 @@ class _BottomBarProfileState extends State<BottomBarProfile> {
           bucket: bucket,
           child: _currentScreens,
         ),
-        floatingActionButton: Container(
-          height: 70,
-          width: 70,
-          child: FittedBox(
-            alignment: Alignment.bottomCenter,
-            child: FloatingActionButton(
-              elevation: 0,
-              backgroundColor: AppTheme.primaryColor,
-              onPressed: () {},
-              child: MaterialButton(
-                onPressed: () {
-                  setState(() {
-                    _currentScreens = EmployerHirePage();
-                    _currentTab = 5;
-                  });
-                },
-                child: Center(
-                  child: Image.asset(
-                    'assets/icon/group_add.png',
-                    color: Colors.white,
-                    // color: _currentTab == 5
-                    //     ? AppTheme.primaryColor
-                    //     : AppTheme.textColor,
-                    width: 22,
+        floatingActionButton: Padding(
+          padding: EdgeInsets.only(top: 30),
+          child: Container(
+            height: 70,
+            width: 70,
+            child: FittedBox(
+              alignment: Alignment.bottomCenter,
+              child: FloatingActionButton(
+                elevation: 0,
+                backgroundColor: AppTheme.primaryColor,
+                onPressed: () {},
+                child: MaterialButton(
+                  onPressed: () {
+                    setState(() {
+                      _currentScreens = EmployerHirePage();
+                      _currentTab = 5;
+                    });
+                  },
+                  child: Center(
+                    child: Image.asset(
+                      'assets/icon/group_add.png',
+                      color: Colors.white,
+                      // color: _currentTab == 5
+                      //     ? AppTheme.primaryColor
+                      //     : AppTheme.textColor,
+                      width: 22,
+                    ),
                   ),
                 ),
               ),
