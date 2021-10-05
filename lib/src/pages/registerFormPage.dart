@@ -26,7 +26,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 40,
+                  height: 20,
                 ),
                 backButton(),
                 SizedBox(

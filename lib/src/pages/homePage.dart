@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage>
         backgroundColor: HexColor('#fbfbfb'),
         body: SingleChildScrollView(
           child: Container(
-            height: 1000,
+            height: 1100,
             child: Column(
               children: [
                 Stack(
@@ -133,7 +133,7 @@ class _HomePageState extends State<HomePage>
                       right: 30,
                       top: 190,
                       child: Container(
-                        height: 1000,
+                        height: 1500,
                         width: Get.width,
                         decoration: BoxDecoration(
                           // color: HexColor('#fbfbfb'),

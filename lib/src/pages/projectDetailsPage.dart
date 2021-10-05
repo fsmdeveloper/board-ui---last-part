@@ -53,7 +53,7 @@ class _ProjectDetailsPageState extends State<ProjectDetailsPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 backButton(),
                 SizedBox(

@@ -43,7 +43,7 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
           child: Column(
             children: [
               Container(
-                height: 1250,
+                height: 1400,
                 child: Column(
                   children: [
                     Stack(
@@ -67,10 +67,10 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
                               ),
                             ),
                             child: Center(
-                              child: Icon(
-                                Icons.arrow_back_ios,
-                                size: 16,
+                              child: Image.asset(
+                                'assets/icon/back.png',
                                 color: AppTheme.white,
+                                width: 8,
                               ),
                             ),
                           ),
@@ -113,7 +113,7 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
                         Positioned(
                           top: 170,
                           child: Container(
-                            height: 2000,
+                            height: 2500,
                             width: Get.width,
                             decoration: BoxDecoration(
                               color: AppTheme.white,
@@ -129,7 +129,7 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
                                 Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 30),
                                   child: TabBar(
-                                    labelStyle: TextStyle(
+                                    labelStyle: GoogleFonts.cairo(
                                       fontWeight: AppTheme.medium,
                                       letterSpacing: .50,
                                       fontSize: 13,

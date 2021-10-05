@@ -1,4 +1,3 @@
-
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/pages/projectSuccessPage.dart';
 import 'package:board_ui/src/widgets/backButton.dart';
@@ -252,7 +251,7 @@ class _AddNewCardPagesState extends State<AddNewCardPages> {
                     ),
                   ],
                 ),
-                SizedBox(height: 190),
+                SizedBox(height: 160),
                 GestureDetector(
                   onTap: () => Get.to(ProjectSuccessPage()),
                   child: Container(

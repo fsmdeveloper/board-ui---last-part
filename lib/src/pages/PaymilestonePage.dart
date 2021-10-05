@@ -403,7 +403,7 @@ class _PayMileStonePageState extends State<PayMileStonePage> {
                     ),
                   ),
                 ),
-                SizedBox(height: 50),
+                SizedBox(height: 40),
                 primaryButton(
                   'pay&Continue',
                   () => Get.to(MilestoneSuccessPage()),

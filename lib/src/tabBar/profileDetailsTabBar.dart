@@ -20,7 +20,7 @@ class ProfileDetailsBar extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 25),
             child: Container(
-              height: 2000,
+              height: 2500,
               child: Column(
                 children: [
                   SizedBox(height: 40),
@@ -93,7 +93,7 @@ class ProfileDetailsBar extends StatelessWidget {
                           SizedBox(height: 10),
                           KText(
                             text: 'profileAbout',
-                            fontSize: 12,
+                            fontSize: 12.50,
                             fontWeight: AppTheme.regular,
                             color: Colors.black45,
                             textAlign: TextAlign.center,
@@ -108,14 +108,14 @@ class ProfileDetailsBar extends StatelessWidget {
                       KText(
                         text: 'portfolio',
                         fontSize: 16,
-                        fontFamily: 'Poppins Medium',
+                        // fontFamily: 'Poppins Medium',
                       ),
                       Spacer(),
                       KText(
                         text: 'viewAll',
                         fontSize: 14,
                         color: AppTheme.iconColor,
-                        fontFamily: 'Poppins Medium',
+                        // fontFamily: 'Poppins Medium',
                       ),
                       SizedBox(width: 5),
                       Icon(

@@ -4,6 +4,7 @@ import 'package:board_ui/src/pages/bidSuccessPage.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PlaceingBidPage extends StatelessWidget {
   const PlaceingBidPage({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class PlaceingBidPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 20),
+                      SizedBox(height: 15),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -47,7 +48,7 @@ class PlaceingBidPage extends StatelessWidget {
                           ),
                           KText(
                             text: 'makeAbid',
-                            fontFamily: 'Poppins Semi Bold',
+                            fontWeight: AppTheme.bold,
                             fontSize: AppTheme.textSize17,
                           ),
                           Container(),
@@ -75,13 +76,13 @@ class PlaceingBidPage extends StatelessWidget {
                                   KText(
                                     text: 'open',
                                     fontSize: AppTheme.textSize11,
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: AppTheme.regular,
                                     color: AppTheme.primaryColor,
                                   ),
                                   KText(
                                     text: 'endsWithIn4days',
                                     fontSize: AppTheme.textSize11,
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: AppTheme.regular,
                                     color: AppTheme.textColor2,
                                   ),
                                 ],
@@ -89,99 +90,103 @@ class PlaceingBidPage extends StatelessWidget {
                               SizedBox(height: 10),
                               KText(
                                 text: 'projectTitles',
-                                fontSize: 16,
+                                fontSize: 19,
                                 maxLines: 1,
-                                fontFamily: 'poppins Semi Bold',
+                                fontWeight: AppTheme.bold,
                                 color: AppTheme.textColor,
                               ),
                               SizedBox(height: 10),
-                              Row(
-                                children: [
-                                  Stack(
-                                    clipBehavior: Clip.none,
-                                    children: [
-                                      CircleAvatar(
-                                        backgroundColor: Colors.white,
-                                        radius: 15,
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(50),
-                                          child: Image.asset(
-                                            'assets/img/bid-img-2.jpg',
-                                            width: 25,
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        left: 10,
-                                        child: CircleAvatar(
+                              Directionality(
+                                textDirection: TextDirection.ltr,
+                                child: Row(
+                                  children: [
+                                    Stack(
+                                      clipBehavior: Clip.none,
+                                      children: [
+                                        CircleAvatar(
                                           backgroundColor: Colors.white,
                                           radius: 15,
                                           child: ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(50),
                                             child: Image.asset(
-                                              'assets/img/bid-img-1.jpg',
+                                              'assets/img/bid-img-2.jpg',
                                               width: 25,
+                                              fit: BoxFit.cover,
                                             ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(width: 20),
-                                  KText(
-                                    text: '60Bids',
-                                    fontSize: AppTheme.textSize10,
-                                  ),
-                                  Spacer(),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '10,000 ',
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        color: AppTheme.textColor,
-                                        fontFamily: 'Poppins Semi Bold',
-                                      ),
-                                      children: [
-                                        TextSpan(
-                                          text: 'sar'.tr,
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                            fontWeight: AppTheme.medium,
-                                            color: AppTheme.textColor2,
+                                        Positioned(
+                                          left: 10,
+                                          child: CircleAvatar(
+                                            backgroundColor: Colors.white,
+                                            radius: 15,
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(50),
+                                              child: Image.asset(
+                                                'assets/img/bid-img-1.jpg',
+                                                width: 25,
+                                              ),
+                                            ),
                                           ),
                                         ),
                                       ],
                                     ),
-                                  ),
-                                  KText(
-                                    text: ' ~',
-                                    color: AppTheme.iconColor,
-                                    fontSize: 16,
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: ' 10,000 ',
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        color: AppTheme.textColor,
-                                        fontFamily: 'Poppins Semi Bold',
-                                      ),
-                                      children: [
-                                        TextSpan(
-                                          text: 'sar'.tr,
-                                          style: TextStyle(
-                                            fontWeight: AppTheme.medium,
-                                            fontSize: 12,
-                                            color: AppTheme.textColor2,
-                                          ),
-                                        ),
-                                      ],
+                                    SizedBox(width: 20),
+                                    KText(
+                                      text: '60Bids',
+                                      fontWeight: AppTheme.medium,
+                                      fontSize: AppTheme.textSize10,
                                     ),
-                                  ),
-                                ],
+                                    Spacer(),
+                                    RichText(
+                                      text: TextSpan(
+                                        text: '10,000 ',
+                                        style: TextStyle(
+                                          fontSize: 13,
+                                          color: AppTheme.textColor,
+                                          fontWeight: AppTheme.bold,
+                                        ),
+                                        children: [
+                                          TextSpan(
+                                            text: 'sar'.tr,
+                                            style: GoogleFonts.cairo(
+                                              fontSize: 12,
+                                              fontWeight: AppTheme.medium,
+                                              color: AppTheme.textColor2,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    KText(
+                                      text: ' ~',
+                                      color: AppTheme.iconColor,
+                                      fontSize: 16,
+                                    ),
+                                    RichText(
+                                      text: TextSpan(
+                                        text: ' 15,000 ',
+                                        style: TextStyle(
+                                          fontSize: 13,
+                                          color: AppTheme.textColor,
+                                          fontWeight: AppTheme.bold,
+                                        ),
+                                        children: [
+                                          TextSpan(
+                                            text: 'sar'.tr,
+                                            style: GoogleFonts.cairo(
+                                              fontWeight: AppTheme.medium,
+                                              fontSize: 12,
+                                              color: AppTheme.textColor2,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ],
                           ),
@@ -252,7 +257,7 @@ class PlaceingBidPage extends StatelessWidget {
                           textAlignVertical: TextAlignVertical.center,
                           decoration: InputDecoration(
                             floatingLabelBehavior: FloatingLabelBehavior.always,
-                            suffixText: 'days',
+                            suffixText: 'days'.tr,
                             hintText: '..',
                             hintStyle: TextStyle(
                               // fontFamily: 'Poppins Semi Bold',

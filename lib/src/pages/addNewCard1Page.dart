@@ -251,7 +251,7 @@ class _AddNewCard1PagesState extends State<AddNewCard1Pages> {
                     ),
                   ],
                 ),
-                SizedBox(height: 190),
+                SizedBox(height: 160),
                 GestureDetector(
                   onTap: () => Get.to(ProjectSuccessPage()),
                   child: Container(

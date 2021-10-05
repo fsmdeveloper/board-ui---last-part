@@ -73,7 +73,6 @@ class _OtpPageState extends State<OtpPage> {
                   text: 'enter4DigitAbout',
                   fontSize: AppTheme.textSize13,
                   fontWeight: AppTheme.regular,
-                  // fontFamily: 'Poppins Medium',
                   color: AppTheme.textColor2,
                 ),
                 SizedBox(
@@ -156,7 +155,7 @@ class _OtpPageState extends State<OtpPage> {
                   ],
                 ),
                 SizedBox(
-                  height: 370,
+                  height: 330,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

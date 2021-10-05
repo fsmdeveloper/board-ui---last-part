@@ -3,6 +3,7 @@ import 'package:board_ui/src/pages/projectPage.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BidSuccessPage extends StatelessWidget {
   const BidSuccessPage({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class BidSuccessPage extends StatelessWidget {
       child: Scaffold(
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 50),
+            padding: EdgeInsets.symmetric(horizontal: 40),
             child: Column(
               children: [
                 SizedBox(height: 140),
@@ -65,6 +66,7 @@ class BidSuccessPage extends StatelessWidget {
                       vertical: 10,
                     ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -91,97 +93,101 @@ class BidSuccessPage extends StatelessWidget {
                           color: AppTheme.textColor,
                         ),
                         SizedBox(height: 10),
-                        Row(
-                          children: [
-                            Stack(
-                              clipBehavior: Clip.none,
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.white,
-                                  radius: 15,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    child: Image.asset(
-                                      'assets/img/bid-img-2.jpg',
-                                      width: 25,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  left: 10,
-                                  child: CircleAvatar(
+                        Directionality(
+                          textDirection: TextDirection.ltr,
+                          child: Row(
+                            children: [
+                              Stack(
+                                clipBehavior: Clip.none,
+                                children: [
+                                  CircleAvatar(
                                     backgroundColor: Colors.white,
                                     radius: 15,
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(50),
                                       child: Image.asset(
-                                        'assets/img/bid-img-1.jpg',
+                                        'assets/img/bid-img-2.jpg',
                                         width: 25,
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
                                   ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(width: 20),
-                            KText(
-                              text: '60Bids',
-                              fontSize: 11,
-                            ),
-                            Spacer(),
-                            RichText(
-                              text: TextSpan(
-                                text: '10,000 ',
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  color: AppTheme.textColor,
-                                  fontWeight: AppTheme.medium,
-                                ),
-                                children: [
-                                  TextSpan(
-                                    text: 'sar'.tr,
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      fontWeight: AppTheme.regular,
-                                      color: AppTheme.textColor2,
+                                  Positioned(
+                                    left: 10,
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.white,
+                                      radius: 15,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(50),
+                                        child: Image.asset(
+                                          'assets/img/bid-img-1.jpg',
+                                          width: 25,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ],
                               ),
-                            ),
-                            KText(
-                              text: ' ~',
-                              color: AppTheme.iconColor,
-                              fontSize: 16,
-                            ),
-                            RichText(
-                              text: TextSpan(
-                                text: ' 15,000 ',
-                                style: TextStyle(
-                                  fontWeight: AppTheme.medium,
-                                  fontSize: 13,
-                                  color: AppTheme.textColor,
-                                ),
-                                children: [
-                                  TextSpan(
-                                    text: 'sar'.tr,
-                                    style: TextStyle(
-                                      fontWeight: AppTheme.regular,
-                                      fontSize: 12,
-                                      color: AppTheme.textColor2,
-                                    ),
-                                  ),
-                                ],
+                              SizedBox(width: 20),
+                              KText(
+                                text: '60Bids',
+                                fontSize: 11,
+                                fontWeight: AppTheme.regular,
                               ),
-                            ),
-                          ],
+                              Spacer(),
+                              RichText(
+                                text: TextSpan(
+                                  text: '10,000 ',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: AppTheme.textColor,
+                                    fontWeight: AppTheme.medium,
+                                  ),
+                                  children: [
+                                    TextSpan(
+                                      text: 'sar'.tr,
+                                      style: GoogleFonts.cairo(
+                                        fontSize: 12,
+                                        fontWeight: AppTheme.regular,
+                                        color: AppTheme.textColor2,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              KText(
+                                text: ' ~',
+                                color: AppTheme.iconColor,
+                                fontSize: 16,
+                              ),
+                              RichText(
+                                text: TextSpan(
+                                  text: ' 15,000 ',
+                                  style: TextStyle(
+                                    fontWeight: AppTheme.medium,
+                                    fontSize: 14,
+                                    color: AppTheme.textColor,
+                                  ),
+                                  children: [
+                                    TextSpan(
+                                      text: 'sar'.tr,
+                                      style: GoogleFonts.cairo(
+                                        fontWeight: AppTheme.regular,
+                                        fontSize: 12,
+                                        color: AppTheme.textColor2,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
                   ),
                 ),
-                SizedBox(height: 170),
+                SizedBox(height: 140),
                 GestureDetector(
                   onTap: () => Get.to(ProjectPage()),
                   child: Container(

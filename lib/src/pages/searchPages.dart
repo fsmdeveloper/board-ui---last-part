@@ -257,105 +257,108 @@ class _SearchPageState extends State<SearchPage> {
           color: AppTheme.textColor,
         ),
         SizedBox(height: 10),
-        Row(
-          children: [
-            Stack(
-              clipBehavior: Clip.none,
-              children: [
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 15,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(50),
-                    child: Image.asset(
-                      'assets/img/bid-img-2.jpg',
-                      width: 25,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                Positioned(
-                  left: 10,
-                  child: CircleAvatar(
+        Directionality(
+          textDirection: TextDirection.ltr,
+          child: Row(
+            children: [
+              Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  CircleAvatar(
                     backgroundColor: Colors.white,
                     radius: 15,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(50),
                       child: Image.asset(
-                        'assets/img/bid-img-1.jpg',
+                        'assets/img/bid-img-2.jpg',
                         width: 25,
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
-            SizedBox(width: 20),
-            RichText(
-              text: TextSpan(
-                text: '60 ',
-                style: TextStyle(
-                  fontSize: AppTheme.textSize11,
-                  color: AppTheme.textColor,
-                ),
-                children: [
-                  TextSpan(
-                    text: 'bids'.tr,
-                    style: GoogleFonts.cairo(
-                      fontSize: AppTheme.textSize11,
-                      color: AppTheme.textColor,
+                  Positioned(
+                    left: 10,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      radius: 15,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(50),
+                        child: Image.asset(
+                          'assets/img/bid-img-1.jpg',
+                          width: 25,
+                        ),
+                      ),
                     ),
                   ),
                 ],
               ),
-            ),
-            Spacer(),
-            RichText(
-              text: TextSpan(
-                text: '10,000 ',
-                style: TextStyle(
-                  fontSize: AppTheme.textSize13,
-                  color: AppTheme.textColor,
-                  fontWeight: AppTheme.semi,
-                ),
-                children: [
-                  TextSpan(
-                    text: 'sar'.tr,
-                    style: GoogleFonts.cairo(
-                      fontSize: AppTheme.textSize12,
-                      color: AppTheme.textColor2,
-                      fontWeight: AppTheme.medium,
-                    ),
+              SizedBox(width: 20),
+              RichText(
+                text: TextSpan(
+                  text: '60 ',
+                  style: TextStyle(
+                    fontSize: AppTheme.textSize11,
+                    color: AppTheme.textColor,
                   ),
-                ],
-              ),
-            ),
-            KText(
-              text: '~',
-              color: AppTheme.iconColor,
-              fontSize: AppTheme.textSize16,
-            ),
-            RichText(
-              text: TextSpan(
-                text: ' 15,000 ',
-                style: TextStyle(
-                  fontSize: AppTheme.textSize13,
-                  color: AppTheme.textColor,
-                  fontWeight: AppTheme.semi,
-                ),
-                children: [
-                  TextSpan(
-                    text: 'sar'.tr,
-                    style: GoogleFonts.cairo(
-                      fontSize: AppTheme.textSize12,
-                      color: AppTheme.textColor2,
-                      fontWeight: AppTheme.medium,
+                  children: [
+                    TextSpan(
+                      text: 'bids'.tr,
+                      style: GoogleFonts.cairo(
+                        fontSize: AppTheme.textSize11,
+                        color: AppTheme.textColor,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+              Spacer(),
+              RichText(
+                text: TextSpan(
+                  text: '10,000 ',
+                  style: TextStyle(
+                    fontSize: AppTheme.textSize13,
+                    color: AppTheme.textColor,
+                    fontWeight: AppTheme.semi,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'sar'.tr,
+                      style: GoogleFonts.cairo(
+                        fontSize: AppTheme.textSize12,
+                        color: AppTheme.textColor2,
+                        fontWeight: AppTheme.medium,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              KText(
+                text: '~',
+                color: AppTheme.iconColor,
+                fontSize: AppTheme.textSize16,
+              ),
+              RichText(
+                text: TextSpan(
+                  text: ' 15,000 ',
+                  style: TextStyle(
+                    fontSize: AppTheme.textSize13,
+                    color: AppTheme.textColor,
+                    fontWeight: AppTheme.semi,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'sar'.tr,
+                      style: GoogleFonts.cairo(
+                        fontSize: AppTheme.textSize12,
+                        color: AppTheme.textColor2,
+                        fontWeight: AppTheme.medium,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ],
     );

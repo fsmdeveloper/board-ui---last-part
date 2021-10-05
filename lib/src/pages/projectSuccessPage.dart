@@ -3,6 +3,7 @@ import 'package:board_ui/src/pages/bottomBarHome.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProjectSuccessPage extends StatelessWidget {
   const ProjectSuccessPage({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class ProjectSuccessPage extends StatelessWidget {
         resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 50),
+            padding: EdgeInsets.symmetric(horizontal: 40),
             child: Column(
               children: [
                 SizedBox(height: 120),
@@ -65,6 +66,8 @@ class ProjectSuccessPage extends StatelessWidget {
                       vertical: 10,
                     ),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -84,15 +87,12 @@ class ProjectSuccessPage extends StatelessWidget {
                           ],
                         ),
                         SizedBox(height: 10),
-                        Container(
-                          alignment: Alignment.centerLeft,
-                          child: KText(
-                            text: 'bidAbout',
-                            fontSize: 14,
-                            maxLines: 1,
-                            fontFamily: 'poppins Semi Bold',
-                            color: AppTheme.textColor,
-                          ),
+                        KText(
+                          text: 'bidAbout',
+                          fontSize: 16,
+                          maxLines: 1,
+                          fontWeight: AppTheme.bold,
+                          color: AppTheme.textColor,
                         ),
                         SizedBox(height: 10),
                         Row(
@@ -101,14 +101,14 @@ class ProjectSuccessPage extends StatelessWidget {
                               text: TextSpan(
                                 text: ' 10,000 ',
                                 style: TextStyle(
-                                  fontSize: 13,
+                                  fontSize: 14,
                                   color: AppTheme.textColor,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontWeight: AppTheme.medium,
                                 ),
                                 children: [
                                   TextSpan(
                                     text: 'sar'.tr,
-                                    style: TextStyle(
+                                    style: GoogleFonts.cairo(
                                       fontWeight: AppTheme.medium,
                                       fontSize: 12,
                                       color: AppTheme.textColor2,
@@ -126,14 +126,14 @@ class ProjectSuccessPage extends StatelessWidget {
                               text: TextSpan(
                                 text: ' 15,000 ',
                                 style: TextStyle(
-                                  fontSize: 13,
+                                  fontSize: 14,
                                   color: AppTheme.textColor,
-                                  fontFamily: 'Poppins Semi Bold',
+                                  fontWeight: AppTheme.medium,
                                 ),
                                 children: [
                                   TextSpan(
                                     text: 'sar'.tr,
-                                    style: TextStyle(
+                                    style: GoogleFonts.cairo(
                                       fontSize: 12,
                                       fontWeight: AppTheme.medium,
                                       color: AppTheme.textColor2,
@@ -148,7 +148,7 @@ class ProjectSuccessPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 200),
+                SizedBox(height: 160),
                 GestureDetector(
                   onTap: () => Get.to(BottomBarHome()),
                   child: Container(

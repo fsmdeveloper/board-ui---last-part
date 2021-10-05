@@ -105,7 +105,7 @@ class FreelancerBar extends StatelessWidget {
                                           SizedBox(width: 8),
                                           KText(
                                             text: 'muhammedZakria',
-                                            fontFamily: 'Poppins Medium',
+                                            fontWeight: AppTheme.medium,
                                             fontSize: 13,
                                           ),
                                         ],
