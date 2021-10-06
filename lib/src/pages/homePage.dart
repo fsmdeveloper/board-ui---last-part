@@ -1,5 +1,4 @@
 import 'package:board_ui/src/configs/appTheme.dart';
-import 'package:board_ui/src/controllers/advanceController.dart';
 import 'package:board_ui/src/tabBar/employerTab.dart';
 import 'package:board_ui/src/tabBar/freelancerBar.dart';
 import 'package:board_ui/src/widgets/advanceSegment.dart';
@@ -19,16 +18,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   //
-  late AdvancedSegmentController _advanceC =
-      AdvancedSegmentController('freelancher');
-  //
   late TabController _tabController;
 
 //
 
   @override
   void initState() {
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 2, vsync: this);
     super.initState();
   }
 
@@ -37,17 +33,6 @@ class _HomePageState extends State<HomePage>
     _tabController.dispose();
     super.dispose();
   }
-
-//
-
-  final segmentName = {
-    'freelancer': 'freelancer'.tr,
-    'employer': 'employer'.tr,
-  };
-//
-  var _value = 'freelancer';
-
-  //
 
   @override
   Widget build(BuildContext context) {
@@ -82,47 +67,86 @@ class _HomePageState extends State<HomePage>
                             fontWeight: FontWeight.w600,
                           ),
                           SizedBox(height: 30),
-                          advanceSegment(),
-                          SizedBox(height: 10),
-                          Container(
-                            margin: EdgeInsets.symmetric(horizontal: 10),
-                            height: 60,
-                            child: Column(
-                              children: [
-                                TabBar(
+                          // advanceSegment(),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 30),
+                            child: Container(
+                              height: 45,
+                              decoration: BoxDecoration(
+                                color: Colors.white24,
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(
+                                    vertical: 5, horizontal: 5),
+                                child: TabBar(
                                   labelStyle: GoogleFonts.cairo(
                                     fontWeight: AppTheme.semi,
-                                    fontSize: 13,
-                                  ),
-                                  indicatorPadding: EdgeInsets.symmetric(
-                                    vertical: 5,
-                                    horizontal: 43,
+                                    fontSize: 14,
                                   ),
                                   indicatorColor: AppTheme.white,
                                   indicatorWeight: 2,
                                   unselectedLabelStyle: GoogleFonts.cairo(
                                     fontWeight: AppTheme.regular,
                                   ),
-                                  unselectedLabelColor: Colors.white70,
-                                  labelColor: Colors.white,
+                                  unselectedLabelColor: Colors.white,
+                                  labelColor: AppTheme.primaryColor,
+                                  indicator: BoxDecoration(
+                                    color: AppTheme.white,
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
                                   tabs: [
-                                    Tab(
-                                      text: 'all'.tr,
-                                    ),
-                                    Tab(
-                                      text: 'open'.tr,
-                                    ),
-                                    Tab(
-                                      text: 'ongoing'.tr,
-                                    ),
-                                    Tab(
-                                      text: 'done'.tr,
-                                    ),
+                                    Tab(text: 'freelancer'.tr),
+                                    Tab(text: 'employer'.tr),
                                   ],
                                   controller: _tabController,
-                                  indicatorSize: TabBarIndicatorSize.tab,
                                 ),
-                              ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          DefaultTabController(
+                            length: 4,
+                            child: Container(
+                              margin: EdgeInsets.symmetric(horizontal: 10),
+                              height: 60,
+                              child: Column(
+                                children: [
+                                  TabBar(
+                                    labelStyle: GoogleFonts.cairo(
+                                      fontWeight: AppTheme.semi,
+                                      fontSize: 13,
+                                    ),
+                                    indicatorPadding: EdgeInsets.symmetric(
+                                      vertical: 5,
+                                      horizontal: 43,
+                                    ),
+                                    indicatorColor: AppTheme.white,
+                                    indicatorWeight: 2,
+                                    unselectedLabelStyle: GoogleFonts.cairo(
+                                      fontWeight: AppTheme.regular,
+                                    ),
+                                    unselectedLabelColor: Colors.white70,
+                                    labelColor: Colors.white,
+                                    tabs: [
+                                      Tab(
+                                        text: 'all'.tr,
+                                      ),
+                                      Tab(
+                                        text: 'open'.tr,
+                                      ),
+                                      Tab(
+                                        text: 'ongoing'.tr,
+                                      ),
+                                      Tab(
+                                        text: 'done'.tr,
+                                      ),
+                                    ],
+                                    // controller: _tabController,
+                                    indicatorSize: TabBarIndicatorSize.tab,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ],
@@ -151,8 +175,6 @@ class _HomePageState extends State<HomePage>
                                 children: [
                                   FreelancerBar(),
                                   EmployerBar(),
-                                  Center(child: KText(text: 'OnGoing')),
-                                  Center(child: KText(text: 'Done')),
                                 ],
                               ),
                             ),
@@ -166,41 +188,6 @@ class _HomePageState extends State<HomePage>
             ),
           ),
         ),
-      ),
-    );
-  }
-
-  Widget advanceSegment() {
-    return Center(
-      child: AdvancedSegment(
-        sliderOffset: 5,
-        sliderColor: Colors.white,
-        backgroundColor: Colors.white24,
-        shadow: [
-          BoxShadow(
-            color: Colors.transparent,
-          ),
-        ],
-        activeStyle: GoogleFonts.cairo(
-          fontWeight: AppTheme.semi,
-          color: AppTheme.primaryColor,
-        ),
-        inactiveStyle: GoogleFonts.cairo(
-          fontWeight: AppTheme.semi,
-          color: AppTheme.white,
-        ),
-        itemPadding: EdgeInsets.symmetric(
-          horizontal: 50,
-          vertical: 12,
-        ),
-        segments: segmentName,
-        controller: _advanceC,
-        onValueChanged: (groupValues) {
-          setState(() {
-            _value = groupValues;
-          });
-        },
-        value: _value,
       ),
     );
   }
