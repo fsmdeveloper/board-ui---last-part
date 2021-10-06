@@ -1,7 +1,6 @@
 import 'package:board_ui/src/configs/appTheme.dart';
 import 'package:board_ui/src/tabBar/employerTab.dart';
 import 'package:board_ui/src/tabBar/freelancerBar.dart';
-import 'package:board_ui/src/widgets/advanceSegment.dart';
 import 'package:board_ui/src/widgets/kText.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
