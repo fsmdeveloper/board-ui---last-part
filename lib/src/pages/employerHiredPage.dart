@@ -610,31 +610,6 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               ],
                             ),
                             SizedBox(height: 10),
-                            Container(
-                              child: Stepper(
-                                steps: [
-                                  Step(
-                                      title: Text("Task-7"),
-                                      content: Text(""),
-                                      subtitle: Text("Compled"),
-                                      isActive: true,
-                                      state: StepState.complete),
-                                  Step(
-                                      title: Text("Task-7"),
-                                      content: Text(""),
-                                      subtitle: Text("Compled"),
-                                      isActive: true,
-                                      state: StepState.complete),
-                                ],
-                                // currentStep: _index,
-                                // onStepTapped: (index) {
-                                //   setState(() {
-                                //     _index = index;
-                                //   });
-                                // },
-                               
-                              ),
-                            ),
                             Row(
                               children: [
                                 CircleAvatar(
