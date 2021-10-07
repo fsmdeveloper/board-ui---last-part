@@ -470,6 +470,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                         left: 20,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             KText(
                               text: 'projectManagement',
@@ -489,9 +490,15 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                       Positioned(
                         top: 30,
                         right: 20,
-                        child: Image.asset(
-                          'assets/icon/settings1.png',
-                          width: 27,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset(
+                              'assets/icon/settings1.png',
+                              width: 27,
+                            ),
+                          ],
                         ),
                       ),
                       Positioned(

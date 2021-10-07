@@ -72,88 +72,95 @@ class _BottomBarProfileState extends State<BottomBarProfile> {
           ),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        bottomSheet: BottomAppBar(
-          color: AppTheme.white,
-          elevation: 0,
-          // shape: CircularNotchedRectangle(),
-          notchMargin: 10,
-          child: Container(
-            width: Get.width,
-            height: 70,
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.white.withOpacity(.50),
-                  spreadRadius: 80,
-                  blurRadius: 70,
+        bottomSheet: Directionality(
+          textDirection: TextDirection.ltr,
+          child: BottomAppBar(
+            color: AppTheme.white,
+            elevation: 0,
+            // shape: CircularNotchedRectangle(),
+            notchMargin: 10,
+            child: Container(
+              width: Get.width,
+              height: 70,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(20),
                 ),
-              ],
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                MaterialButton(
-                  onPressed: () {
-                    setState(() {
-                      _currentScreens = HomePage();
-                      _currentTab = 0;
-                    });
-                  },
-                  child: Image.asset(
-                    'assets/icon/home.png',
-                    color: _currentTab == 0
-                        ? AppTheme.primaryColor
-                        : AppTheme.textColor,
-                    width: 19.19,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.white.withOpacity(.50),
+                    spreadRadius: 80,
+                    blurRadius: 70,
                   ),
-                ),
-                MaterialButton(
-                  onPressed: () {
-                    setState(() {
-                      _currentScreens = EmployerProjectPage();
-                      _currentTab = 1;
-                    });
-                  },
-                  child: Image.asset(
-                    'assets/icon/share.png',
-                    width: 17.51,
-                    color: _currentTab == 1
-                        ? AppTheme.primaryColor
-                        : AppTheme.textColor,
+                ],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  MaterialButton(
+                    onPressed: () {
+                      setState(() {
+                        _currentScreens = HomePage();
+                        _currentTab = 0;
+                      });
+                    },
+                    child: Image.asset(
+                      'assets/icon/home.png',
+                      color: _currentTab == 0
+                          ? AppTheme.primaryColor
+                          : AppTheme.textColor,
+                      width: 19.19,
+                    ),
                   ),
-                ),
-                SizedBox(width: 45),
-                MaterialButton(
-                  onPressed: () {
-                    setState(() {
-                      _currentScreens = ChatPage();
-                      _currentTab = 2;
-                    });
-                  },
-                  child: Image.asset(
-                    'assets/icon/msg.png',
-                    width: 17.27,
-                    color: _currentTab == 2
-                        ? AppTheme.primaryColor
-                        : AppTheme.textColor,
+                  MaterialButton(
+                    onPressed: () {
+                      setState(() {
+                        _currentScreens = EmployerProjectPage();
+                        _currentTab = 1;
+                      });
+                    },
+                    child: Image.asset(
+                      'assets/icon/share.png',
+                      width: 17.51,
+                      color: _currentTab == 1
+                          ? AppTheme.primaryColor
+                          : AppTheme.textColor,
+                    ),
                   ),
-                ),
-                MaterialButton(
-                  onPressed: () {
-                    setState(() {
-                      _currentScreens = ProfileDetailsPage();
-                      _currentTab = 3;
-                    });
-                  },
-                  child: Image.asset(
-                    'assets/icon/user2.png',
-                    width: 16.27,
-                    color: _currentTab == 3
-                        ? AppTheme.primaryColor
-                        : AppTheme.textColor,
+                  SizedBox(width: 45),
+                  MaterialButton(
+                    onPressed: () {
+                      setState(() {
+                        _currentScreens = ChatPage();
+                        _currentTab = 2;
+                      });
+                    },
+                    child: Image.asset(
+                      'assets/icon/msg.png',
+                      width: 17.27,
+                      color: _currentTab == 2
+                          ? AppTheme.primaryColor
+                          : AppTheme.textColor,
+                    ),
                   ),
-                ),
-              ],
+                  MaterialButton(
+                    onPressed: () {
+                      setState(() {
+                        _currentScreens = ProfileDetailsPage();
+                        _currentTab = 3;
+                      });
+                    },
+                    child: Image.asset(
+                      'assets/icon/user2.png',
+                      width: 16.27,
+                      color: _currentTab == 3
+                          ? AppTheme.primaryColor
+                          : AppTheme.textColor,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
