@@ -19,6 +19,8 @@ class EmployerHirePage extends StatefulWidget {
 class _EmployerHirePageState extends State<EmployerHirePage> {
   bool value = false;
 
+  int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -477,7 +479,7 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               fontSize: 16,
                               fontWeight: AppTheme.semi,
                             ),
-                            SizedBox(height: 8),
+                            SizedBox(height: 2),
                             KText(
                               text: 'paymentsDetailsRelatedtotheProject',
                               fontSize: 12,
@@ -514,157 +516,190 @@ class _EmployerHirePageState extends State<EmployerHirePage> {
                               color: AppTheme.primaryColor,
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(),
-                                  Container(
-                                    alignment: Alignment.center,
-                                    child: KText(
-                                      text: 'createMilestone',
-                                      color: Colors.white,
-                                      fontSize: 14,
-                                      fontWeight: AppTheme.medium,
+                            child: Directionality(
+                              textDirection: TextDirection.ltr,
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 16),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(),
+                                    Container(
+                                      alignment: Alignment.center,
+                                      child: KText(
+                                        text: 'createMilestone',
+                                        color: Colors.white,
+                                        fontSize: 14,
+                                        fontWeight: AppTheme.medium,
+                                      ),
                                     ),
-                                  ),
-                                  CircleAvatar(
-                                    backgroundColor: AppTheme.white,
-                                    radius: 10,
-                                    child: CircleAvatar(
-                                      backgroundColor: AppTheme.primaryColor,
-                                      radius: 8.80,
-                                      child: Center(
-                                        child: Icon(
-                                          Icons.attach_money,
-                                          color: AppTheme.white,
-                                          size: 15,
+                                    CircleAvatar(
+                                      backgroundColor: AppTheme.white,
+                                      radius: 10,
+                                      child: CircleAvatar(
+                                        backgroundColor: AppTheme.primaryColor,
+                                        radius: 8.80,
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.attach_money,
+                                            color: AppTheme.white,
+                                            size: 15,
+                                          ),
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
                         ),
                       ),
                       Positioned(
-                        bottom: 110,
+                        bottom: 20,
                         left: 30,
                         right: 30,
-                        child: Row(
+                        child: Column(
                           children: [
-                            CircleAvatar(
-                              radius: 8,
-                              backgroundColor: AppTheme.primaryColor,
-                            ),
-                            // Transform.scale(
-                            //   scale: .80,
-                            //   child: Radio(
-                            //     activeColor: AppTheme.primaryColor,
-                            //     toggleable: true,
-                            //     value: 'null',
-                            //     groupValue: 'null',
-                            //     onChanged: (val) {
-                            //       setState(() {});
-                            //     },
-                            //   ),
-                            // ),
-                            SizedBox(width: 20),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                            Row(
                               children: [
-                                KText(
-                                  text: 'paid',
-                                  fontSize: 11,
-                                  color: AppTheme.primaryColor,
-                                  fontWeight: AppTheme.regular,
+                                CircleAvatar(
+                                  radius: 8,
+                                  backgroundColor: AppTheme.primaryColor,
                                 ),
-                                SizedBox(height: 3),
-                                KText(
-                                  text: 'firstPartoftheProjectIsdone',
-                                  fontSize: 14,
-                                  fontWeight: AppTheme.semi,
+                                // Transform.scale(
+                                //   scale: .80,
+                                //   child: Radio(
+                                //     activeColor: AppTheme.primaryColor,
+                                //     toggleable: true,
+                                //     value: 'null',
+                                //     groupValue: 'null',
+                                //     onChanged: (val) {
+                                //       setState(() {});
+                                //     },
+                                //   ),
+                                // ),
+                                SizedBox(width: 20),
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    KText(
+                                      text: 'paid',
+                                      fontSize: 11,
+                                      color: AppTheme.primaryColor,
+                                      fontWeight: AppTheme.regular,
+                                    ),
+                                    SizedBox(height: 3),
+                                    KText(
+                                      text: 'firstPartoftheProjectIsdone',
+                                      fontSize: 14,
+                                      fontWeight: AppTheme.semi,
+                                    ),
+                                    SizedBox(height: 4),
+                                    KText(
+                                      text: '3DaysAgo',
+                                      fontSize: 11,
+                                      color: Colors.grey,
+                                      fontWeight: AppTheme.regular,
+                                    ),
+                                  ],
                                 ),
-                                SizedBox(height: 4),
-                                KText(
-                                  text: '3DaysAgo',
-                                  fontSize: 11,
-                                  color: Colors.grey,
-                                  fontWeight: AppTheme.regular,
-                                )
                               ],
                             ),
-                          ],
-                        ),
-                      ),
-                      Positioned(
-                        top: 220,
-                        left: 37,
-                        child: Container(
-                          height: 50,
-                          width: 1.50,
-                          color: Colors.grey.shade100,
-                        ),
-                      ),
-                      Positioned(
-                        left: 32,
-                        right: 30,
-                        bottom: 30,
-                        child: Row(
-                          children: [
-                            CircleAvatar(
-                              radius: 6,
-                              backgroundColor: AppTheme.primaryColor,
-                              child: CircleAvatar(
-                                radius: 5,
-                                backgroundColor: AppTheme.white,
+                            SizedBox(height: 10),
+                            Container(
+                              child: Stepper(
+                                steps: [
+                                  Step(
+                                      title: Text("Task-7"),
+                                      content: Text(""),
+                                      subtitle: Text("Compled"),
+                                      isActive: true,
+                                      state: StepState.complete),
+                                  Step(
+                                      title: Text("Task-7"),
+                                      content: Text(""),
+                                      subtitle: Text("Compled"),
+                                      isActive: true,
+                                      state: StepState.complete),
+                                ],
+                                // currentStep: _index,
+                                // onStepTapped: (index) {
+                                //   setState(() {
+                                //     _index = index;
+                                //   });
+                                // },
+                               
                               ),
                             ),
-                            // Transform.scale(
-                            //   scale: .80,
-                            //   child: Radio(
-                            //     activeColor: AppTheme.primaryColor,
-                            //     toggleable: true,
-                            //     value: 'null',
-                            //     groupValue: 'null',
-                            //     onChanged: (val) {
-                            //       setState(() {});
-                            //     },
-                            //   ),
-                            // ),
-                            SizedBox(width: 20),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                            Row(
                               children: [
-                                KText(
-                                  text: 'ongoing',
-                                  fontSize: 11,
-                                  color: AppTheme.primaryColor,
-                                  fontWeight: AppTheme.regular,
+                                CircleAvatar(
+                                  radius: 6,
+                                  backgroundColor: AppTheme.primaryColor,
+                                  child: CircleAvatar(
+                                    radius: 5,
+                                    backgroundColor: AppTheme.white,
+                                  ),
                                 ),
-                                SizedBox(height: 3),
-                                KText(
-                                  text: 'finalDeliveryoftheProject',
-                                  fontSize: 14,
-                                  fontWeight: AppTheme.semi,
+                                // Transform.scale(
+                                //   scale: .80,
+                                //   child: Radio(
+                                //     activeColor: AppTheme.primaryColor,
+                                //     toggleable: true,
+                                //     value: 'null',
+                                //     groupValue: 'null',
+                                //     onChanged: (val) {
+                                //       setState(() {});
+                                //     },
+                                //   ),
+                                // ),
+
+                                SizedBox(width: 20),
+
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    KText(
+                                      text: 'ongoing',
+                                      fontSize: 11,
+                                      color: AppTheme.primaryColor,
+                                      fontWeight: AppTheme.regular,
+                                    ),
+                                    SizedBox(height: 3),
+                                    KText(
+                                      text: 'finalDeliveryoftheProject',
+                                      fontSize: 14,
+                                      fontWeight: AppTheme.semi,
+                                    ),
+                                    SizedBox(height: 4),
+                                    KText(
+                                      text: '3DaysAgo',
+                                      fontSize: 11,
+                                      color: Colors.grey,
+                                      fontWeight: AppTheme.regular,
+                                    )
+                                  ],
                                 ),
-                                SizedBox(height: 4),
-                                KText(
-                                  text: '3DaysAgo',
-                                  fontSize: 11,
-                                  color: Colors.grey,
-                                  fontWeight: AppTheme.regular,
-                                )
                               ],
                             ),
                           ],
+                        ),
+                      ),
+                      Positioned(
+                        top: 210,
+                        left: 37,
+                        child: Directionality(
+                          textDirection: TextDirection.rtl,
+                          child: Container(
+                            height: 50,
+                            width: 1.50,
+                            color: Colors.grey.shade100,
+                          ),
                         ),
                       ),
                     ],

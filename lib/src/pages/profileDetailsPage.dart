@@ -57,13 +57,12 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
                         ),
                         Positioned(
                           top: 50,
-                          // left: 30,
+                          left: 30,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Container(
                                 alignment: Alignment.center,
-
                                 width: 40,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
@@ -71,97 +70,104 @@ class _ProfileDetailsPageState extends State<ProfileDetailsPage>
                                     .60,
                                   ),
                                 ),
-                                child: Center(
-                                  child: IconButton(
-                                    onPressed: () => Get.back(),
-                                    icon: Padding(
-                                      padding: EdgeInsets.only(left: 2),
-                                      child: Icon(
-                                        Icons.arrow_back_ios,
+                                child:
+                                    // Center(
+                                    //   child: IconButton(
+                                    //     onPressed: () => Get.back(),
+                                    //     icon: Padding(
+                                    //       padding: EdgeInsets.only(left: 2),
+                                    //       child: Icon(
+                                    //         Icons.arrow_back_ios,
+                                    //         color: AppTheme.white,
+                                    //         size: 16,
+                                    //       ),
+                                    //     ),
+                                    //   ),
+                                    // ),
+                                    GestureDetector(
+                                  onTap: () => Get.back(),
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Center(
+                                      child: Image.asset(
+                                        'assets/icon/back.png',
                                         color: AppTheme.white,
-                                        size: 16,
+                                        width: 10,
                                       ),
                                     ),
                                   ),
                                 ),
-                                // Center(
-                                //   child: Image.asset(
-                                //     'assets/icon/back.png',
-                                //     color: AppTheme.white,
-                                //     width: 8,
-                                //   ),
-                                // ),
                               ),
                               // Spacer(),
-                              Container(
-                                height: 30,
-                                width: 80,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  border: Border.all(
-                                    color: AppTheme.iconColor,
-                                  ),
-                                ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'edit'.tr,
-                                      style: GoogleFonts.cairo(
-                                        fontSize: 13,
-                                        color: AppTheme.white,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                      // textDirection: TextDirection.ltr,
-                                    ),
-                                    SizedBox(width: 5),
-                                    Icon(
-                                      Icons.edit,
-                                      color: AppTheme.white,
-                                      size: 14,
-                                    ),
-                                  ],
-                                ),
-                              ),
+                              // Container(
+                              //   height: 30,
+                              //   width: 80,
+                              //   decoration: BoxDecoration(
+                              //     borderRadius: BorderRadius.circular(20),
+                              //     border: Border.all(
+                              //       color: AppTheme.iconColor,
+                              //     ),
+                              //   ),
+                              //   child: Row(
+                              //     mainAxisAlignment: MainAxisAlignment.center,
+                              //     crossAxisAlignment: CrossAxisAlignment.center,
+                              //     children: [
+                              //       Text(
+                              //         'edit'.tr,
+                              //         style: GoogleFonts.cairo(
+                              //           fontSize: 13,
+                              //           color: AppTheme.white,
+                              //           fontWeight: FontWeight.w600,
+                              //         ),
+                              //         // textDirection: TextDirection.ltr,
+                              //       ),
+                              //       SizedBox(width: 5),
+                              //       Icon(
+                              //         Icons.edit,
+                              //         color: AppTheme.white,
+                              //         size: 14,
+                              //       ),
+                              //     ],
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),
-                        // Positioned(
-                        //   top: 50,
-                        //   right: 30,
-                        //   child: Container(
-                        //     height: 30,
-                        //     width: 80,
-                        //     decoration: BoxDecoration(
-                        //       borderRadius: BorderRadius.circular(20),
-                        //       border: Border.all(
-                        //         color: AppTheme.iconColor,
-                        //       ),
-                        //     ),
-                        //     child: Row(
-                        //       mainAxisAlignment: MainAxisAlignment.center,
-                        //       crossAxisAlignment: CrossAxisAlignment.center,
-                        //       children: [
-                        //         Text(
-                        //           'edit'.tr,
-                        //           style: GoogleFonts.cairo(
-                        //             fontSize: 13,
-                        //             color: AppTheme.white,
-                        //             fontWeight: FontWeight.w600,
-                        //           ),
-                        //           // textDirection: TextDirection.ltr,
-                        //         ),
-                        //         SizedBox(width: 5),
-                        //         Icon(
-                        //           Icons.edit,
-                        //           color: AppTheme.white,
-                        //           size: 14,
-                        //         ),
-                        //       ],
-                        //     ),
-                        //   ),
-                        // ),
+                        Positioned(
+                          top: 50,
+                          right: 30,
+                          child: Container(
+                            height: 30,
+                            width: 80,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              border: Border.all(
+                                color: AppTheme.iconColor,
+                              ),
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'edit'.tr,
+                                  style: GoogleFonts.cairo(
+                                    fontSize: 13,
+                                    color: AppTheme.white,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  // textDirection: TextDirection.ltr,
+                                ),
+                                SizedBox(width: 5),
+                                Icon(
+                                  Icons.edit,
+                                  color: AppTheme.white,
+                                  size: 14,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
                         Positioned(
                           top: 170,
                           child: Container(

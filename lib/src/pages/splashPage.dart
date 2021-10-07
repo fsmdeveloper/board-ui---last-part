@@ -13,25 +13,6 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-  final List<Map<String, dynamic>> locales = [
-  {
-    'name': 'English',
-    'locale': Locale('en', 'US'),
-  },
-  {
-    'name': 'Arabic',
-    'locale': Locale('ar'),
-  },
-];
-updateLocal(Locale locale, BuildContext context) {
-  Navigator.of(context).pop();
-  Get.updateLocale(locale);
-  
-}
-  String font = 'Poppins';
-
-  List<String> fonts = ['Poppins', 'Cairo'];
-  late bool isLanguageEnglish = true;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -124,44 +105,4 @@ updateLocal(Locale locale, BuildContext context) {
       ),
     );
   }
-
-  // showDialouge(BuildContext context) {
-  //   showDialog(
-  //     context: context,
-  //     builder: (_) => AlertDialog(
-  //       title: Row(
-  //         children: [
-  //           KText(text: 'Select a Language '),
-  //           Icon(
-  //             Icons.expand_more,
-  //             size: 20,
-  //           ),
-  //         ],
-  //       ),
-  //       content: Container(
-   
-  //         child: ListView.separated(
-  //           shrinkWrap: true,
-  //           separatorBuilder: (context, index) => Divider(),
-  //           itemCount: fonts.length,
-  //           itemBuilder: (context, index) {
-  //             // ignore: deprecated_member_use
-  //             return FlatButton(
-  //               padding: EdgeInsets.all(8),
-  //               child: Text(
-  //                 fonts[index],
-  //                 style: GoogleFonts.getFont(fonts[index],
-  //                     fontSize: 32, color: Colors.white),
-  //               ),
-  //               onPressed: () => setState(() {
-  //                 font = fonts[index];
-  //               }),
-  //               color: Colors.black,
-  //             );
-  //           },
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
 }
