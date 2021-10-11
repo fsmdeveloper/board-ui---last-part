@@ -602,7 +602,7 @@ etretqr consectetur adipiscen''',
         //
 
         //  Arabics
-        'ar': {
+        'ar_AR': {
           //1Splash Page Arabic ==>
 
           'dontHaveId': ' ليس لديك حساب؟',
@@ -737,8 +737,7 @@ etretqr consectetur adipiscen''',
 
           //11 Register Form Page ==>
 
-          'registerFormAbout':
-              '''قم بتسجيل حساب جديد ببريدك الإلكتروني الخاص بك
+          'registerFormAbout': '''قم بتسجيل حساب جديد ببريدك الإلكتروني الخاص بك
 و يمكنك البدء بالعمل اليوم''',
           // 'emailAddress': 'Email Address',
           // 'textFieldEmail' : '',
